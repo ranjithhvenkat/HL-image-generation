@@ -1,0 +1,52 @@
+# config/operations.yaml
+
+operations:
+  # ---------------------------------------------------------
+  # OPERATION 09: Fabric / Color Simulation
+  # Focus: Changing surface aesthetics while keeping geometry.
+  # ---------------------------------------------------------
+  - id: "09"
+    name: "Fabric_Color_Simulation"
+    workflow: "material_edit_workflow" 
+    description: "Generate alternate fabric textures or color variants for apparel, furniture, and beauty products."
+    variants:
+      - name: "solid_color_change"
+        template: "op09_solid_color_change.txt"
+        description: "Retains original texture but changes the hue/saturation to specific colors (e.g., Red to Blue)."
+        
+      - name: "material_texture_swap"
+        template: "op09_material_texture_swap.txt"
+        description: "Replaces the material entirely (e.g., Cotton to Leather, Matte to Glossy) requiring texture regeneration."
+
+      - name: "pattern_overlay"
+        template: "op09_pattern_overlay.txt"
+        description: "Applies a specific print or pattern (e.g., Floral, Stripes) onto the existing product surface."
+
+  # ---------------------------------------------------------
+  # OPERATION 36: Seasonal / Thematic Contexts
+  # Focus: Changing the environment/background to match a theme.
+  # ---------------------------------------------------------
+  - id: "36"
+    name: "Seasonal_Thematic_Contexts"
+    workflow: "context_generation_workflow"
+    description: "Generate promotional themes for holidays, seasons, or specific sales events."
+    variants:
+      - name: "christmas"
+        template: "op36_christmas.txt"
+        description: "Snow, red/green aesthetics, lights, festive decorations."
+
+      - name: "diwali"
+        template: "op36_diwali.txt"
+        description: "Oil lamps (diyas), marigolds, warm lighting, gold accents."
+
+      - name: "new_year"
+        template: "op36_new_year.txt"
+        description: "Confetti, champagne tones, party atmosphere, 'New Year' text elements."
+
+      - name: "summer_vibe"
+        template: "op36_summer.txt"
+        description: "Bright sunlight, harsh shadows, outdoor/beach elements, vibrant colors."
+        
+      - name: "winter_cozy"
+        template: "op36_winter.txt"
+        description: "Warm indoor lighting, fireplaces, knit textures, cold outdoor window views."
