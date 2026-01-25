@@ -4,7 +4,18 @@ import streamlit as st
 import yaml
 import os
 from typing import List, Dict, Any
-
+from workflows import static_flow, dynamic_flow
+from utils import output_handler 
+# ==========================================
+# WORKFLOW REGISTRY
+# ==========================================
+# This dictionary maps the YAML 'workflow' string to the Python module
+WORKFLOW_MAP = {
+    "static_prompting": static_flow,
+    "dynamic_prompting": dynamic_flow,
+    # Future scalability:
+    # "masking_workflow": masking_flow 
+}
 # ==========================================
 # CONFIGURATION & SETUP
 # ==========================================
@@ -130,28 +141,55 @@ def main():
     # SECTION 4: EXECUTION
     # ------------------------------------------------
     st.markdown("---")
-    
-    # State validation
-    ready_to_run = uploaded_files or product_specs and current_op
-    
-    if st.button("Generate Output", type="primary", disabled=not ready_to_run):
+    if st.button("Generate Output", type="primary"):
         
-        # UI Feedback
-        st.status("Processing...", expanded=True)
+        # 1. Identify the requested workflow string (e.g., "dynamic_prompting")
+        workflow_name = current_op.get('workflow')
         
-        # ---------------------------------------------
-        # PLACEHOLDER FOR UTILITY CONNECTION
-        # ---------------------------------------------
-        st.write(f"**Selected Operation:** {current_op['name']}")
-        if current_variant:
-            st.write(f"**Selected Variant:** {current_variant['name']}")
-            st.write(f"**Template File:** {current_variant['template']}")
+        # 2. Get the corresponding Python module
+        workflow_module = WORKFLOW_MAP.get(workflow_name)
         
-        st.write(f"**Images Queued:** {len(uploaded_files)}")
-        st.write(f"**Workflow Engine:** {current_op['workflow']}")
-        
-        # In the next step, we will import utils here and pass these variables:
-        # utils.execute_workflow(current_op['workflow'], uploaded_files, product_specs, current_variant['template'])
+        if not workflow_module:
+            st.error(f"Workflow '{workflow_name}' is not defined in main.py registry.")
+            return
+
+        # 3. Execute the Workflow
+        try:
+            results = workflow_module.execute(
+                uploaded_files=uploaded_files,
+                product_specs=product_specs,
+                template_filename=current_variant['template']
+            )
+            
+            # 4. Display & Save Results
+            st.success("Generation Complete!")
+            
+            # Create columns if multiple images
+            cols = st.columns(len(results))
+            
+            for idx, img in enumerate(results):
+                with cols[idx]:
+                    # A. Display Image
+                    st.image(img, caption=f"Result {idx+1}", use_container_width=True)
+                    
+                    # B. Save to Disk (Auto-save)
+                    save_path, filename = output_handler.save_image(
+                        img, 
+                        current_op['name'], 
+                        current_variant['name']
+                    )
+                    st.caption(f"Saved locally to: `{save_path}`")
+                    
+                    # C. Download Button
+                    btn = st.download_button(
+                        label="⬇️ Download Image",
+                        data=output_handler.convert_to_bytes(img),
+                        file_name=filename,
+                        mime="image/png"
+                    )
+                
+        except Exception as e:
+            st.error(f"An error occurred during execution: {e}")
 
 if __name__ == "__main__":
     main()

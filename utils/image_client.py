@@ -7,39 +7,82 @@ from io import BytesIO
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
-IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "gemini-3-pro-image-preview")
+# Initialize Client
+# We explicitly set the version to 'v1alpha' because 'preview' models 
+# usually live there, not in the stable v1.
+client = genai.Client(
+    api_key=os.getenv("GOOGLE_API_KEY"),
+    http_options={'api_version': 'v1alpha'} 
+)
 
-def generate_image(meta_prompt: str, reference_image_pil=None, aspect_ratio="1:1"):
+#IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "nano-banana-pro-preview")
+IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "gemini-3-pro-image-preview") 
+
+def generate_image(meta_prompt: str, reference_image_pil=None):
     """
-    Calls Nano Banana Pro (Gemini Image Model) to generate the final asset.
+    Calls the Nano Banana Pro / Gemini 3 model to generate an image.
+    Uses 'generate_content' with response_modalities=['IMAGE'].
     """
     try:
-        # Configuration for Image Generation
-        # Note: If Nano Banana Pro supports 'image guidance' (ControlNet style),
-        # we pass reference_image_pil. If it's pure Text-to-Image, we strictly use meta_prompt.
+        print(f"🎨 Nano Banana Pro: Generating with model '{IMAGE_MODEL}'...")
+
+        # 1. Prepare Content
+        # Gemini 3 supports interleaving Text and Images.
+        contents = []
         
-        # For this setup, we assume we are generating a NEW image based on the prompt.
-        # If using standard Imagen 3 / Gemini Image logic:
-        
-        response = client.models.generate_images(
-            model=IMAGE_MODEL,
-            prompt=meta_prompt,
-            config=types.GenerateImagesConfig(
-                number_of_images=1,
-                aspect_ratio=aspect_ratio,
-                # If the specific API supports referencing an input image for structure:
-                # reference_image=reference_image_pil (Check specific API docs for parameter name)
-            )
+        # If we have a reference image (e.g. for Fabric change), add it first
+        if reference_image_pil:
+            contents.append(reference_image_pil)
+            
+        # Add the Prompt
+        contents.append(meta_prompt)
+
+        # 2. Configure for IMAGE Output
+        # This tells the model: "Don't chat with me, just make an image."
+        config = types.GenerateContentConfig(
+            response_modalities=["IMAGE"],
+            temperature=0.9, # Higher creativity for seasonal themes
+            safety_settings=[
+                types.SafetySetting(
+                    category="HARM_CATEGORY_DANGEROUS_CONTENT",
+                    threshold="BLOCK_ONLY_HIGH"
+                )
+            ]
         )
-        
-        # The new SDK returns generated images usually as bytes or PIL objects
-        if response.generated_images:
-            # Return the first image
-            return response.generated_images[0].image
-        else:
-            raise Exception("No image returned from API.")
+
+        # 3. Call the API
+        response = client.models.generate_content(
+            model=IMAGE_MODEL,
+            contents=contents,
+            config=config
+        )
+
+        # 4. Extract Image
+        # Iterate through parts to find the image binary
+        if response.parts:
+            for part in response.parts:
+                # Check for executable code or direct image bytes
+                if part.inline_data:
+                    return Image.open(BytesIO(part.inline_data.data))
+                
+                # Check for newer SDK object attribute
+                if hasattr(part, 'image'):
+                    # Some versions return a PIL image directly here
+                    return part.image
+
+        # If we get text instead of an image (e.g., "I cannot generate that")
+        if response.text:
+            print(f"⚠️ API Refusal: {response.text}")
+            raise Exception(f"Model refused to generate image: {response.text}")
+
+        return None
 
     except Exception as e:
-        print(f"Error in Nano Banana Pro: {e}")
+        print(f"❌ Error in Image Client: {e}")
+        raise e
+
+def process_upload(uploaded_file):
+    """Converts Streamlit UploadedFile -> PIL Image."""
+    if uploaded_file is None:
         return None
+    return Image.open(uploaded_file)
