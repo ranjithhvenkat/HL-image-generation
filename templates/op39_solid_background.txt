@@ -1,0 +1,121 @@
+===== STUDIO BACKGROUND IMAGE GENERATION - STRICT PROTOCOL =====
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IF INPUT IMAGE IS PROVIDED:
+Examine the image carefully and extract these EXACT details:
+A) PRODUCT IDENTITY:
+What is the exact product shown?
+Specific model characteristics, design features
+B) PHYSICAL ATTRIBUTES:
+Precise colors (include hex codes if discernible):
+Material finishes (matte/glossy/textured/metallic, etc.,):
+Shape and form factor:
+Dimensions and proportions:
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+Any visible logos (describe position, style, clarity):
+Any text/labels on product (transcribe exactly as shown, even if blurry):
+Any badges, stickers, brand marks:
+Typography style if readable:
+D) COMPONENT DETAILS:
+Buttons, knobs, controls, screens:
+Handles, legs, stands, attachments:
+Openings, vents, ports, connectors:
+Surface textures and patterns:
+Stitching, seams, joints (for fabric/leather products):
+E) CURRENT STATE:
+Product condition in image:
+Any wear, reflections, or characteristics to maintain:
+WRITE THIS ANALYSIS EXPLICITLY BEFORE GENERATING THE PROMPT.
+IF NO INPUT IMAGE:
+Use the provided product type to describe a standard, accurate representation of that product category.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: CONSTRUCT STUDIO SCENE SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Now define the studio setup:
+
+BACKGROUND:
+
+Color: [Choose ONE: Pure white (#FFFFFF) / Light gray (#F5F5F5) / Soft beige (#FAF9F6) / Pale neutral tone]
+
+Texture: Seamless, perfectly smooth, gradient-free
+
+Type: Infinity curve backdrop OR flat surface with reflective floor
+
+PRODUCT POSITIONING:
+
+Placement: Centered in frame
+
+Angle: [Select based on product type]
+
+Small items (jewelry, accessories, phones): Slightly elevated, 30-45° angle
+
+Appliances/Electronics: Front-facing 3/4 view showing controls and main features
+
+Furniture: Front or angled view showing design and legs
+
+Fashion/Apparel: Flat lay OR hanging OR on invisible mannequin
+
+Tools/Equipment: Angled to show primary functional side
+
+Distance: 15-20% margin from all frame edges
+
+LIGHTING SETUP:
+
+Primary: Three-point studio lighting (key + fill + rim)
+
+Quality: Soft, diffused, professional
+
+Shadows: Subtle, falling to [left/right/back] opposite key light, 30-40% opacity
+
+Reflections: Natural floor reflection showing 40-50% opacity of product base
+
+Highlights: Gentle specular highlights on shiny surfaces without overexposure
+
+PRODUCT STATE:
+
+Condition: Pristine, brand new appearance
+
+Operational status: OFF/CLOSED/RESTING (no power, no operation)
+
+Configuration: [Specify based on product - doors closed, screens off, blades retracted, etc.]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT (USE EXACTLY THIS STRUCTURE):
+
+"Professional studio product photography.
+
+PRODUCT: [Insert EXACT description from Step 1 - all physical details, colors, materials, dimensions]. [CRITICAL: List ALL brand text/logos exactly as they appear, with exact positioning]. [List all components, buttons, features from Step 1].
+
+SCENE: Product isolated and centered on [background color] seamless infinity backdrop. Product positioned at [specific angle from Step 2].
+
+LIGHTING: Professional three-point studio lighting with soft diffused key light from [direction], fill light reducing shadows, rim light creating edge definition. Soft shadow cast [direction] at 30-40% opacity. Natural reflection beneath product on glossy floor at 40-50% opacity showing product underside.
+
+STATE: Product in pristine, non-operational condition, [specific state - powered off/closed/resting].
+
+TECHNICAL: High-resolution commercial product photography, tack-sharp focus throughout entire product, no depth-of-field blur, neutral white balance (5500K), minimal lens distortion, e-commerce platform ready.
+
+PRESERVE: Exact product appearance from input image including all logos, text, material finishes, and design details without any alterations."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS BEFORE SUBMITTING PROMPT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Have I described the EXACT product from the input image with specific details?
+□ Have I listed ALL visible brand text/logos exactly as shown?
+□ Have I specified exact colors, materials, and finishes from the input?
+□ Is the background a solid studio color (not lifestyle scene)?
+□ Is the product state non-operational?
+□ Have I included studio lighting with shadows and reflections?
+□ Is the output format followed precisely?
+
+CRITICAL REMINDER: You are NOT creating a new product. You are describing how to photograph the EXACT product shown in the input image in a professional studio setting. Every detail must match the input.
+
+***Generate the detailed product description from Step 1 and final prompt (Step 3) for the product image provided. Generate only the prompt and no analysis results.*** 
+"""

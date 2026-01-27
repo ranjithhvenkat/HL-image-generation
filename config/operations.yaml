@@ -9,6 +9,57 @@ operations:
         template: "op09_solid_color_change.txt"
         description: "Change color hue."
 
+  - id: "20"
+    name: "Background Removal / Isolation"
+    workflow: "dynamic_prompting"
+    description: "Removes or replaces product background with white, transparent, or lifestyle isolation."
+    input_challenges: 
+      - "Complex edges (hair, fur, mesh)"
+      - "Reflective surfaces (chrome, glass)"
+      - "Transparent/translucent materials"
+      - "Fine details (lace, embroidery)"
+      - "Low contrast edges (white products)"
+    variants:
+        - name: "Studio White"
+          template: "op20_studio_white.txt"
+          description: "Clean white studio background. Perfect for e-catalogs."
+          best_for: "Electronics, furniture, apparel, tools, cosmetics"
+
+        - name: "Transparent PNG"
+          template: "op20_transparent.txt"
+          description: "Fully transparent background (PNG). For overlays/composites."
+          best_for: "All opaque products"
+
+        - name: "Soft Gray Gradient"
+          template: "op20_gray_gradient.txt"
+          description: "Subtle gray gradient background"
+          best_for: "White/light products, jewelry"
+
+        - name: "Pure Black"
+          template: "op20_pure_black.txt"
+          description: "Pure black background. High contrast for dark/light products."
+          best_for: "Bright products, cosmetics, jewelry"
+
+        - name: "Lifestyle Blur"
+          template: "op20_lifestyle_blur.txt"
+          description: "Original background blurred heavily. Subtle context."
+          best_for: "Furniture, large appliances"
+
+        - name: "Precision Edge"
+          template: "op20_precision_edge.txt"
+          description: "Ultra-precise edge detection for hair, fur, feathers."
+          best_for: "Apparel with hair, fur items, feathers"
+
+        - name: "Glass Safe"
+          template: "op20_glass_safe.txt"
+          description: "Special handling for glass, acrylic, transparent plastics."
+          best_for: "Glassware, bottles, transparent containers"
+
+        - name: "Reflective Safe"
+          template: "op20_reflective_safe.txt"
+          description: "Chrome, metal, glossy surfaces with preserved reflections."
+          best_for: "Chrome appliances, jewelry, polished metal"
+
   # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
   - id: "36"
     name: "Seasonal_Thematic_Contexts"
@@ -18,6 +69,16 @@ operations:
       - name: "christmas"
         template: "op36_christmas.txt"
         description: "Festive Christmas theme."
+  
+  # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
+  - id: "39"
+    name: "Solid/Plain Background"
+    workflow: "dynamic_prompting"
+    description: "Generate plain BG for products."
+    variants:
+      - name: "Studio shot"
+        template: "op39_solid_background.txt"
+        description: "Simple plain background."
 
   # EXAMPLE of a Static Operation (for testing Workflow 1)
   - id: "99"

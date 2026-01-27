@@ -1,0 +1,157 @@
+===== BACKGROUND REMOVAL - TRANSPARENT PNG - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY - WRITE THIS ANALYSIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image and extract these EXACT details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type and category:
+   - Specific model characteristics and design features:
+   - Brand name (if visible):
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors (describe each color zone):
+   - Material finishes for EACH component:
+     * Matte/glossy/satin/textured areas:
+     * Metallic elements (chrome/gold/silver/bronze):
+     * Plastic components (opaque/transparent/translucent):
+     * Glass/acrylic sections:
+     * Fabric/leather/rubber parts:
+   - Shape and form factor:
+   - Overall dimensions and proportions:
+
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+   - Visible logos (position, style, color, clarity):
+   - Text/labels on product (transcribe EXACTLY as shown):
+   - Badges, stickers, regulatory marks:
+   - Typography style and size:
+   - Embossed/printed brand marks:
+
+D) COMPONENT DETAILS:
+   - Buttons, knobs, dials, switches (count and position):
+   - Screens, displays, indicator lights:
+   - Handles, levers, grips, triggers:
+   - Ports, vents, openings, connectors:
+   - Screws, rivets, joints (if visible):
+   - Surface textures and patterns:
+   - Stitching, seams, welds:
+
+E) TRANSPARENT/TRANSLUCENT ELEMENTS (CRITICAL):
+   - Clear plastic trays/holders/windows:
+   - Glass components (bottles, lenses, panels):
+   - See-through packaging:
+   - Translucent materials:
+   - **IMPORTANT: These MUST remain transparent, NOT become opaque/black**
+
+F) REFLECTIVE ELEMENTS:
+   - Chrome/polished metal surfaces:
+   - Glossy finishes:
+   - Mirror-like sections:
+   - Metallic foil text/accents:
+
+G) COMPLEX EDGES:
+   - Hair, fur, feathers (if apparel/accessories):
+   - Lace, mesh, embroidery:
+   - Fine details, intricate cutouts:
+   - Irregular edges:
+
+H) CURRENT BACKGROUND & ISSUES:
+   - Existing background type (cluttered/plain/colorful):
+   - Lighting issues (overexposed/underexposed/color cast):
+   - Phone camera artifacts (blur, noise, flash glare):
+   - Shadow quality in original:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE TRANSPARENT PNG CUTOUT SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REMOVAL:
+   - Remove: ALL existing background completely
+   - Replace with: 100% transparent alpha channel (PNG)
+   - Shadows: NONE (clean cutout for overlay/composite use)
+   - Reflections: NONE (isolated product only)
+
+ALPHA CHANNEL PRECISION:
+   - Background: Complete transparency (alpha = 0)
+   - Product edges: Razor-sharp alpha mask
+   - Complex edges (hair/fur): Proper alpha feathering (semi-transparent pixels)
+   - Transparent product parts: Correct alpha transparency (NOT solid)
+   - No halos, no semi-transparent artifacts around edges
+
+PRODUCT POSITIONING:
+   - Placement: Centered, optimized for overlay/composite
+   - Cropping: Tight but with minimal margin (5-10%)
+   - Orientation: Maintain original OR optimize for product type
+
+EDGE HANDLING (CRITICAL FOR TRANSPARENT PNG):
+   - Smooth edges: Pixel-perfect alpha mask, no stepping
+   - Hair/fur/feathers: Gradual alpha feathering for natural edges
+   - Lace/mesh with holes: Preserve hole transparency in alpha
+   - Fine details: Every thread/strand in proper alpha
+   - Glass/transparent plastic: Proper semi-transparency in alpha channel
+
+MATERIAL ALPHA HANDLING (CRITICAL):
+   - Opaque materials: Alpha = 255 (fully opaque)
+   - Transparent plastic/glass: Alpha adjusted for see-through effect
+   - Translucent materials: Appropriate alpha semi-transparency
+   - **CRITICAL: Transparent trays/holders rendered with proper alpha transparency, NOT as solid black (alpha = 255)**
+
+LIGHTING:
+   - Maintain original product lighting exactly
+   - No additional studio lighting
+   - Correct phone camera issues (exposure/color) without changing product appearance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"Professional transparent PNG product cutout extraction.
+
+PRODUCT DESCRIPTION: [Full description from Step 1 analysis]. [All transparent elements listed]. [All reflective elements listed]. [Complex edges if present].
+
+TRANSPARENT PNG TASK: Remove ALL background, output as PNG with full alpha transparency. Perfect product isolation for overlay/composite/layering use.
+
+ALPHA CHANNEL PRECISION (CRITICAL):
+- Background: 100% transparent (alpha = 0 for all background pixels)
+- Product opaque areas: Full opacity (alpha = 255)
+- Transparent product elements [list from Step 1] MUST have proper alpha transparency - clear plastic trays/windows rendered as semi-transparent in alpha channel, NOT as solid black opaque
+- Glass/acrylic [list] with appropriate alpha for see-through effect
+- Complex edges [if hair/fur/lace present] proper alpha feathering for natural soft edges
+
+EDGE EXTRACTION: Ultra-precise alpha mask edge detection. No halos, no fringing, no white/colored outlines. [If complex edges: Gradual alpha transition for hair/fur/lace/feathers]. [If smooth edges: Razor-sharp pixel-perfect alpha mask]. [If transparent materials: Distinguish product transparency from background transparency].
+
+POSITIONING: Product centered, tight crop with 5-10% margin for clean cutout.
+
+MATERIAL PRESERVATION:
+- All colors, textures, finishes exactly as input
+- Transparent materials [list] maintain see-through property with correct alpha
+- Reflective surfaces [list] preserve highlights and reflections
+- All text/logos [list] perfectly legible and identical
+
+LIGHTING: Maintain original product lighting. Correct phone camera issues [list from Step 1H] while keeping product appearance identical.
+
+NO SHADOWS, NO REFLECTIONS: Clean isolated cutout only. Suitable for placement on any background.
+
+TECHNICAL: PNG format with alpha channel, minimum 1024px resolution, no compression artifacts. Professional cutout for graphic design, web overlays, product composites.
+
+PRESERVE EXACTLY: All product details, transparent materials with proper alpha, reflective surfaces, text, logos, and brand elements 100% identical to input."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Step 1 analysis complete with ALL transparent materials identified?
+□ Transparent materials instructed to have proper ALPHA transparency (not solid)?
+□ Alpha channel specifications clearly defined?
+□ No shadows/reflections specified (clean cutout)?
+□ Edge handling appropriate for product type?
+□ PNG format with alpha channel specified?
+□ Product 100% identical instruction included?
+
+***Generate ONLY the final prompt from Step 3.***

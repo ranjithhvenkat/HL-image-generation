@@ -1,0 +1,178 @@
+===== BACKGROUND REMOVAL - STUDIO WHITE - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY - WRITE THIS ANALYSIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image and extract these EXACT details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type and category:
+   - Specific model characteristics and design features:
+   - Brand name (if visible):
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors (describe each color zone):
+   - Material finishes for EACH component:
+     * Matte/glossy/satin/textured areas:
+     * Metallic elements (chrome/gold/silver/bronze):
+     * Plastic components (opaque/transparent/translucent):
+     * Glass/acrylic sections:
+     * Fabric/leather/rubber parts:
+   - Shape and form factor:
+   - Overall dimensions and proportions:
+
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+   - Visible logos (position, style, color, clarity):
+   - Text/labels on product (transcribe EXACTLY as shown):
+   - Badges, stickers, regulatory marks:
+   - Typography style and size:
+   - Embossed/printed brand marks:
+
+D) COMPONENT DETAILS:
+   - Buttons, knobs, dials, switches (count and position):
+   - Screens, displays, indicator lights:
+   - Handles, levers, grips, triggers:
+   - Ports, vents, openings, connectors:
+   - Screws, rivets, joints (if visible):
+   - Surface textures and patterns:
+   - Stitching, seams, welds:
+
+E) TRANSPARENT/TRANSLUCENT ELEMENTS (CRITICAL):
+   - Clear plastic trays/holders/windows:
+   - Glass components (bottles, lenses, panels):
+   - See-through packaging:
+   - Translucent materials:
+   - **IMPORTANT: These MUST remain transparent, NOT become opaque/black**
+
+F) REFLECTIVE ELEMENTS:
+   - Chrome/polished metal surfaces:
+   - Glossy finishes:
+   - Mirror-like sections:
+   - Metallic foil text/accents:
+
+G) COMPLEX EDGES:
+   - Hair, fur, feathers (if apparel/accessories):
+   - Lace, mesh, embroidery:
+   - Fine details, intricate cutouts:
+   - Irregular edges:
+
+H) CURRENT BACKGROUND & ISSUES:
+   - Existing background type (cluttered/plain/colorful):
+   - Lighting issues (overexposed/underexposed/color cast):
+   - Phone camera artifacts (blur, noise, flash glare):
+   - Shadow quality in original:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE BACKGROUND REMOVAL & REPLACEMENT SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL existing background completely
+   - Replace with: Pure white (#FFFFFF)
+   - Style: Seamless studio infinity backdrop
+   - Texture: Perfectly smooth, no gradient, no texture
+
+PRODUCT POSITIONING:
+   - Placement: Centered in frame
+   - Margins: 15-20% space from all edges
+   - Orientation: Maintain original angle OR optimize for product type:
+     * Small items: Slight 30-45° angle showing dimension
+     * Appliances/fixtures: Front-facing showing controls/features
+     * Furniture: Angled showing design elements
+     * Fashion: Flat lay or front-facing
+
+EDGE HANDLING (CRITICAL):
+   - Edge precision: Ultra-sharp, no halos, no fringing
+   - Complex edges (hair/fur/lace): Perfect feathering
+   - Transparent materials: Maintain transparency against white
+   - Reflective edges: Clean cut without losing reflections
+   - Fine details: Preserve every thread, strand, embossing
+
+LIGHTING CORRECTION & ENHANCEMENT:
+   - Studio lighting: Three-point setup (key + fill + rim)
+   - Quality: Soft, diffused, professional
+   - Exposure: Correct input image issues while maintaining product colors
+   - White balance: Neutral 5500K (fix phone camera color cast)
+   - Highlights: Preserve natural highlights on glossy/reflective surfaces
+
+SHADOW GENERATION:
+   - Type: Subtle natural drop shadow
+   - Direction: Directly beneath product OR slightly to right/left
+   - Opacity: 20-30% gray
+   - Blur: Soft, realistic edge
+   - Purpose: Grounding the product on white background
+
+FLOOR REFLECTION (OPTIONAL FOR HARD SURFACES):
+   - Reflection: Subtle product reflection on glossy white floor
+   - Opacity: 30-40%
+   - Visibility: Base/bottom of product only
+
+MATERIAL PRESERVATION (CRITICAL):
+   - Transparent plastic: MUST stay transparent (not black/opaque)
+   - Glass: Maintain clarity, internal contents visible
+   - Chrome/metal: Keep original reflections and sheen
+   - Fabric transparency: Preserve sheerness
+   - Metallic foil: Retain shine and metallic quality
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT (USE EXACTLY THIS STRUCTURE):
+
+"Professional e-commerce background removal and studio white replacement.
+
+PRODUCT DESCRIPTION: [Insert EXACT product from Step 1 - all physical details, colors, materials, dimensions]. [CRITICAL: List ALL brand text/logos exactly as they appear with positions]. [List all components, buttons, features from Step 1]. [List ALL transparent/translucent elements identified]. [List ALL reflective/metallic elements identified]. [List complex edge details if applicable].
+
+BACKGROUND REMOVAL TASK: Remove ALL existing background completely. Replace with pure white (#FFFFFF) seamless studio infinity backdrop. Ultra-precise edge extraction - no halos, no fringing, no cut-offs.
+
+MATERIAL PRESERVATION (CRITICAL):
+- Transparent elements [list from Step 1] MUST remain transparent/see-through against white background, NOT rendered as opaque or black
+- Glass/acrylic components [list] maintain full clarity with internal contents visible
+- Reflective surfaces [list] preserve original reflections, specular highlights, and metallic sheen exactly as original
+- [Any other specific materials] maintain exact finish and appearance
+
+EDGE HANDLING: [Select based on Step 1 analysis]
+- [If complex edges present: Ultra-precise feathering for hair/fur/lace/mesh - capture every strand/thread]
+- [If smooth edges: Razor-sharp edge detection]
+- [If transparent edges: Proper alpha handling to distinguish from white background]
+
+POSITIONING: Product centered in frame with 15-20% margin from all edges. [Specify angle based on product type from Step 2].
+
+LIGHTING CORRECTION: Apply professional three-point studio lighting. Correct input image issues [list from Step 1H: overexposure/color cast/blur] while maintaining exact product colors. Soft diffused lighting with natural highlights on glossy/reflective surfaces. Neutral white balance (5500K).
+
+SHADOW: Subtle natural drop shadow directly beneath product, 20-30% opacity, soft realistic blur for product grounding.
+
+[If applicable: FLOOR REFLECTION: Subtle reflection of product base on glossy white floor at 30-40% opacity.]
+
+PRODUCT STATE: Maintain exact product condition from input. [Specify: operational/non-operational, open/closed, extended/retracted based on input].
+
+PHONE CAMERA ARTIFACT CORRECTION: [If issues found in Step 1H: Fix flash glare/noise/blur/poor lighting] while preserving all product details and material properties.
+
+TECHNICAL SPECIFICATIONS: High-resolution e-commerce quality, minimum 1024px shortest side. Tack-sharp focus throughout entire product. No depth-of-field blur. Professional white background isolation suitable for Lowes.com, Amazon, eBay catalogs.
+
+PRESERVE EXACTLY: All logos, text, material finishes, colors, proportions, brand elements, transparent materials, reflective surfaces, and design details from input image. Product must be 100% identical to original with only background changed to studio white."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS BEFORE SUBMITTING PROMPT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Have I analyzed the input image completely in Step 1 and listed ALL details?
+□ Have I identified ALL transparent/translucent materials and instructed they stay transparent?
+□ Have I identified ALL reflective/metallic surfaces and instructed to preserve reflections?
+□ Have I listed ALL brand text/logos exactly as shown in input?
+□ Have I specified ultra-precise edge handling for complex edges (hair/fur/lace)?
+□ Is background replacement clearly pure white #FFFFFF studio backdrop?
+□ Have I included lighting correction for phone camera artifacts?
+□ Have I specified subtle drop shadow for product grounding?
+□ Have I emphasized ZERO changes to product - only background removal?
+□ Is the output format followed precisely with all sections included?
+
+CRITICAL REMINDER: The product must remain 100% identical to the input image. You are ONLY changing the background to pure white studio backdrop. All materials, colors, transparency, reflections, text, and details must be perfectly preserved.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3. Do NOT include the Step 1 analysis or Step 2 specifications in your output. Output should contain ONLY the final structured prompt starting with "Professional e-commerce background removal..."***
