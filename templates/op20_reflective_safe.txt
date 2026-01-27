@@ -1,0 +1,238 @@
+===== BACKGROUND REMOVAL - REFLECTIVE/CHROME SPECIALIST - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE - REFLECTIVE SURFACE FOCUS (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine uploaded image with SPECIAL ATTENTION to reflective/metallic surfaces:
+
+A) PRODUCT IDENTITY:
+   - Exact product type (appliance, fixture, jewelry, hardware):
+   - Specific model characteristics:
+   - Brand name:
+
+B) REFLECTIVE SURFACE ANALYSIS (CRITICAL - DETAILED):
+   - **CHROME/POLISHED METAL:**
+     * Chrome-plated areas (list all sections):
+     * Polished metal type: Stainless steel, aluminum, brass, copper
+     * Polish level: Mirror-finish, high-polish, satin-polish
+     * Surface area coverage (% of product that's reflective):
+   
+   - **CURRENT REFLECTIONS (WHAT'S BEING REFLECTED):**
+     * Environment reflections visible: Room, ceiling, walls, photographer
+     * Object reflections: Other items reflected in surface
+     * Light source reflections: Windows, lamps, flash visible in chrome
+     * Color tones in reflections: Warm, cool, neutral
+     * Distortion level: Accurate reflections vs. distorted
+   
+   - **SPECULAR HIGHLIGHTS:**
+     * Bright spots/catchlights on metal surface:
+     * Number and intensity of highlights:
+     * Highlight positioning:
+     * Overexposed areas vs. controlled highlights:
+   
+   - **METALLIC FINISHES:**
+     * Brushed metal: Direction and grain of brushing
+     * Hammered/textured metal: Pattern and depth
+     * Satin finish: Subtle sheen vs. mirror
+     * Matte metal: Low reflectivity
+   
+   - **METALLIC FOIL/ACCENTS:**
+     * Gold/silver foil text or logos:
+     * Metallic print/embossing:
+     * Holographic elements:
+     * Metallized plastic sections:
+   
+   - **GLOSSY NON-METAL:**
+     * Glossy painted surfaces:
+     * Lacquered/coated areas:
+     * Shiny plastic:
+     * Patent leather:
+
+C) NON-REFLECTIVE SECTIONS:
+   - Matte areas on same product:
+   - Textured non-reflective parts:
+   - Plastic/rubber components:
+
+D) BRAND ELEMENTS ON REFLECTIVE SURFACES:
+   - Logos on chrome/metal (engraved, printed, embossed):
+   - Text on reflective surfaces:
+   - Brand badges on metal:
+
+E) EDGE CHARACTERISTICS:
+   - Reflective edges: Sharp, beveled, rounded:
+   - Edge highlights:
+   - Transitions between reflective and non-reflective areas:
+
+F) PRODUCT GEOMETRY:
+   - Curved vs. flat reflective surfaces:
+   - Multiple angles creating different reflections:
+   - Complex shapes with varied reflections:
+
+G) TRANSPARENT + REFLECTIVE COMBINATION:
+   - If product has BOTH glass and chrome:
+   - Interaction between transparency and reflection:
+
+H) CURRENT ISSUES:
+   - Overexposed reflections:
+   - Harsh flash reflections:
+   - Unwanted reflections to remove (photographer, messy room):
+   - Phone camera artifact reflections:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE REFLECTIVE SURFACE PRESERVATION SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL existing background
+   - Replace with: Pure white (#FFFFFF)
+   - Reflections: Adjust to show appropriate STUDIO environment reflections
+   - Purpose: Clean backdrop while maintaining metallic character
+
+REFLECTION PRESERVATION (CRITICAL):
+   - Original reflection CHARACTER preserved (mirror-like quality maintained)
+   - Specular highlights: ALL highlights preserved in position and intensity
+   - Metallic sheen: Exact shine and reflectivity level maintained
+   - Chrome quality: Mirror-finish chrome stays mirror-like
+   - Polished metal: High-polish stays high-polish
+
+REFLECTION CONTENT ADJUSTMENT:
+   - Remove unwanted reflections: Photographer, messy room, inappropriate content
+   - Replace with: Clean studio environment reflections (lights, ceiling, subtle surroundings)
+   - Maintain natural appearance: Reflections look natural, not artificial
+   - Lighting reflections: Studio lights reflected appropriately in metal
+   - White background may reflect subtly in curved chrome surfaces
+
+SPECULAR HIGHLIGHT HANDLING:
+   - Position: All highlight positions from original preserved
+   - Intensity: Brightness levels maintained (unless overexposed in input)
+   - Count: Number of highlights consistent
+   - Quality: Sharp, defined highlights characteristic of polished metal
+   - If input overexposed: Reduce to controlled professional level while keeping brightness
+
+METALLIC FINISH PRESERVATION:
+   - Brushed metal: Direction and grain EXACTLY as original
+   - Hammered/textured: Pattern and depth preserved
+   - Satin finish: Subtle sheen level maintained
+   - Chrome: Mirror-like quality preserved
+   - Metallic foil: Gold/silver shine and color exact
+
+EDGE HANDLING ON REFLECTIVE SURFACES:
+   - Chrome edges: Ultra-sharp despite reflective complexity
+   - Edge highlights: Bright edges on curved metal preserved
+   - Beveled edges: Multi-faceted reflections on bevels maintained
+   - Transitions: Clean transitions between reflective and matte areas
+   - NO halos: Despite bright reflective edges
+
+LIGHTING FOR REFLECTIVE PRODUCTS:
+   - Studio lighting setup: Three-point optimized for reflective surfaces
+   - Diffused lighting: Softening harsh reflections while keeping highlights
+   - Rim lighting: Edge highlights on chrome/metal curves
+   - Balanced exposure: Preventing complete blowout of reflections
+   - Maintaining dimensionality: Light and shadow showing metal form
+
+MATERIAL-SPECIFIC HANDLING:
+   - Chrome: Mirror reflections with studio environment
+   - Stainless steel: Slightly muted reflections vs. chrome
+   - Brushed metal: Directional sheen with grain visible
+   - Gold/brass: Warm metallic reflections
+   - Silver/aluminum: Cool metallic reflections
+   - Glossy paint: Smooth reflections with color maintained
+   - Metallic foil: Sparkle and shine preserved
+
+TRANSPARENT + REFLECTIVE COMBINATION:
+   - If glass + chrome present: Handle each material property independently
+   - Glass: Transparent with white background through
+   - Chrome: Reflective with studio reflections
+   - Interaction: Natural where glass and chrome meet
+
+SHADOW & REFLECTION:
+   - Drop shadow: Appropriate for product weight
+   - Floor reflection: Optional subtle reflection of chrome product on white glossy floor
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"SPECIALIST: Reflective and chrome surface background removal with reflection preservation.
+
+PRODUCT DESCRIPTION: [Insert EXACT product]. [CRITICAL: Detailed description of ALL reflective/metallic components from Step 1B]. [List ALL current reflections visible]. [List ALL specular highlights]. [List metallic finishes]. [Brand elements on metal]. [If transparent components also present, list separately].
+
+REFLECTIVE SURFACE INVENTORY (CRITICAL):
+- Chrome/polished metal areas: [Specific sections, polish level - from Step 1B]
+- Metal type and finish: [Stainless/aluminum/brass, mirror/brushed/satin]
+- Current reflections: [What's reflected - studio/environment elements]
+- Specular highlights: [Count, positions, intensity - from Step 1B]
+- Metallic foil/accents: [Gold/silver text, logos, embossing]
+- Glossy surfaces: [Painted, lacquered, shiny plastic areas]
+- [If transparent + reflective combo: Glass areas separate from chrome areas]
+
+BACKGROUND REMOVAL: Remove ALL existing background. Replace with pure white (#FFFFFF).
+
+REFLECTION PRESERVATION (CRITICAL - HIGHEST PRIORITY):
+- Reflective surfaces [list all chrome/metal areas] MUST preserve mirror-like/reflective CHARACTER exactly
+- ALL specular highlights [list positions from Step 1B] preserved with exact intensity and positioning
+- Metallic sheen on [chrome/stainless/brass/etc.] maintained at EXACT shine level from original
+- Chrome mirror-finish quality preserved - stays mirror-like
+- Polished metal [type] stays high-polish with reflections
+
+REFLECTION CONTENT CLEANING & ADJUSTMENT:
+- Remove unwanted reflections: [Photographer/messy room/inappropriate content from input]
+- Replace with: Clean professional studio environment reflections (lighting fixtures, ceiling, subtle surroundings)
+- Maintain natural appearance: Reflections look real, not artificial or flat
+- Studio lights appropriately reflected in [chrome/metal surfaces]
+- White background may reflect subtly in curved [chrome sections] naturally
+
+SPECULAR HIGHLIGHT SPECIFICATIONS:
+- All [number] highlights from original positions preserved
+- Intensity: [If input has overexposure: Reduce to controlled professional level while keeping bright highlights] OR [Maintain original intensity levels]
+- Sharp, defined highlights characteristic of [polished metal type]
+- Catchlights showing studio lighting setup naturally
+
+METALLIC FINISH DETAILS:
+- [If brushed metal: Direction and grain EXACTLY as original - list direction]
+- [If hammered/textured: Pattern and depth preserved]
+- [If satin finish: Subtle sheen level maintained]
+- [If chrome: Mirror-quality preserved]
+- [If metallic foil: Gold/silver shine and color exact]
+- [If glossy paint: Smooth reflections with [color] maintained]
+
+EDGE HANDLING:
+- Ultra-sharp edges on reflective surfaces despite bright highlights
+- Edge highlights on curved [chrome/metal] sections preserved
+- [If beveled edges: Multi-faceted reflections maintained]
+- Clean transitions between reflective [areas] and matte [areas]
+- NO halos despite bright reflective edges
+
+LIGHTING FOR REFLECTIVE PRODUCTS:
+- Three-point studio lighting optimized for chrome/metal surfaces
+- Diffused lighting softening harsh reflections while maintaining highlights
+- Rim lighting creating edge highlights on [metal curves/edges]
+- Balanced exposure preventing blowout while showing reflections
+- Light showing dimensionality and form of [metal product]
+
+MATERIAL-SPECIFIC PRESERVATION:
+- [Chrome areas: Mirror reflections with studio environment]
+- [Stainless steel: Appropriate reflection level]
+- [Brushed metal: Directional sheen with grain]
+- [Gold/brass: Warm metallic reflections]
+- [Silver/aluminum: Cool metallic reflections]
+- [Metallic foil text/logos: Sparkle and metallic shine preserved]
+
+[IF TRANSPARENT + REFLECTIVE COMBINATION PRESENT:]
+DUAL MATERIAL HANDLING:
+- Transparent [glass/plastic] areas: Maintain see-through property with white background visible through
+- Reflective [chrome/metal] areas: Preserve mirror-like reflections with studio environment
+- Handle each material property independently where they meet naturally
+
+POSITIONING: Centered, optimal angle showing reflective surfaces and metallic character.
+
+SHADOW: Subtle drop shadow appropriate for product weight. [Optional: Subtle glossy floor reflection showing chrome/metal product base reflection].
+
+PHONE CAMERA CORRECTION: Fix [list issues from Step 1H: harsh flash/overexposure/unwanted reflections] while PRESERVING all metallic shine, highlights, and reflective character.
+
+TECHNICAL SPECIFICATIONS: High-resolution metallic/chrome product photography, minimum 1024px. Professional studio

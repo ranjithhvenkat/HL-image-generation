@@ -1,0 +1,167 @@
+===== BACKGROUND REMOVAL - PURE BLACK - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY - WRITE THIS ANALYSIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image and extract these EXACT details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type and category:
+   - Specific model characteristics and design features:
+   - Brand name (if visible):
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors (note if BRIGHT/COLORFUL or DARK/BLACK):
+   - Material finishes for EACH component:
+     * Matte/glossy/satin/textured areas:
+     * Metallic elements (chrome/gold/silver/bronze):
+     * Plastic components (opaque/transparent/translucent):
+     * Glass/acrylic sections:
+     * Fabric/leather/rubber parts:
+   - Shape and form factor:
+   - Overall dimensions and proportions:
+
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+   - Visible logos (position, style, color, clarity):
+   - Text/labels on product (transcribe EXACTLY as shown):
+   - Badges, stickers, regulatory marks:
+   - Typography style and size:
+   - Embossed/printed brand marks:
+
+D) COMPONENT DETAILS:
+   - Buttons, knobs, dials, switches (count and position):
+   - Screens, displays, indicator lights:
+   - Handles, levers, grips, triggers:
+   - Ports, vents, openings, connectors:
+   - Surface textures and patterns:
+
+E) TRANSPARENT/TRANSLUCENT ELEMENTS (CRITICAL FOR BLACK BG):
+   - Clear plastic trays/holders/windows:
+   - Glass components (bottles, lenses, panels):
+   - See-through packaging:
+   - **CRITICAL: Must remain distinguishable from black background**
+   - **Will need subtle edge highlights to separate from black**
+
+F) REFLECTIVE ELEMENTS:
+   - Chrome/polished metal surfaces:
+   - Glossy finishes:
+   - Mirror-like sections:
+   - Metallic foil text/accents:
+
+G) DARK PRODUCT CHALLENGE:
+   - Is this product BLACK, DARK GRAY, or DARK-COLORED?
+   - Are there low-contrast edges that will merge with black background?
+   - **NOTE: Black background best for BRIGHT/COLORFUL products**
+
+H) CURRENT BACKGROUND & ISSUES:
+   - Existing background type:
+   - Lighting issues:
+   - Phone camera artifacts:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE PURE BLACK BACKGROUND SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL existing background completely
+   - Replace with: Pure black (#000000)
+   - Texture: Solid, no gradient, no texture, absolute black
+   - Style: Luxury high-contrast presentation
+   - Purpose: Maximum contrast for bright/colorful/metallic products
+
+PRODUCT POSITIONING:
+   - Placement: Centered in frame
+   - Margins: 15-20% space from all edges
+   - Orientation: Dramatic presentation angle
+
+EDGE HANDLING (CRITICAL FOR BLACK BACKGROUND):
+   - Bright edges: Ultra-sharp high-contrast extraction
+   - Dark edges: If product has dark areas, add subtle rim lighting to separate from black
+   - Transparent materials: ADD subtle edge highlights to distinguish from black background
+   - Complex edges: Perfect feathering with high contrast
+   - Glass/transparent plastic: Must be visibly distinct from black, not merge into it
+
+LIGHTING SETUP (HIGH-KEY FOR CONTRAST):
+   - Style: High-key dramatic lighting
+   - Purpose: Create maximum contrast between product and black
+   - Key light: Bright, creating vibrant product appearance
+   - Rim light: Essential for edge separation, especially on dark/transparent areas
+   - Fill: Minimal, maintaining dramatic shadows
+
+SHADOW HANDLING:
+   - Type: Minimal or none (luxury presentation)
+   - If included: Very subtle, 10-15% opacity
+   - Purpose: Product appears to "float" on black
+
+TRANSPARENT MATERIAL CRITICAL HANDLING:
+   - Transparent plastic trays/holders: ADD subtle white/gray edge highlights or rim lighting to make edges visible against black
+   - Glass: Add subtle edge glow or highlights to distinguish from black
+   - See-through packaging: Internal contents must be visible, edges highlighted
+   - **CRITICAL: Transparent elements MUST NOT merge invisibly into black background**
+
+DARK PRODUCT HANDLING:
+   - If product has black/dark areas: Add subtle rim lighting around edges
+   - Separation: Ensure dark product areas distinguishable from black background
+
+MATERIAL PRESERVATION:
+   - Transparent elements: Stay transparent BUT with edge highlights for visibility
+   - Reflective surfaces: Preserve all reflections, may reflect subtle light sources
+   - Bright colors: Maintain vibrancy, enhanced pop against black
+   - Metallic elements: Maximum shine and contrast
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"Professional luxury e-commerce background removal with pure black backdrop.
+
+PRODUCT DESCRIPTION: [Insert EXACT product from Step 1 - all physical details, colors, materials, dimensions]. [Note if bright/colorful or if has dark areas]. [CRITICAL: List ALL brand text/logos exactly]. [List all components, features]. [List ALL transparent/translucent elements]. [List ALL reflective/metallic elements]. [Note if product has dark/black areas].
+
+BACKGROUND REMOVAL & BLACK REPLACEMENT: Remove ALL existing background completely. Replace with pure solid black #000000, no texture, no gradient, absolute black. Ultra-precise high-contrast edge extraction for luxury dramatic presentation.
+
+MATERIAL PRESERVATION & BLACK BACKGROUND HANDLING (CRITICAL):
+- Transparent elements [list] MUST remain transparent BUT with SUBTLE EDGE HIGHLIGHTS/RIM LIGHTING added to distinguish from black background - clear plastic trays/windows need visible edges against black, NOT merging invisibly
+- Glass/acrylic [list] maintain clarity with subtle edge glow or highlights for visibility against black
+- Reflective surfaces [list] preserve reflections, maximum shine and metallic contrast
+- Bright/colorful areas [list] maintain exact colors with enhanced vibrancy against black
+- [If dark product areas present:] Dark/black areas [list] ADD subtle rim lighting to separate from black background
+
+EDGE HANDLING: Ultra-sharp high-contrast edges. [If transparent elements: Add subtle white/light gray edge highlights for visibility]. [If dark product areas: Add rim lighting separation]. [If bright areas: Maximum contrast preservation]. [If complex edges: Perfect feathering with strong contrast].
+
+POSITIONING: Product centered, dramatic luxury composition.
+
+LIGHTING: High-key dramatic lighting for maximum product-to-background contrast. Bright key light creating vibrant product appearance. Essential rim lighting for [transparent materials] and [dark product areas] to separate from black. Minimal fill for dramatic effect. Correct input artifacts [list] while enhancing contrast.
+
+SHADOW: [Minimal to none - floating effect] OR [Very subtle drop shadow 10-15% opacity if grounding needed].
+
+TRANSPARENT ELEMENT VISIBILITY: CRITICAL - All transparent/glass elements MUST be distinguishable from black background through subtle edge highlights, rim lighting, or internal illumination. Do NOT allow transparent materials to become invisible against black.
+
+PHONE CAMERA CORRECTION: Fix [list issues] while maximizing contrast and color vibrancy against black background.
+
+TECHNICAL SPECIFICATIONS: High-resolution luxury presentation, minimum 1024px. Tack-sharp focus. Pure black #000000 background. High contrast suitable for cosmetics, jewelry, bright products, luxury items. Dramatic e-commerce presentation.
+
+PRESERVE EXACTLY: All logos, text, colors (with enhanced vibrancy), transparent materials (with edge visibility), reflective surfaces, brand elements. Product 100% identical except enhanced contrast. Transparent elements visible against black, not merged."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Is product BRIGHT/COLORFUL (ideal) or DARK (needs rim lighting)?
+□ Pure black #000000 specified with no texture/gradient?
+□ ALL transparent materials identified with edge highlight instructions?
+□ Dark product areas identified with rim lighting separation?
+□ High-contrast lighting specified?
+□ Minimal/no shadow for luxury floating effect?
+□ Transparent elements WON'T merge invisibly into black?
+□ Product 100% identical with enhanced contrast?
+
+CRITICAL: Transparent materials MUST be visible against black via edge highlights. Dark product areas need rim lighting separation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3.***

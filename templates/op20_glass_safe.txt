@@ -1,0 +1,245 @@
+===== BACKGROUND REMOVAL - GLASS/TRANSPARENT SPECIALIST - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE - TRANSPARENCY FOCUS (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine uploaded image with SPECIAL ATTENTION to transparent/translucent materials:
+
+A) PRODUCT IDENTITY:
+   - Exact product type (glassware, bottle, acrylic, plastic packaging):
+   - Specific container/vessel characteristics:
+   - Brand name:
+
+B) TRANSPARENCY ANALYSIS (CRITICAL - DETAILED):
+   - **GLASS COMPONENTS:**
+     * Glass type: Clear, frosted, tinted, colored
+     * Glass thickness: Thin, standard, thick
+     * Glass clarity: Crystal clear, slight haze, textured
+     * Number of glass pieces/sections:
+   
+   - **INTERNAL CONTENTS (VISIBLE THROUGH TRANSPARENCY):**
+     * Liquid contents: Color, level, clarity, bubbles
+     * Solid contents: Items inside glass, visibility
+     * Labels inside: Text visible through glass walls
+     * Product items: If packaging, what's inside and visible
+     * Empty vs. filled: Is container empty or containing something
+   
+   - **REFRACTIONS & OPTICAL EFFECTS:**
+     * Light bending through glass:
+     * Distortions through curved glass:
+     * Background visible through glass (currently):
+     * Multiple glass layers (double walls):
+   
+   - **RIM & EDGES:**
+     * Glass rim thickness and clarity:
+     * Edge sharpness:
+     * Top opening characteristics:
+     * Base/bottom visibility:
+   
+   - **TRANSPARENT PLASTIC COMPONENTS:**
+     * Clear plastic packaging, windows, trays:
+     * Plastic clarity: Crystal, slightly cloudy
+     * Plastic thickness:
+     * Items visible through plastic:
+   
+   - **ACRYLIC/POLYCARBONATE:**
+     * Material clarity and thickness:
+     * Internal elements visible:
+
+C) SURFACE CHARACTERISTICS:
+   - Smooth glass vs. textured:
+   - Embossed patterns on glass:
+   - Labels adhered to glass (position, clarity):
+   - Brand text etched/printed on glass:
+
+D) REFLECTIONS & HIGHLIGHTS:
+   - Specular highlights on glass surface:
+   - Environment reflections on glass:
+   - Light catchlights:
+
+E) BRAND ELEMENTS:
+   - Logos on glass/bottle (etched, printed, label):
+   - Text on glass (product name, volume, warnings):
+   - Label details (if paper label on glass):
+   - Cap/lid branding:
+
+F) NON-TRANSPARENT COMPONENTS:
+   - Caps, lids, stoppers (material, color):
+   - Metal parts (rings, clasps):
+   - Opaque sections:
+
+G) CURRENT BACKGROUND THROUGH GLASS:
+   - What's currently visible through glass/transparent areas:
+   - Background colors showing through:
+   - Background complexity through transparency:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE GLASS/TRANSPARENT PRESERVATION SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL existing background
+   - Replace with: Pure white (#FFFFFF)
+   - Result: White visible THROUGH transparent glass/plastic
+   - Purpose: Showcase transparency while providing clean backdrop
+
+TRANSPARENCY PRESERVATION (CRITICAL):
+   - Glass/plastic MUST remain fully transparent/translucent
+   - See-through nature: White background visible through material
+   - NOT render as: Solid opaque, black, or losing transparency
+   - Clarity: Maintain glass clarity and optical properties
+
+INTERNAL CONTENTS VISIBILITY (CRITICAL):
+   - Contents inside glass: FULLY VISIBLE exactly as original
+   - Liquid contents: Color, level, bubbles all preserved
+   - Solid contents: Items inside remain visible through glass walls
+   - Labels inside: Text readable through glass
+   - Products in packaging: Items visible through transparent packaging
+   - Empty containers: Interior visible through transparency
+
+REFRACTION & OPTICAL EFFECTS:
+   - Light refraction through glass: Natural and preserved
+   - Distortions: Optical distortions through curved glass maintained
+   - Background through glass: White background shows through with natural distortion
+   - Multiple layers: If double-walled, layered transparency preserved
+
+RIM & EDGE HANDLING:
+   - Glass rim: Perfect edge detection, no cut-offs
+   - Rim thickness: Visible and accurate
+   - Opening: Top opening clearly defined
+   - Base: Bottom/base of glass sharply defined
+
+LIGHTING FOR TRANSPARENCY:
+   - Backlighting: Subtle backlight to emphasize transparency
+   - Side lighting: Highlights edges and shows glass depth
+   - Light through glass: Light transmission through material
+   - Highlights: Natural specular highlights on glass surface
+   - Internal illumination: Contents inside properly lit
+
+REFLECTION HANDLING:
+   - Surface reflections: Natural glass reflections preserved
+   - Environmental reflections: Appropriate studio environment reflections
+   - Catchlights: Specular catchlights on glass
+   - No harsh reflections: Balanced, not overpowering transparency
+
+GLASS-SPECIFIC MATERIAL PRESERVATION:
+   - Glass color: Clear, tinted, frosted exactly as original
+   - Textures: Smooth, textured, embossed preserved
+   - Thickness variations: Visible through edge clarity
+   - Labels on glass: Preserved with correct positioning and clarity
+
+PLASTIC TRANSPARENCY:
+   - Clear plastic: Remains transparent (NOT black/opaque)
+   - Plastic trays/packaging: See-through property maintained
+   - Items through plastic: Fully visible
+   - Plastic clarity: Match original clarity level
+
+SHADOW & REFLECTION:
+   - Shadow: Subtle drop shadow appropriate for glass weight
+   - Table reflection: Optional subtle reflection showing glass base
+   - Light cast-through: Shadow may show light passing through glass
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"SPECIALIST: Glass and transparent material background removal with transparency preservation.
+
+PRODUCT DESCRIPTION: [Insert EXACT product]. [CRITICAL: Detailed description of ALL transparent/glass components from Step 1B]. [List ALL internal contents visible through transparency]. [List ALL refractions/optical effects]. [Brand elements on glass]. [Non-transparent components like caps/lids].
+
+TRANSPARENT MATERIAL INVENTORY (CRITICAL):
+- Glass components: [Type, clarity, thickness, sections - from Step 1B]
+- Transparent plastic: [Trays, packaging, windows - from Step 1B]
+- Acrylic/polycarbonate: [If present]
+- Internal contents VISIBLE THROUGH transparency: [Liquids, solids, labels, items, products - detailed from Step 1B]
+- Refractions: [Light bending, distortions through glass]
+- Glass edges: [Rim, base, thickness characteristics]
+
+BACKGROUND REMOVAL: Remove ALL existing background. Replace with pure white (#FFFFFF).
+
+TRANSPARENCY PRESERVATION (CRITICAL - HIGHEST PRIORITY):
+- Glass/plastic components [list] MUST remain FULLY TRANSPARENT/see-through
+- White background (#FFFFFF) MUST be visible THROUGH transparent materials naturally
+- Internal contents [list all from Step 1B] MUST remain FULLY VISIBLE through glass/plastic walls exactly as original:
+  * [If liquid: Color, level, clarity, bubbles preserved]
+  * [If solid items: Products/contents visible inside]
+  * [If labels inside: Text readable through glass walls]
+  * [If empty: Interior space visible through transparency]
+- DO NOT render glass/plastic as solid, opaque, black, or losing transparency
+- Glass clarity [clear/frosted/tinted] maintained exactly
+
+OPTICAL EFFECTS PRESERVATION:
+- Light refraction through [glass type] preserved naturally
+- Optical distortions through curved glass maintained
+- White background shows through glass with natural light bending
+- [If double-walled: Layered transparency preserved]
+- [If textured glass: Texture visible with light diffusion]
+
+RIM & EDGE EXTRACTION:
+- Perfect glass rim edge detection - no cut-offs on delicate glass edges
+- Rim thickness [from Step 1B] accurately visible
+- Top opening clearly defined
+- Base/bottom sharply defined
+- ALL glass edges captured precisely
+
+LIGHTING FOR GLASS/TRANSPARENCY:
+- Subtle backlighting emphasizing transparency and see-through nature
+- Side lighting highlighting glass edges and showing material depth
+- Light transmission through glass showing transparency
+- Natural specular highlights on glass surface (not overpowering)
+- Internal contents properly lit and visible through glass walls
+- Studio lighting optimized for glassware photography
+
+REFLECTIONS:
+- Natural glass surface reflections preserved
+- Appropriate studio environment reflections on glass
+- Specular catchlights on curved glass surfaces
+- Balanced reflections not overpowering transparency
+
+MATERIAL SPECIFICATIONS:
+- Glass type [clear/frosted/tinted/colored from Step 1] exactly preserved
+- [If textured/embossed glass: Texture patterns maintained]
+- [Labels on glass: Position and clarity preserved]
+- [Brand text etched/printed on glass: Perfectly legible]
+- [Caps/lids: Color and material exact]
+
+PLASTIC TRANSPARENCY HANDLING:
+- [If clear plastic components present:] Transparent plastic [trays/packaging/windows] remain see-through with white visible through
+- Items/products visible through plastic exactly as original
+- Plastic clarity [crystal/slightly cloudy] matched
+
+POSITIONING: Centered, optimal angle showing transparency and internal contents.
+
+SHADOW: Subtle drop shadow appropriate for glass weight. [Optional: Subtle table reflection showing glass base]. Shadow may show light passing through glass naturally.
+
+PHONE CAMERA CORRECTION: Fix [list issues] while ENHANCING glass clarity and transparency visibility.
+
+TECHNICAL SPECIFICATIONS: High-resolution glassware/transparent product photography, minimum 1024px. Professional lighting for glass. Perfect transparency preservation. Suitable for bottles, glassware, acrylic products, transparent packaging. E-commerce quality glass photography.
+
+PRESERVE EXACTLY: Glass/plastic transparency (see-through with white background visible through), ALL internal contents visible through walls, ALL refractions, rim edges, surface reflections, brand elements on glass, clarity level. Product 100% identical with background changed to white showing through transparency."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ ALL glass/transparent components cataloged with characteristics?
+□ ALL internal contents listed (liquid/solid/labels/items)?
+□ Transparency preservation emphasized as CRITICAL?
+□ White background visible THROUGH glass specified?
+□ Internal contents VISIBLE through walls confirmed?
+□ Refractions and optical effects preserved?
+□ Glass rim/edge handling specified?
+□ Backlighting for transparency specified?
+□ Glass NOT rendered as solid/opaque/black?
+□ All glass material properties preserved?
+
+CRITICAL: Glass/plastic MUST remain transparent with internal contents visible. This is the PRIMARY goal of this specialist operation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3.***

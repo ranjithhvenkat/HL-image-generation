@@ -1,0 +1,202 @@
+===== BACKGROUND REMOVAL - PRECISION EDGE SPECIALIST - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE - COMPLEX EDGE FOCUS (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image with SPECIAL ATTENTION to complex edge details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type (apparel, accessories, fur items, etc.):
+   - Specific model characteristics:
+   - Brand name:
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors:
+   - Material finishes:
+   - Shape and dimensions:
+
+C) BRAND ELEMENTS:
+   - Visible logos (position, style, clarity):
+   - Text/labels (transcribe EXACTLY):
+   - Badges, tags:
+   - Embroidered brand marks:
+
+D) COMPLEX EDGE ANALYSIS (CRITICAL - DETAILED EXAMINATION):
+   - **HAIR/FUR:**
+     * Is there hair on product (apparel with fur trim, hair extensions, wigs)?
+     * Hair type: Fine, coarse, curly, straight, wavy
+     * Hair color and contrast against background:
+     * Number of wispy strands, flyaways:
+     * Hair density and volume:
+   
+   - **FUR/FEATHERS:**
+     * Fur type: Short, long, fluffy, sleek
+     * Feather type: Soft, structured, wispy
+     * Edge complexity: Dense, sparse, layered
+     * Color variations in fur/feathers:
+   
+   - **LACE/MESH:**
+     * Lace pattern: Dense, open, floral, geometric
+     * Thread thickness: Fine, medium, heavy
+     * Holes/openings in lace: Size and distribution
+     * Mesh density: Fine mesh, large holes
+   
+   - **EMBROIDERY:**
+     * Thread types: Metallic, matte, glossy
+     * Stitch patterns: Dense, sparse, raised
+     * Embroidery details: Letters, patterns, logos
+   
+   - **FABRIC EDGES:**
+     * Frayed edges, tassels, fringe
+     * Raw fabric edges vs. hemmed
+     * Texture at edges: Fuzzy, clean, irregular
+
+E) TRANSPARENT/TRANSLUCENT FABRICS:
+   - Sheer fabrics, tulle, organza:
+   - See-through sections:
+   - Layered transparent materials:
+
+F) EDGE COMPLEXITY RATING:
+   - Rate complexity: LOW / MEDIUM / HIGH / EXTREME
+   - Identify most challenging edge areas:
+   - Note color contrast of complex edges vs. background:
+
+G) CURRENT BACKGROUND:
+   - Background type and colors:
+   - Contrast between complex edges and background:
+   - Existing edge quality (clean cut, halos, artifacts):
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE PRECISION EDGE EXTRACTION SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL background completely
+   - Replace with: Pure white (#FFFFFF) for maximum edge contrast
+   - Purpose: Showcase complex edge detail with perfect visibility
+
+EDGE EXTRACTION METHODOLOGY (ULTRA-PRECISION):
+   - Algorithm: MAXIMUM precision edge detection
+   - Hair/Fur feathering: Gradual alpha transition for natural soft edges
+   - Individual strand capture: EVERY visible strand, wisp, flyaway
+   - Lace hole preservation: EVERY hole, opening, gap maintained
+   - Thread visibility: Every embroidery thread sharp and visible
+   - NO halos, NO fringing, NO artifacts, NO cut-offs
+
+COMPLEX EDGE HANDLING BY TYPE:
+   - **HAIR/FUR EDGES:**
+     * Capture: Every individual strand, wisp, flyaway
+     * Feathering: Natural soft edge transition
+     * Transparency: Sparse hair areas show proper semi-transparency
+     * Layering: Multiple hair layers properly separated
+   
+   - **LACE/MESH EDGES:**
+     * Holes: Every opening preserved with proper transparency
+     * Threads: Every thread sharp, no merging
+     * Pattern: Lace pattern completely intact
+     * Internal transparency: Holes show white background through
+   
+   - **EMBROIDERY:**
+     * Stitching: Every stitch visible and sharp
+     * Raised threads: 3D embroidery depth preserved
+     * Metallic threads: Shine and color maintained
+   
+   - **FEATHERS:**
+     * Barbs: Individual feather barbs visible
+     * Softness: Natural feather softness at edges
+     * Layering: Overlapping feathers properly separated
+
+PRODUCT POSITIONING:
+   - Placement: Centered with extra margin for complex edges
+   - Margins: 20-25% (more than standard) to showcase edge detail
+   - Orientation: Optimal angle to display complex edges
+
+LIGHTING FOR EDGE VISIBILITY:
+   - Backlighting: Subtle rim lighting to illuminate fine edges
+   - Edge definition: Light catching hair, fur, lace threads
+   - Transparency visibility: Light through sheer fabrics and lace
+   - No overexposure: Fine details still visible
+
+MATERIAL PRESERVATION:
+   - Transparent fabrics: Maintain sheerness with proper alpha
+   - Lace holes: Complete transparency through holes
+   - Fur/hair texture: Natural texture and variation preserved
+   - Embroidery: All threads, colors, and shine intact
+
+SHADOW (MINIMAL):
+   - Type: Very subtle drop shadow
+   - Purpose: Don't distract from complex edges
+   - Opacity: 15-20%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"SPECIALIST: Ultra-precision background removal for complex edges - hair, fur, lace, embroidery.
+
+PRODUCT DESCRIPTION: [Insert EXACT product from Step 1]. [CRITICAL: List ALL brand text/logos]. [List components]. [DETAILED: List ALL complex edge elements from Step 1D - every hair/fur/lace/embroidery detail with specific characteristics].
+
+COMPLEX EDGE INVENTORY (CRITICAL):
+- [Hair/Fur details: type, color, density, wispy strands]
+- [Lace/Mesh details: pattern, holes, thread thickness]
+- [Embroidery details: stitching, threads, patterns]
+- [Feather details: type, barbs, layering]
+- [Fabric edge details: fringe, tassels, frayed edges]
+- [Transparent fabric areas: sheer sections, see-through materials]
+
+BACKGROUND REMOVAL: Remove ALL background completely. Replace with pure white (#FFFFFF) for maximum edge detail visibility and contrast.
+
+ULTRA-PRECISION EDGE EXTRACTION (MAXIMUM DETAIL):
+- HAIR/FUR: Capture EVERY individual strand, wisp, flyaway, fuzzy edge. Natural feathering with gradual alpha transition for soft natural edges. Preserve [describe hair/fur characteristics from Step 1]. Sparse areas show proper semi-transparency. Multiple layers properly separated. ZERO halos, perfect natural edge.
+
+- LACE/MESH: Preserve EVERY hole, opening, gap in lace pattern. Every thread sharp and visible, no merging. [Describe lace pattern] completely intact. Holes show white background through with complete transparency. Thread thickness [fine/medium/heavy] maintained.
+
+- EMBROIDERY: Every stitch visible and sharp. [Describe embroidery] with all stitching detail preserved. Raised threads show 3D depth. Metallic threads maintain shine and color. Individual thread separation clear.
+
+- FEATHERS: [If applicable] Individual barbs visible. Natural soft feathery edges with proper feathering. Layering preserved.
+
+- FABRIC EDGES: [If fringe/tassels/frayed edges present] Every thread, strand, tassel visible. Irregular edges perfectly captured.
+
+- TRANSPARENT FABRICS: [If sheer materials present] Maintain sheerness with proper alpha transparency. See-through sections show white background through naturally.
+
+EDGE HANDLING SPECIFICATIONS: MAXIMUM precision algorithm. NO halos, NO fringing, NO cut-offs, NO artifacts, NO merged threads. Natural soft alpha transition for hair/fur. Complete transparency for lace holes. Perfect thread separation for embroidery.
+
+POSITIONING: Centered with 20-25% margins to showcase complex edge detail. Optimal angle displaying [specify complex edge areas].
+
+LIGHTING: Subtle rim/backlighting to illuminate fine edges - light catching [hair/fur/lace threads/feathers]. Gentle edge definition without overexposure. Light through transparent/sheer areas showing detail.
+
+SHADOW: Very subtle drop shadow 15-20% opacity. Minimal to not distract from edge detail.
+
+MATERIAL PRESERVATION: [Transparent fabrics] maintain sheerness. [Lace holes] complete transparency. [Fur/hair] natural texture. [Embroidery] all colors and shine. Product 100% identical.
+
+PHONE CAMERA CORRECTION: Fix [list issues] while ENHANCING edge detail visibility and sharpness on complex edges.
+
+TECHNICAL SPECIFICATIONS: MAXIMUM resolution for edge detail, minimum 1024px. Ultra-sharp focus on product and ALL edge details. Professional fashion/apparel e-commerce quality. Specialist complex edge extraction for hair, fur, lace, embroidery, feathers.
+
+PRESERVE EXACTLY: Every strand of [hair/fur], every thread of [lace/embroidery], every [feather barb], all [fabric edge details], all brand elements, all colors, all textures. Product 100% identical with perfect complex edge isolation."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Have I cataloged ALL complex edge details (hair/fur/lace/embroidery)?
+□ Is MAXIMUM precision edge extraction specified?
+□ Is EVERY strand/thread capture emphasized?
+□ Are lace holes specified as fully transparent?
+□ Is natural feathering specified for hair/fur?
+□ Is thread separation specified for embroidery?
+□ Are transparent fabrics handled with proper alpha?
+□ Is white background specified for edge contrast?
+□ Is backlighting specified for edge visibility?
+□ Zero halos/artifacts/cut-offs confirmed?
+
+CRITICAL: This is a SPECIALIST operation for complex edges. Every detail matters. Capture every strand, thread, hole, stitch.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3.***

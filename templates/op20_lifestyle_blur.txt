@@ -1,0 +1,172 @@
+===== BACKGROUND BLUR - LIFESTYLE CONTEXT - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY - WRITE THIS ANALYSIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image and extract these EXACT details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type and category:
+   - Specific model characteristics:
+   - Brand name (if visible):
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors:
+   - Material finishes for EACH component:
+     * Matte/glossy/satin/textured areas:
+     * Metallic elements:
+     * Plastic components (opaque/transparent/translucent):
+     * Glass/acrylic sections:
+     * Fabric/leather/rubber parts:
+   - Shape and form factor:
+   - Dimensions and proportions:
+
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+   - Visible logos (position, style, color, clarity):
+   - Text/labels on product (transcribe EXACTLY):
+   - Badges, stickers, marks:
+   - Typography:
+   - Embossed/printed brand marks:
+
+D) COMPONENT DETAILS:
+   - Buttons, knobs, controls:
+   - Screens, displays:
+   - Handles, grips:
+   - Ports, vents, openings:
+   - Surface textures and patterns:
+   - Stitching, seams:
+
+E) TRANSPARENT/TRANSLUCENT ELEMENTS (CRITICAL):
+   - Clear plastic trays/holders/windows:
+   - Glass components:
+   - See-through packaging:
+   - **MUST remain transparent in sharp focus**
+
+F) REFLECTIVE ELEMENTS:
+   - Chrome/polished metal surfaces:
+   - Glossy finishes:
+   - Metallic foil text/accents:
+
+G) BACKGROUND CONTEXT ANALYSIS (UNIQUE TO THIS VARIANT):
+   - Current background type (room, table, outdoor, etc.):
+   - Background elements (furniture, walls, floor, people, etc.):
+   - Background colors and tones:
+   - Background lighting:
+   - **Determine if background provides useful lifestyle context**
+   - **Assess if background is appropriate to keep (blurred)**
+
+H) FOCUS & DEPTH ANALYSIS:
+   - Is product currently in sharp focus?
+   - Is background already blurred or sharp?
+   - Distance between product and background:
+   - Phone camera depth-of-field quality:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE LIFESTYLE BLUR SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND TREATMENT:
+   - Keep: Original background (DO NOT remove/replace)
+   - Apply: Heavy professional bokeh blur 85-90%
+   - Result: Background recognizable but heavily out of focus, not distracting
+   - Style: Natural depth-of-field effect from high-end camera
+   - Purpose: Maintain lifestyle context while emphasizing product
+
+PRODUCT FOCUS:
+   - Focus: Razor-sharp, tack-sharp on entire product
+   - Clarity: Every product detail crisp and clear
+   - No blur: Product completely in perfect focus
+   - Enhancement: If input product was blurry, sharpen to perfect focus
+
+BOKEH BLUR SPECIFICATIONS:
+   - Blur intensity: 85-90% (heavy blur, recognizable but unfocused)
+   - Blur style: Smooth professional bokeh, not pixelated
+   - Blur transition: Natural gradual transition from sharp product to blurred background
+   - Depth cues: Maintain sense of 3D space and depth
+
+EDGE HANDLING:
+   - Product edges: Ultra-sharp against blurred background
+   - Transition zone: Natural focus falloff around product edges
+   - Complex edges: Proper sharp/blur boundary on hair/fur/fine details
+   - Transparent materials: Sharp and clear against blurred background
+
+LIGHTING:
+   - Maintain: Original scene lighting
+   - Product: Ensure product well-lit and clear
+   - Background: Lighting naturally blurred with background
+   - Correction: Fix phone camera issues on product only, leave background natural
+
+SHADOW & REFLECTION INTEGRATION:
+   - Shadows: Product shadows blend naturally with blurred background
+   - Reflections: If product casts reflections, they blur naturally with background
+   - Ground plane: Natural connection between sharp product and blurred floor/surface
+
+MATERIAL PRESERVATION:
+   - Transparent elements: Sharp and transparent in focus zone
+   - Reflective surfaces: Sharp reflections, may reflect blurred background naturally
+   - All product materials: Perfect clarity and focus
+
+LIFESTYLE CONTEXT RETENTION:
+   - Background elements remain recognizable enough to understand context
+   - Room/setting visible but not distracting
+   - Product clearly hero of image with context supporting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT:
+
+"Professional lifestyle product photography with depth-of-field background blur.
+
+PRODUCT DESCRIPTION: [Insert EXACT product from Step 1 - all physical details, colors, materials, dimensions]. [CRITICAL: List ALL brand text/logos exactly]. [List all components, features]. [List ALL transparent/translucent elements]. [List ALL reflective elements].
+
+BACKGROUND CONTEXT: [Describe existing background from Step 1G - room type, setting, elements visible].
+
+DEPTH-OF-FIELD EFFECT: Apply heavy professional bokeh blur to background at 85-90% intensity. Background [describe background] should be heavily out of focus, recognizable but not distracting, creating natural depth-of-field effect. Smooth professional bokeh blur (not pixelated).
+
+PRODUCT FOCUS (CRITICAL): Product in RAZOR-SHARP perfect focus. Every detail tack-sharp and crisp. NO blur on product whatsoever. [If input product was blurry: Enhance product to perfect sharp focus while blurring background].
+
+MATERIAL PRESERVATION IN FOCUS:
+- Transparent elements [list] MUST remain sharp and transparent in focus zone, NOT blurred
+- Glass/acrylic [list] perfectly clear and sharp with any background visible through glass naturally blurred
+- Reflective surfaces [list] sharp with reflections that may naturally show blurred background
+- All product details, text, logos [list] perfectly sharp and legible
+
+EDGE TRANSITION: Natural professional depth-of-field transition from sharp product edges to blurred background. Smooth gradual focus falloff. [If complex edges like hair/fur: Natural sharp-to-blur boundary]. Product silhouette clearly defined against blur.
+
+POSITIONING: [Maintain original composition] OR [Center product with lifestyle context].
+
+LIGHTING: Maintain original scene lighting character. Ensure product well-lit and clear. Background lighting naturally blurred with background. Correct phone camera issues [list from Step 1H] on PRODUCT ONLY while keeping background natural.
+
+SHADOW & REFLECTION INTEGRATION: Product shadows blend naturally into blurred background. [If reflections present:] Reflections blur naturally with background surface. Natural grounding showing product in real space.
+
+LIFESTYLE CONTEXT RETENTION: Background remains recognizable as [room type/setting] but heavily out of focus. Product clearly hero with [describe context] providing subtle supporting context.
+
+PHONE CAMERA CORRECTION: Fix [list issues] on PRODUCT to perfect sharp focus. Leave background with natural blur applied.
+
+TECHNICAL SPECIFICATIONS: High-resolution lifestyle presentation, minimum 1024px. Professional bokeh depth-of-field effect. Product in perfect focus, background 85-90% blurred. Natural 3D depth. Suitable for furniture, large appliances, lifestyle product marketing.
+
+PRESERVE EXACTLY: All product logos, text, colors, transparent materials (sharp), reflective surfaces (sharp), brand elements, and details in perfect focus. Background context retained but heavily blurred. Product 100% identical in sharp focus."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Have I analyzed existing background context?
+□ Is background being KEPT and BLURRED (not removed)?
+□ Is blur intensity 85-90% specified?
+□ Is product specified as RAZOR-SHARP focus?
+□ Are transparent materials in sharp focus (not blurred)?
+□ Is transition from sharp to blur natural/professional?
+□ Is lifestyle context described and retained?
+□ Product 100% identical in perfect focus?
+
+CRITICAL: DO NOT remove background. BLUR it heavily while keeping product in perfect sharp focus. Transparent materials stay sharp.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3.***

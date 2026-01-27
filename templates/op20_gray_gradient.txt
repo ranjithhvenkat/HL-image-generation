@@ -1,0 +1,171 @@
+===== BACKGROUND REMOVAL - GRAY GRADIENT - STRICT PROTOCOL =====
+
+YOU MUST FOLLOW THESE STEPS IN EXACT ORDER:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: ANALYZE INPUT IMAGE (MANDATORY - WRITE THIS ANALYSIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Examine the uploaded product image and extract these EXACT details:
+
+A) PRODUCT IDENTITY:
+   - Exact product type and category:
+   - Specific model characteristics and design features:
+   - Brand name (if visible):
+
+B) PHYSICAL ATTRIBUTES:
+   - Precise colors (describe each color zone, note if WHITE/LIGHT COLORS):
+   - Material finishes for EACH component:
+     * Matte/glossy/satin/textured areas:
+     * Metallic elements (chrome/gold/silver/bronze):
+     * Plastic components (opaque/transparent/translucent):
+     * Glass/acrylic sections:
+     * Fabric/leather/rubber parts:
+   - Shape and form factor:
+   - Overall dimensions and proportions:
+
+C) BRAND ELEMENTS (CRITICAL - PRESERVE EXACTLY):
+   - Visible logos (position, style, color, clarity):
+   - Text/labels on product (transcribe EXACTLY as shown):
+   - Badges, stickers, regulatory marks:
+   - Typography style and size:
+   - Embossed/printed brand marks:
+
+D) COMPONENT DETAILS:
+   - Buttons, knobs, dials, switches (count and position):
+   - Screens, displays, indicator lights:
+   - Handles, levers, grips, triggers:
+   - Ports, vents, openings, connectors:
+   - Screws, rivets, joints (if visible):
+   - Surface textures and patterns:
+   - Stitching, seams, welds:
+
+E) TRANSPARENT/TRANSLUCENT ELEMENTS (CRITICAL):
+   - Clear plastic trays/holders/windows:
+   - Glass components (bottles, lenses, panels):
+   - See-through packaging:
+   - Translucent materials:
+   - **IMPORTANT: These MUST remain transparent, NOT become opaque/black**
+
+F) REFLECTIVE ELEMENTS:
+   - Chrome/polished metal surfaces:
+   - Glossy finishes:
+   - Mirror-like sections:
+   - Metallic foil text/accents:
+
+G) WHITE/LIGHT PRODUCT CHALLENGE:
+   - Is this product WHITE, OFF-WHITE, CREAM, or LIGHT-COLORED?
+   - Are there low-contrast edges against white backgrounds?
+   - **NOTE: Gray gradient specifically optimized for light products**
+
+H) CURRENT BACKGROUND & ISSUES:
+   - Existing background type:
+   - Lighting issues (overexposed/underexposed/color cast):
+   - Phone camera artifacts (blur, noise, flash glare):
+   - Contrast issues with white products:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: DEFINE GRAY GRADIENT BACKGROUND SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND REPLACEMENT:
+   - Remove: ALL existing background completely
+   - Replace with: Soft gray gradient
+   - Gradient specification: 
+     * Top-left: Light gray (#F5F5F5)
+     * Bottom-right: Medium gray (#E0E0E0)
+     * Transition: Smooth, seamless, professional
+   - Style: Studio infinity backdrop with gradient
+   - Purpose: Provide contrast for white/light-colored products
+
+PRODUCT POSITIONING:
+   - Placement: Centered in frame
+   - Margins: 15-20% space from all edges
+   - Orientation: Optimize for product visibility against gradient
+
+EDGE HANDLING (OPTIMIZED FOR LIGHT PRODUCTS):
+   - Edge precision: Ultra-sharp with enhanced contrast against gray
+   - White/light edges: Clearly visible against gray gradient
+   - Complex edges: Perfect feathering if hair/fur/lace present
+   - Transparent materials: Maintain transparency with gradient visible through
+   - Fine details: Preserve every thread, strand, embossing
+
+LIGHTING SETUP:
+   - Direction: Soft key light from top-left (matching gradient direction)
+   - Quality: Diffused studio lighting
+   - Fill light: Reducing shadows from right
+   - Rim light: Subtle edge definition
+   - White balance: Neutral 5500K
+
+SHADOW GENERATION:
+   - Type: Natural drop shadow blending with gradient
+   - Direction: Toward bottom-right (matching gradient flow)
+   - Opacity: 25-35% (slightly stronger than white background)
+   - Blur: Soft, realistic
+   - Integration: Shadow seamlessly blends into gradient
+
+GRADIENT INTERACTION WITH MATERIALS:
+   - Transparent plastic: Gradient visible through transparency
+   - Glass: Gradient refracted through glass naturally
+   - Reflective surfaces: Subtle gradient reflection on chrome/metal
+   - White/light areas: Strong contrast against gray
+
+MATERIAL PRESERVATION (CRITICAL):
+   - Transparent elements: MUST stay transparent with gradient visible through
+   - Glass: Maintain clarity, gradient shows through
+   - Chrome/metal: Keep reflections, may include subtle gradient reflection
+   - White/cream surfaces: Enhanced contrast, colors unchanged
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: GENERATE FINAL PROMPT WITH STRICT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT (USE EXACTLY THIS STRUCTURE):
+
+"Professional e-commerce background removal with soft gray gradient studio backdrop.
+
+PRODUCT DESCRIPTION: [Insert EXACT product from Step 1 - all physical details, colors, materials, dimensions]. [EMPHASIZE if white/light-colored product]. [CRITICAL: List ALL brand text/logos exactly as they appear with positions]. [List all components, buttons, features from Step 1]. [List ALL transparent/translucent elements identified]. [List ALL reflective/metallic elements identified].
+
+BACKGROUND REMOVAL & GRADIENT REPLACEMENT: Remove ALL existing background completely. Replace with smooth soft gray gradient: light gray #F5F5F5 at top-left transitioning seamlessly to medium gray #E0E0E0 at bottom-right. Professional studio infinity backdrop. Ultra-precise edge extraction optimized for [white/light] products - enhanced contrast, no halos, no fringing.
+
+MATERIAL PRESERVATION (CRITICAL):
+- Transparent elements [list from Step 1] MUST remain transparent/see-through with gray gradient visible through them, NOT rendered as opaque or black
+- Glass/acrylic components [list] maintain full clarity with gradient visible through transparency
+- Reflective surfaces [list] preserve original reflections and metallic sheen, may include subtle natural gradient reflection
+- White/light-colored areas [list if applicable] maintain exact color with enhanced contrast against gray gradient
+- [Any other specific materials] maintain exact finish and appearance
+
+EDGE HANDLING: [If white/light product: Enhanced edge detection for optimal contrast against gray gradient]. [If complex edges present: Ultra-precise feathering for hair/fur/lace/mesh]. [If transparent edges: Proper transparency with gradient visible through material].
+
+POSITIONING: Product centered in frame with 15-20% margin from all edges. Professional composition optimized for light-colored products.
+
+LIGHTING: Professional three-point studio lighting with soft key light from top-left (matching gradient direction). Fill light from right reducing shadows. Subtle rim light for edge definition. Correct input image issues [list from Step 1H: overexposure/color cast/blur] while maintaining exact product colors. Neutral white balance (5500K).
+
+SHADOW: Natural drop shadow toward bottom-right blending seamlessly with gradient. 25-35% opacity, soft realistic blur, integrated into gradient for natural appearance.
+
+GRADIENT INTERACTION: Gradient visible through transparent materials naturally. Subtle gradient reflection on reflective surfaces where appropriate. White/light product areas show strong contrast against gray.
+
+PHONE CAMERA ARTIFACT CORRECTION: [If issues found in Step 1H: Fix flash glare/noise/blur/poor lighting/contrast] while preserving all product details and material properties.
+
+TECHNICAL SPECIFICATIONS: High-resolution e-commerce quality, minimum 1024px shortest side. Tack-sharp focus throughout entire product. Professional gray gradient isolation optimized for white/light products. Suitable for jewelry, cosmetics, white appliances, light-colored products.
+
+PRESERVE EXACTLY: All logos, text, material finishes, colors (especially white/light tones), proportions, brand elements, transparent materials with gradient visible through them, reflective surfaces, and design details from input image. Product must be 100% identical to original with only background changed to gray gradient."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MANDATORY CHECKS BEFORE SUBMITTING PROMPT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Have I identified if product is WHITE/LIGHT-COLORED (primary use case)?
+□ Have I specified exact gradient colors (#F5F5F5 to #E0E0E0)?
+□ Have I identified ALL transparent materials and instructed gradient visible through them?
+□ Have I specified enhanced contrast for white/light products?
+□ Have I included shadow blending with gradient?
+□ Have I preserved all reflective surfaces with subtle gradient reflection?
+□ Is edge handling optimized for light-colored products?
+□ Have I maintained all brand elements and product details exactly?
+
+CRITICAL REMINDER: Gray gradient is specifically for WHITE/LIGHT products to provide contrast. Transparent materials must show gradient through them. Product 100% identical to input.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Generate ONLY the final prompt from Step 3. Do NOT include the Step 1 analysis or Step 2 specifications in your output. Output should contain ONLY the final structured prompt starting with "Professional e-commerce background removal..."***
