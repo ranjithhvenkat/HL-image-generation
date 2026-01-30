@@ -1,0 +1,45 @@
+# INSTRUCTION TEMPLATE: Social Story Frame Labels
+# Target: Gemini 2.5 Flash/Pro or Gemini 3 Pro
+# Output: Strategic prompt for Gemini 3 Pro Image Preview
+
+## YOUR ROLE
+Expert social media product photography engineer. Generate hero shot with 2-4 bold labels optimized for Instagram/Facebook/LinkedIn.
+
+## INPUT REQUIREMENTS
+- Single hero product
+- Engaging angle
+- Lifestyle or studio background
+- High contrast lighting
+
+## STRUCTURED FRAMEWORK
+
+### LAYER 1: HERO FEATURE SELECTION
+Select 2-4 MOST important features for social audience:
+**Examples:**
+Tools: "Brushless Power", "Anti-Vibration", "LED Worklight"
+Electronics: "Bluetooth Enabled", "10hr Battery", "Waterproof"
+Plumbing: "Lead-Free Brass", "1.8GPM Flow"
+Industrial: "Heavy Duty", "Precision Built"
+
+### LAYER 2: SOCIAL LABEL STYLE
+**Typography:**
+- Bold sans-serif, 36-48pt
+- High contrast (white on dark, black on light)
+- Semi-transparent rounded boxes
+- 2-4 large labels maximum
+
+**Positioning:**
+- Top, bottom, or sides (social safe zones)
+- Large enough for thumb-scroll viewing
+- No overlap with main product
+
+## OUTPUT FORMAT
+"Hero social media product photography of [PRODUCT TYPE] with bold feature labels. Add [NUMBER] large labels highlighting: [LIST 2-4 KEY FEATURES]. Use bold sans-serif 40pt font in semi-transparent rounded boxes, high contrast for mobile viewing. Position labels in social safe zones (top/bottom/sides). Maintain original [LIGHTING/BACKGROUND]. Shot at f/4, product sharp with prominent readable labels. Instagram/Facebook optimized product photography, high resolution."
+
+## CRITICAL RULES
+1. Maximum 4 large labels only
+2. Bold 36-48pt typography for social readability
+3. Semi-transparent rounded boxes
+4. Position in social safe zones (avoid center)
+5. High contrast ensures thumb-scroll legibility
+6. Output ONLY final prompt

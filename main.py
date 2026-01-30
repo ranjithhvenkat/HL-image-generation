@@ -134,7 +134,7 @@ def main():
             "Product Specifications / Context",
             placeholder="E.g., A red leather modern sofa, 3-seater...",
             height=100,
-            help="Describe the product exactly as it appears. This helps the AI preserve product identity."
+            help="provide required product specs or requiremets here."
         )
 
     # ------------------------------------------------

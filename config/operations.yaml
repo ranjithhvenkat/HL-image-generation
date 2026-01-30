@@ -59,16 +59,115 @@ operations:
           template: "op20_reflective_safe.txt"
           description: "Chrome, metal, glossy surfaces with preserved reflections."
           best_for: "Chrome appliances, jewelry, polished metal"
+          
+  - id: "31"
+    name: "Annotation & Feature Overlay"
+    workflow: "dynamic_prompting"
+    description: "Auto-generates visual part labels, icons, and feature tags on product images for e-commerce web/social listings."
+    input_image_constraints:
+      - "Single main product clearly visible and in focus"
+      - "Product fills 50-80% of frame with margin space for labels"
+      - "All parts to be labeled are within frame and not occluded"
+      - "Clean or simple background (studio, workbench, bathroom wall)"
+      - "Even lighting with no extreme shadows hiding components"
+      - "Resolution sufficient for small part details (~1000px min)"
+      - "No heavy existing text overlays that could confuse labeling"
+    variants:
+        - name: "Clean Part Labels – Tools"
+          template: "op31_clean_part_labels.txt"
+          description: "Simple text labels + thin arrows on tool components (Chuck, Trigger, Battery). Technical catalog style."
+          best_for: "Power tools, hand tools, industrial equipment"
+
+
+        - name: "Icon + Text Tags – Electronics"
+          template: "op31_icon_text_tags.txt"
+          description: "Small icons (⚡🔊🔈) + short text near front-facing controls/ports. Clean electronics hero shot."
+          best_for: "Speakers, routers, monitors, headphones, control panels"
+
+
+        - name: "Inline Tag Cloud – Attribute Bubbles"
+          template: "op31_inline_tag_cloud.txt"
+          description: "Floating rounded bubbles with feature benefits (IP65, Brushless, Waterproof). Marketing style."
+          best_for: "All categories - tools, electronics, plumbing, industrial"
+
+
+        - name: "Technical Blueprint Overlay"
+          template: "op31_technical_blueprint.txt"
+          description: "Subtle engineering overlay with thin lines + technical labels (Inlet, Shaft, Flange). 20% opacity."
+          best_for: "Industrial machinery, pumps, valves, compressors"
+
+
+        - name: "Plumbing Fixture Labels"
+          template: "op31_plumbing_fixture.txt"
+          description: "Standard plumbing labels (Hot Inlet, Aerator, Cartridge) with chrome-safe placement."
+          best_for: "Faucets, shower mixers, valves, filter housings"
+
+
+        - name: "Social Story Frame Labels"
+          template: "op31_social_story_frame.txt"
+          description: "2-4 large bold labels (Brushless Power, Bluetooth 5.0) in social safe zones. Instagram/FB optimized."
+          best_for: "Hero social creatives - tools, electronics, plumbing"
 
   # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
   - id: "36"
-    name: "Seasonal_Thematic_Contexts"
-    workflow: "dynamic_prompting"  # <--- ALSO USES WORKFLOW 2
-    description: "Generate promotional themes."
+    name: "SeasonalorThematic Promotional Contexts"
+    workflow: "dynamic_prompting"
+    description: "Transforms product photos into seasonal/holiday-themed promotional images for e-commerce catalogs with festive, summer, or industrial contexts."
+    input_image_constraints:
+      - "Product clearly visible and in focus"
+      - "Adequate lighting (no extreme shadows or overexposure)"
+      - "Product fills 50-80% of frame"
+      - "Minimal clutter or distracting elements"
+      - "Product orientation appropriate (upright for furniture, flat for apparel items)"
+      - "Reasonable image quality (not heavily pixelated or blurry)"
+      - "Product identifiable (brand, material, type discernible)"
     variants:
-      - name: "christmas"
-        template: "op36_christmas.txt"
-        description: "Festive Christmas theme."
+        - name: "Diwali Promotional Theme"
+          template: "op36_diwali_promotional.txt"
+          description: "Indian festival theme with diyas, marigolds, rangoli, warm golden lighting. LLM infers product type (apparel/furniture/electronics) from image."
+          best_for: "All product categories for Indian market Diwali campaigns"
+
+
+        - name: "Beach-Tropical Vibes"
+          template: "op36_beach_tropical.txt"
+          description: "Summer beach setting with sand, tropical elements, azure ocean backdrop, bright sunny atmosphere."
+          best_for: "Apparel, accessories, furniture, beverages, lifestyle products"
+
+
+        - name: "Outdoor Adventure Context"
+          template: "op36_outdoor_adventure.txt"
+          description: "Natural outdoor setting with picnic elements, forest/mountain context, dappled sunlight through trees."
+          best_for: "Outdoor gear, apparel, food/beverage, camping equipment, lifestyle products"
+
+
+        - name: "Festive Product Shot"
+          template: "op36_festive_product_shot.txt"
+          description: "Christmas/holiday theme with ornaments, pine branches, warm bokeh lights on rustic wooden surface."
+          best_for: "All products for end-of-year holiday gift catalogs"
+
+
+        - name: "Winter Wonderland"
+          template: "op36_winter_wonderland.txt"
+          description: "Cozy winter interior with snow view, Christmas tree lights, warm-cool lighting contrast, hygge aesthetic."
+          best_for: "Home decor, furniture, apparel, food/beverage, lifestyle products"
+
+
+        - name: "Construction Site Context"
+          template: "op36_construction_site.txt"
+          description: "Authentic construction site environment with building structures, bright daylight, industrial realism."
+          best_for: "Industrial equipment, tools, safety gear, building materials, B2B products"
+
+
+        - name: "Workshop-Facility Setting"
+          template: "op36_workshop_facility.txt"
+          description: "Professional workshop/facility with industrial shelving, concrete floors, overhead lighting, organized workspace."
+          best_for: "Tools, machinery, industrial components, maintenance supplies, B2B equipment"
+
+
+        - name: "Clean Industrial Studio"
+          template: "op36_clean_industrial_studio.txt"
+          description: "Premium industrial studio with dark gradient background, dramatic lighting, metal platform, high-contrast aesthetic."
+          best_for: "Premium industrial equipment, precision tools, machinery, high-end B2B products"
   
   # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
   - id: "39"

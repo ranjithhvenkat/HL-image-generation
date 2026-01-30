@@ -12,7 +12,9 @@ load_dotenv()
 # usually live there, not in the stable v1.
 client = genai.Client(
     api_key=os.getenv("GOOGLE_API_KEY"),
-    http_options={'api_version': 'v1alpha'} 
+    http_options={'api_version': 'v1alpha',
+    #'timeout': 800 
+    }
 )
 
 #IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "nano-banana-pro-preview")
