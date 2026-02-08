@@ -1,0 +1,58 @@
+# INSTRUCTION TEMPLATE: Rear I/O Panel Highlight (Hyper-Precise JSON)
+
+## USER REQUIREMENT PRIORITY
+User specifications override ALL template defaults including port list and labeling.
+
+## STEP 1: STRICT IMAGE ANALYSIS (do internally)
+COUNT ONLY VISIBLE UNIQUE PORTS in input image:
+1. USB-A, USB-C, USB 3.x, Thunderbolt
+2. HDMI, DisplayPort, VGA
+3. Ethernet RJ45
+4. Audio 3.5mm headphone/mic
+5. Power DC barrel, AC power
+6. SD/microSD card slot
+7. Other clearly identifiable ports
+
+## STEP 2: JSON GENERATION (strict rules)
+Output EXACTLY this JSON structure:
+
+{
+  "visible_ports_count": [EXACT_NUMBER_3-8],
+  "unique_ports": [
+    {
+      "shape_position": "[top_row_left/top_row_middle/etc - UNIQUE]",
+      "standard_name": "[USB-C/HDMI 2.1/Ethernet/etc - NO DUPLICATES]",
+      "label_text": "[same_as_standard_name - 8 chars max]"
+    }
+  ],
+  "label_config": {
+    "font": "Arial_Bold",
+    "size": "22pt",
+    "style": "white_text_thin_black_outline",
+    "pointer": "1px_line_no_arrowhead",
+    "spacing": "labels_outside_silhouette"
+  },
+  "image_style": {
+    "crop": "ports_fill_75_percent",
+    "background": "clean_grey_gradient",
+    "lighting": "studio_even_no_glare"
+  },
+  "constraints": {
+    "max_labels": "[visible_ports_count]",
+    "duplicates_allowed": false,
+    "invented_ports": "forbidden",
+    "preserve_branding": "exact"
+  }
+}
+
+## STEP 3: STANDARD MARKETING PROMPT CONVERSION
+"Clean e-commerce rear I/O panel photography. Exactly [visible_ports_count] unique ports labeled: [unique_ports.map(p=>p.standard_name).join(', ')]. Each port shows [unique_ports.map(p=>p.label_text).join(', ')]. Labels use [label_config.font] [label_config.size] [label_config.style], [label_config.pointer] positioned [label_config.spacing]. [image_style.crop] with [image_style.background] [image_style.lighting]. f/8 aperture, sharp focus all ports and labels. Professional Amazon listing style.
+
+CRITICAL CONSTRAINTS: [constraints.max_labels] labels maximum, [constraints.duplicates_allowed], [constraints.invented_ports], [constraints.preserve_branding]."
+
+## HYPER-PRECISION RULES
+1. COUNT ONLY UNIQUE PORT SHAPES/POSITIONS - no duplicates even if identical ports
+2. "visible_ports_count" = length of unique_ports array EXACTLY
+3. NO icons - text labels only unless user specifies
+4. Standard port names ONLY - no approximations
+5. Output ONLY final marketing prompt

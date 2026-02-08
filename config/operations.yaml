@@ -9,6 +9,41 @@ operations:
         template: "op09_solid_color_change.txt"
         description: "Change color hue."
 
+  - id: "10"
+    name: "Port_Interface Highlighting"
+    workflow: "dynamic_prompting"
+    description: "Generates annotated or zoomed images that clearly highlight ports, buttons, and displays for e-commerce and social listings."
+    input_image_constraints:
+      - "Single main product clearly visible and in focus"
+      - "Target interface region (ports/buttons/display) captured clearly in the frame"
+      - "Product fills 50-80% of frame with some empty space for labels or insets"
+      - "Simple or studio-style background that does not hide small details"
+      - "Even lighting with minimal glare on glossy surfaces and ports"
+      - "Resolution high enough for small ports/buttons (≈1500px on shortest side recommended)"
+      - "No heavy existing text or annotation overlays on the product"
+    variants:
+        - name: "Rear I-O Panel Highlight"
+          template: "op10_rear_io_panel.txt"
+          description: "Zoomed rear or side panel view with clean labels for each key port (USB, HDMI, Ethernet, power, audio). Ideal for connectivity specification tiles."
+          best_for: "Monitors, TVs, laptops, PCs, docks, set-top boxes, audio interfaces"
+
+
+        - name: "Front Control Panel Highlight"
+          template: "op10_front_control_panel.txt"
+          description: "Close-up of the front control cluster with labels on buttons, knobs, and switches (Power, Mode, Start/Pause, Timer)."
+          best_for: "Amplifiers, receivers, speakers, soundbars, ovens, washing machines, microwaves, coffee machines, control panels"
+
+
+        - name: "Tool Interface Close-up"
+          template: "op10_tool_interface.txt"
+          description: "Handle/control-area close-up showing functional labels for switches, selectors, LEDs, and triggers on tools."
+          best_for: "Power drills, drivers, sanders, garden tools, pressure washers, other powered tools"
+
+        - name: "Touchscreen & Display Zones"
+          template: "op10_touchscreen_zones.txt"
+          description: "Display close-up with semi-transparent highlight zones and short labels for key UI areas (Temperature, Mode, Status, Timer)."
+          best_for: "Smart appliances, thermostats, control panels, medical/electronic instruments, smart speakers with displays"
+
   - id: "20"
     name: "Background Removal / Isolation"
     workflow: "dynamic_prompting"
@@ -59,7 +94,7 @@ operations:
           template: "op20_reflective_safe.txt"
           description: "Chrome, metal, glossy surfaces with preserved reflections."
           best_for: "Chrome appliances, jewelry, polished metal"
-          
+
   - id: "31"
     name: "Annotation & Feature Overlay"
     workflow: "dynamic_prompting"
@@ -73,19 +108,19 @@ operations:
       - "Resolution sufficient for small part details (~1000px min)"
       - "No heavy existing text overlays that could confuse labeling"
     variants:
-        - name: "Clean Part Labels – Tools"
+        - name: "Clean Part Labels for Tools"
           template: "op31_clean_part_labels.txt"
           description: "Simple text labels + thin arrows on tool components (Chuck, Trigger, Battery). Technical catalog style."
           best_for: "Power tools, hand tools, industrial equipment"
 
 
-        - name: "Icon + Text Tags – Electronics"
+        - name: "Icon + Text Tags for Electronics"
           template: "op31_icon_text_tags.txt"
           description: "Small icons (⚡🔊🔈) + short text near front-facing controls/ports. Clean electronics hero shot."
           best_for: "Speakers, routers, monitors, headphones, control panels"
 
 
-        - name: "Inline Tag Cloud – Attribute Bubbles"
+        - name: "Inline Tag Cloud for Attribute Bubbles"
           template: "op31_inline_tag_cloud.txt"
           description: "Floating rounded bubbles with feature benefits (IP65, Brushless, Waterproof). Marketing style."
           best_for: "All categories - tools, electronics, plumbing, industrial"

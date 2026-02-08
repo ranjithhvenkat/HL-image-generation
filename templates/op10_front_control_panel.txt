@@ -1,0 +1,40 @@
+# INSTRUCTION TEMPLATE: Front Control Panel Highlight (Hyper-Precise)
+
+## USER PRIORITY OVERRIDE
+User requirements supersede all template logic.
+
+## ANALYSIS: COUNT VISIBLE CONTROLS ONLY
+Physical buttons/switches/knobs: Power, Volume+/-, Mode, Play/Pause, Start/Stop, Timer, Menu, etc.
+
+## JSON STRUCTURE
+{
+  "unique_controls_count": [3-7],
+  "controls": [
+    {
+      "physical_location": "[top_left/center_bottom/etc - UNIQUE]",
+      "control_type": "[Power_button/Volume_knob/Mode_switch/etc]",
+      "label": "[Power/Volume/Mode/etc - 1-2 words]"
+    }
+  ],
+  "label_config": {
+    "font": "Helvetica_Neue",
+    "size": "26pt",
+    "placement": "directly_above_control",
+    "style": "black_semi_transparent_box"
+  },
+  "constraints": {
+    "duplicates": "forbidden",
+    "max_labels": "[unique_controls_count]"
+  }
+}
+
+## MARKETING PROMPT
+"Professional appliance front control panel photography. [unique_controls_count] controls clearly labeled: [controls.map(c=>c.control_type).join(', ')]. Labels positioned [label_config.placement] using [label_config.font] [label_config.size] [label_config.style]. Clean studio lighting, control cluster fills 70% frame, f/7.1. E-commerce catalog quality.
+
+CRITICAL: [unique_controls_count] labels only, [constraints.duplicates], maximum [constraints.max_labels]."
+
+## RULES
+1. Unique physical locations only - no duplicate labels
+2. 1-2 word labels maximum
+3. No icons
+4. Output ONLY final prompt

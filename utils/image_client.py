@@ -19,6 +19,7 @@ client = genai.Client(
 
 #IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "nano-banana-pro-preview")
 IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "gemini-3-pro-image-preview") 
+#IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "imagen-4.0-generate-001") 
 
 def generate_image(meta_prompt: str, reference_image_pil=None):
     """

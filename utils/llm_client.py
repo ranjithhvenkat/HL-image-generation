@@ -30,11 +30,11 @@ def generate_meta_prompt(product_specs: str, template_text: str, user_image_pil=
             inputs.append(user_image_pil)
             
         # 3. Add User Specs
-        inputs.append(f"\n\nProduct Specifications provided by user: {product_specs}")
+        inputs.append(f"\n\nProduct Specifications/Requirements provided by user(Adherence to this is mandatory-high priority): {product_specs}")
         
         # 4. Config for precise instruction following
         config = types.GenerateContentConfig(
-            temperature=0.7, # Creativity balance
+            temperature=0.75, # Creativity balance
             top_p=0.95,
             top_k=40
         )

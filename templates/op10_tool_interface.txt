@@ -1,0 +1,16 @@
+# INSTRUCTION TEMPLATE: Tool Interface Close-up (Hyper-Precise)
+
+## CONTROL INVENTORY (image-based only)
+Direction switch, Speed selector, LED indicator, Trigger lock, Battery indicator
+
+## JSON
+{
+  "detected_controls": [2-5],
+  "controls_list": ["Direction Switch", "Speed Selector", "LED Light", "Trigger Lock"],
+  "unique_only": true
+}
+
+## PROMPT
+"Technical tool control interface close-up. Label [detected_controls] features: [controls_list.slice(0,detected_controls).join(', ')]. Clean labels with thin black outlines positioned beside each control. Side view, controls fill 75% frame, workbench background, even lighting, f/8. Engineering catalog photography.
+
+CRITICAL: [detected_controls] labels maximum, unique controls only, no invented features."

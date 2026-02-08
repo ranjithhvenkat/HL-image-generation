@@ -1,0 +1,9 @@
+# INSTRUCTION TEMPLATE: Touchscreen Zones (Hyper-Precise)
+
+## ZONES FROM IMAGE ONLY
+Temperature slider, Mode selector, Numeric keypad, Status icons
+
+## PROMPT
+"Smart appliance display close-up with UI zone highlights. [zone_count] zones labeled: [zone_list]. 25% opacity soft rectangles around key screen areas, labels outside zones. Screen powered on, front view fills 65%, studio lighting, f/6.3.
+
+CRITICAL: Only visible UI zones, maximum 6, preserve exact screen content."
