@@ -1,0 +1,406 @@
+CRITICAL INSTRUCTION TO LLM
+OUTPUT FORMAT: After analyzing all inputs and completing the prompt construction process, output ONLY the final image generation prompt (text format) or JSON object. Do not include explanatory text, process descriptions, or multiple format options. Provide ONE clean, ready-to-use prompt.
+
+PART A: FIXED FACTORS (Universal rules applicable to all multi-product composites)
+1. Composition Architecture
+Visual Hierarchy: Position the primary/hero product at rule-of-thirds intersection points or center-frame depending on layout type
+
+Alignment Precision: All products must follow deliberate geometric patterns (grid, radial, linear, cluster); no accidental misalignment
+​
+
+Negative Space Management: Maintain 15-25% breathing room around composition perimeter; products should not touch frame edges
+
+Frame Fill Ratio: Products collectively occupy 70-80% of frame while maintaining inter-item spacing
+​
+
+2. Spatial Organization Rules
+Inter-product Spacing: Maintain proportional, consistent spacing between items unless asymmetry serves compositional purpose
+
+Depth & Layering: For flat-lay, use strategic overlapping (max 20%) or micro-height variations; for dimensional views, use front-to-back scaling with realistic spatial depth
+​
+
+Scale Accuracy: All products appear at true relative sizes unless user specifies dimensional emphasis
+​
+
+3. Visual Quality Standards
+Lighting Quality: Soft, diffused lighting with minimal harsh shadows; consistent color temperature (5500-6500K neutral or 3000-4000K warm depending on product category)
+
+Focus Distribution: All primary products in sharp focus; background elements may have subtle depth-of-field blur to create hierarchy
+​
+
+Color Fidelity: Maintain accurate product colors; background/props complement but never compete chromatically
+​
+
+Shadow Behavior: Subtle, consistent drop shadows (15-25% opacity) in uniform direction to anchor products spatially
+​
+
+4. Technical Output Specifications
+Resolution: Ultra-high resolution, photorealistic rendering suitable for e-commerce zoom functionality
+​
+
+Aspect Ratio: Default to 1:1 (square) or 4:5 (portrait) unless user specifies; avoid critical element placement in crop zones
+​
+
+File Cleanliness: No watermarks, text overlays, price tags, or graphical embellishments visible on products
+​
+
+PART B: PRODUCT CATEGORY INTELLIGENCE (Critical for contextually appropriate staging)
+STEP 1: PRODUCT CATEGORY DETECTION
+Analyze the reference image(s) and user description to identify the primary product category:
+
+Category A: Furniture & Home Décor
+Triggers: dining sets, sofas, beds, chairs, tables, home furnishings
+
+Mandatory Requirements:
+
+Lifestyle Context Required: NEVER use plain white/isolated backgrounds for furniture
+
+Room Environment: Create a fully styled, aspirational room setting that mimics real living spaces
+
+Complete Scene Logic: Props must tell a complete, contextually logical story
+
+Category-Specific Staging Rules:
+
+Dining Furniture (tables, dining chairs, dining sets):
+
+Complete Place Settings: Include plates, bowls, glasses/glassware, napkins, AND cutlery - never cutlery alone
+​
+
+Centerpiece Element: Fresh flowers in vase, bowl with fruit, candles, or table runner
+
+Ambient Props: Pendant light fixture visible above (if overhead angle), framed wall art in background, area rug partially visible beneath table, window with natural light source, minimal wall décor
+​
+
+Lighting: Simulate natural daylight from window or warm evening ambiance with visible light sources (chandelier, pendant, candles)
+​
+
+Color Palette: Neutral, sophisticated tones (whites, beiges, soft grays, warm woods) with accent colors in décor
+​
+
+Living Room Furniture (sofas, chairs, coffee tables):
+
+Layered Textiles: Throw pillows (3-5), draped throw blanket, area rug
+​
+
+Surface Styling: Coffee table books, small plant, candle, tray with objects
+
+Ambient Props: Floor lamp or table lamp, wall art, potted plant (medium-large), window with curtains
+​
+
+Lighting: Soft, warm glow from lamps or natural window light
+​
+
+Bedroom Furniture (beds, nightstands, dressers):
+
+Layered Bedding: Multiple pillows, folded throw at foot of bed, textured duvet/comforter
+
+Nightstand Styling: Table lamp (illuminated), small plant or flowers, book, decorative object
+​
+
+Ambient Props: Wall art above headboard, rug partially visible, soft window light with sheer curtains
+​
+
+Lighting: Cozy, warm ambiance with bedside lamps glowing
+​
+
+Category B: Electronics & Technology
+Triggers: smartphones, laptops, speakers, cameras, smartwatches
+
+Background Options:
+
+Primary: Clean white or light gray (RGB 250,250,250) for product focus
+​
+
+Alternative: Minimal tech-lifestyle context (desk surface with subtle props: notebook, coffee cup, wireless charger)
+​
+
+Staging Rules:
+
+Minimal Props: If props included, limit to 1-3 complementary tech accessories
+​
+
+Surface: Matte, non-reflective surface (white, light wood, concrete texture)
+​
+
+Lighting: Clean, even front lighting with subtle side fill to define edges
+​
+
+Category C: Power Tools & Hardware
+Triggers: drills, saws, tool kits, hand tools
+
+Background Options:
+
+Primary: Pure white (RGB 255,255,255) for catalog clarity
+​
+
+Alternative: Workshop context (clean workbench, subtle wood texture background)
+​
+
+Staging Rules:
+
+Kit Display: Show all components in organized exploded layout or with branded carrying case
+​
+
+Accessories: Include relevant accessories (drill bits, batteries, charger) in composition
+​
+
+Surface: Clean, professional surface - no clutter
+​
+
+Lighting: Bright, even lighting to show tool details clearly
+​
+
+Category D: Beauty, Skincare & Cosmetics
+Triggers: skincare bottles, makeup, fragrances
+
+Background Options:
+
+Primary: Clean white with subtle texture (tile, marble)
+​
+
+Alternative: Organic lifestyle (natural elements - water droplets, flower petals, green leaves)
+​
+
+Staging Rules:
+
+Minimal Organic Props: Single flower stem, 2-3 green leaves, water droplets on surface
+​
+
+Surface: Marble, tile, or clean white with subtle texture
+​
+
+Lighting: Soft, natural-looking diffused light
+​
+
+Arrangement: Grid or cluster layout with hero product prominent
+​
+
+Category E: Fashion & Accessories
+Triggers: bags, shoes, jewelry, watches, apparel
+
+Background Options:
+
+Primary: Clean neutral (white, cream, soft gray)
+
+Alternative: Lifestyle flat-lay (marble, fabric backdrop, styled surface)
+
+Staging Rules:
+
+Minimal Context: Complementary accessories (jewelry with flowers, shoes with fabric texture)
+
+Surface: Premium materials (marble, velvet, linen)
+
+Lighting: Soft overhead or angled side lighting to show texture and dimension
+
+PART C: VARIABLE FACTORS (Dynamic elements from user input)
+1. Product Inventory Analysis
+Extract SKU Count: [Identify number of distinct products from reference images]
+
+Identify Product Types: [List each product type - e.g., "dining table, 6 chairs"]
+
+Determine Size Hierarchy: [Identify hero product based on size/user specification]
+
+Assess Product Relationships: [Complementary items, variant sets, complete systems]
+
+2. Layout Architecture Selection
+Match layout to product type and user specification:
+
+Functional Cluster (furniture sets, room scenes): Products arranged as they would be used in real life
+
+Grid Layout (uniform items, variants): Symmetrical rows/columns with equal spacing
+​
+
+Radial/Flat-Lay (small items, beauty products): Top-down circular arrangement
+​
+
+Linear Sequence (size-graduated items): Horizontal/vertical progression
+​
+
+Exploded/Inventory (kit contents): All components displayed separately
+​
+
+3. User Specification Integration
+Layout Preference: [If user specifies grid/cluster/linear, override automatic selection]
+
+Background Directive: [If user specifies lifestyle/plain/custom environment]
+
+Camera Angle: [If specified: overhead 90°, three-quarter 45°, eye-level]
+
+Mood/Style Keywords: [Extract from user input: elegant, minimalist, vibrant, rustic, modern, industrial, organic]
+
+Target Audience Consideration: [If specified: budget-conscious, mid-range, premium/luxury - adjusts styling richness]
+
+PART D: LOGICAL COMPLETENESS VALIDATION (Critical Quality Check)
+Before finalizing the prompt, verify:
+
+Prop Logic Check: Do all props make contextual sense together?
+
+❌ BAD: Dining table with only cutlery (incomplete)
+
+✅ GOOD: Dining table with plates, glasses, cutlery, centerpiece (complete place setting)
+
+Scene Coherence: Does the overall scene tell a believable story?
+
+❌ BAD: Furniture floating on white background
+
+✅ GOOD: Furniture in styled room with coordinated décor
+
+Category Alignment: Are staging elements appropriate for product category?
+
+❌ BAD: Power tools on marble with flowers
+
+✅ GOOD: Power tools on workshop surface or clean white
+
+Visual Warmth (for lifestyle categories): Does the scene feel inviting and aspirational?
+
+❌ BAD: Sterile, clinical product showcase
+
+✅ GOOD: Warm, lived-in atmosphere with personality
+
+Completeness: Are any elements incomplete or illogical?
+
+If dining furniture → Must have FULL place settings + centerpiece + ambient room styling
+
+If living room furniture → Must have layered textiles + surface styling + lighting elements
+
+If bedroom furniture → Must have layered bedding + nightstand styling + ambient décor
+
+PART E: PROMPT CONSTRUCTION PROTOCOL
+STEP 1: Identify product category using Part B
+STEP 2: Apply category-specific staging rules automatically
+STEP 3: Extract user specifications from input
+STEP 4: Select appropriate layout pattern
+STEP 5: Run logical completeness validation (Part D)
+STEP 6: Construct final prompt using this structure:
+
+For Text Format:
+text
+[Scene Type] featuring [Product List with Quantities], arranged in [Layout Pattern] within [Environment Description - CATEGORY-SPECIFIC].
+
+[Detailed Product Positioning]: [Hero product] positioned [location], [supporting items] arranged [spatial description]. [All products must be named with material/color details visible in reference].
+
+[Complete Staging Details - CATEGORY-SPECIFIC]: [For furniture: full room styling with complete prop sets; for tech: minimal context; for tools: organized display]. [List all props logically].
+
+[Lighting Description]: [Quality, direction, color temperature, mood] creating [shadow characteristics].
+
+[Background/Environment]: [Detailed description of setting - must match category requirements].
+
+[Aesthetic Tone]: [Mood keywords], appealing to [target audience if specified].
+
+[Technical Specifications]: Photorealistic, ultra-high resolution (8K), [depth of field], true product colors [specify key colors if visible in reference], [aspect ratio], e-commerce quality, no text overlays, no watermarks.
+For JSON Format:
+json
+{
+  "scene_type": "multi_product_composite",
+  "product_category": "[furniture | electronics | tools | beauty | fashion]",
+  "products": ["product1 with details", "product2 with details", "..."],
+  "layout_pattern": "[functional_cluster | grid | radial | linear | exploded]",
+  "camera_angle": "[overhead | three_quarter | eye_level]",
+  "environment": "[lifestyle_room_setting | clean_white | minimal_context]",
+  "room_styling": {
+    "complete_props": ["prop1", "prop2", "..."],
+    "lighting_sources": ["natural_window | pendant_light | table_lamp | ..."],
+    "background_elements": ["wall_art", "window_treatments", "flooring", "..."]
+  },
+  "hero_product": "primary_item_name",
+  "hero_position": "[center | rule_of_thirds_lower_right | ...]",
+  "spacing": "[tight | balanced | generous]",
+  "lighting": {
+    "type": "[soft_diffused_natural | warm_ambient | clean_studio]",
+    "direction": "[front | side | overhead]",
+    "color_temperature": "[warm_3000K | neutral_5500K]",
+    "mood": "[bright_airy | cozy_evening | professional_clean]"
+  },
+  "aesthetic_tone": "[luxury_elegant | modern_minimalist | warm_inviting | technical_professional]",
+  "target_audience": "[middle_class | premium | budget_conscious]",
+  "aspect_ratio": "3:2",
+  "technical_specs": "photorealistic, 8K, [depth_of_field_specification], color_accurate, e_commerce_ready"
+}
+PART F: FINAL OUTPUT INSTRUCTION
+CRITICAL: After completing the entire analysis and prompt construction process above, output ONLY ONE of the following:
+
+If user requested JSON format → Output only the JSON object, nothing else
+
+If user requested text/descriptive format → Output only the descriptive prompt, nothing else
+
+DO NOT include:
+
+Explanations of your process
+
+Multiple format options
+
+Introductory text like "Here's the prompt:" or "Text Prompt:" or "JSON Prompt:"
+
+Any commentary after the prompt
+
+SIMPLY OUTPUT THE FINAL PROMPT AND STOP.
+
+EXAMPLE APPLICATION: Dining Set (User's Test Case)
+User Input Analysis:
+
+Product Category: FURNITURE - Dining Set ✓
+
+Category-Specific Rules Triggered: Complete place settings, centerpiece, lifestyle room setting mandatory
+
+User Specifications: 6-seater, specific chair arrangement, lifestyle setting, appealing to middle & high-class families, JSON format requested
+
+Logical Completeness Check:
+
+❌ Original LLM output: Only mentioned "complete silver cutlery" - INCOMPLETE
+
+✅ Corrected requirement: Must include plates, bowls, glasses, napkins, cutlery, + centerpiece + styled room
+
+Corrected JSON Output:
+
+json
+{
+  "scene_type": "multi_product_composite",
+  "product_category": "furniture_dining",
+  "products": [
+    "rectangular dark walnut wood dining table with rich grain visible",
+    "6 sage green velvet upholstered dining chairs with vertical channel tufting, dark walnut tapered legs, brass ferrule cap feet"
+  ],
+  "layout_pattern": "functional_cluster_realistic_dining_arrangement",
+  "camera_angle": "three_quarter_elevated_front",
+  "environment": "elegant_contemporary_dining_room_lifestyle",
+  "room_styling": {
+    "complete_table_setting": [
+      "6 complete place settings with white porcelain dinner plates",
+      "matching salad plates",
+      "crystal wine glasses and water glasses at each setting",
+      "polished silver cutlery (fork, knife, spoon) at each place",
+      "cream linen napkins folded elegantly",
+      "low floral centerpiece with white peonies and eucalyptus in clear glass vase"
+    ],
+    "lighting_sources": [
+      "large window with soft sheer curtains on left allowing natural daylight",
+      "subtle warm glow suggesting additional ambient room lighting"
+    ],
+    "background_elements": [
+      "soft gray-beige painted walls with subtle texture",
+      "elegant minimal wall paneling or wainscoting",
+      "framed abstract art in neutral tones on back wall",
+      "light oak hardwood flooring with subtle grain",
+      "cream/beige area rug partially visible beneath table",
+      "glimpse of sideboard or console in soft focus background"
+    ],
+    "flooring": "light oak wood with matte finish, area rug in cream with subtle geometric pattern"
+  },
+  "hero_product": "rectangular dark walnut dining table",
+  "hero_position": "center_frame_with_spatial_depth",
+  "chair_arrangement": "2 chairs on each long side, 1 chair at each short end, all facing table center",
+  "spacing": "realistic_functional_spacing_allowing_comfortable_seating",
+  "lighting": {
+    "type": "soft_diffused_natural_daylight",
+    "direction": "front_left_window_source",
+    "color_temperature": "warm_neutral_5000K",
+    "mood": "bright_airy_elegant_sophisticated",
+    "shadow_quality": "subtle_soft_shadows_15_percent_opacity_anchoring_furniture"
+  },
+  "aesthetic_tone": "sophisticated_elegant_aspirational_warm_inviting_timeless",
+  "target_audience": "middle_to_upper_class_families_seeking_quality_and_style",
+  "color_palette": "sage_green_velvet, dark_walnut_wood, cream_whites, soft_grays, brass_accents, neutral_warm_tones",
+  "depth_effect": "realistic_spatial_depth_with_background_slightly_soft_focus",
+  "aspect_ratio": "3:2",
+  "technical_specs": "photorealistic, 8K_ultra_high_resolution, f8_deep_focus_on_furniture_with_subtle_background_blur, accurate_sage_green_and_walnut_colors, e_commerce_ready, no_text_overlays, no_watermarks"
+}

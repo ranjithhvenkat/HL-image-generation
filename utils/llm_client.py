@@ -10,31 +10,41 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gemini-2.5-flash")
 
-def generate_meta_prompt(product_specs: str, template_text: str, user_image_pil=None) -> str:
+
+def generate_meta_prompt(
+    user_specs: str,
+    template_text: str,
+    user_images_pil=None  # ✅ Changed: accepts LIST of images
+) -> str:
     """
-    Uses Gemini 2.5 Flash to generate a detailed image description.
-    
+    Uses Gemini 2.5 Flash to generate a detailed image generation prompt.
+
     Args:
-        product_specs: User's text description.
-        template_text: The system instruction from the .txt file.
-        user_image_pil: (Optional) The PIL image if the prompt needs visual context.
+        user_specs: Combined product specifications and user requirements.
+        template_text: The system instruction template for this operation.
+        user_images_pil: (Optional) List of PIL images for visual context.
     """
     try:
         inputs = []
-        
-        # 3. Add User Specs
-        inputs.append(f"\n\nProduct Specifications provided by user: {product_specs}")
-        
-        # 1. Add System/Template Instruction
+
+        # 1. System/Template Instruction (sets the operational context)
         inputs.append(template_text)
-        
-        # 2. Add the Image (if provided, multimodal reasoning)
-        if user_image_pil:
-            inputs.append(user_image_pil)
-        
-        # 4. Config for precise instruction following
+
+        # 2. ALL Reference Images (multimodal reasoning)
+        if user_images_pil:
+            for idx, img in enumerate(user_images_pil):
+                inputs.append(f"\n[Reference Image {idx + 1}]:")
+                inputs.append(img)
+
+        # 3. User Specifications & Requirements
+        inputs.append(
+            f"\n\n**User Specifications & Requirements:**\n"
+            f"{user_specs}"
+        )
+
+        # 4. Config
         config = types.GenerateContentConfig(
-            temperature=0.7, # Creativity balance
+            temperature=0.7,
             top_p=0.95,
             top_k=40
         )
@@ -44,7 +54,7 @@ def generate_meta_prompt(product_specs: str, template_text: str, user_image_pil=
             contents=inputs,
             config=config
         )
-        
+
         return response.text.strip()
 
     except Exception as e:

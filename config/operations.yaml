@@ -1,30 +1,21 @@
 operations:
-  # OPERATION 09: Requires LLM to understand "Velvet vs Leather"
+  # OPERATION 09: Fabric / Color Simulation
   - id: "09"
     name: "Fabric_Color_Simulation"
-    workflow: "dynamic_prompting"  # <--- USES WORKFLOW 2
-    description: "Generate alternate fabric textures or color variants."
-    variants:
-      - name: "solid_color_change"
-        template: "op09_solid_color_change.txt"
-        description: "Change color hue."
+    workflow: "dynamic_prompting"
+    template: "op09_master.txt"
+    description: "Change fabric, texture, or color (e.g., 'Make it blue velvet')."
 
-  # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
+  # OPERATION 36: Seasonal / Thematic Contexts
   - id: "36"
     name: "Seasonal_Thematic_Contexts"
-    workflow: "dynamic_prompting"  # <--- ALSO USES WORKFLOW 2
-    description: "Generate promotional themes."
-    variants:
-      - name: "christmas"
-        template: "op36_christmas.txt"
-        description: "Festive Christmas theme."
+    workflow: "dynamic_prompting"
+    template: "op36_master.txt"
+    description: "Place product in a specific theme (e.g., 'Christmas', 'Cyberpunk')."
 
-  # EXAMPLE of a Static Operation (for testing Workflow 1)
-  - id: "99"
-    name: "Quick_Enhance"
-    workflow: "static_prompting"   # <--- USES WORKFLOW 1
-    description: "Simple enhancement without LLM reasoning."
-    variants:
-      - name: "standard"
-        template: "op99_enhance.txt" # Contains just: "High resolution, 4k product photo"
-        description: "Standard upscale."
+  # OPERATION 99: Static Enhance (Example)
+  - id: "39"
+    name: "SKU"
+    workflow: "dynamic_prompting"
+    template: "sku.txt"
+    description: "Set view"

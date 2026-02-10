@@ -1,35 +1,41 @@
-#version 1 of main.py.
-#Simple set up using streamlit to mimic the frontend of user
 import streamlit as st
 import yaml
 import os
+import re
 from typing import List, Dict, Any
 from workflows import static_flow, dynamic_flow
-from utils import output_handler 
+from utils import output_handler
+from PIL import Image 
 # ==========================================
 # WORKFLOW REGISTRY
 # ==========================================
-# This dictionary maps the YAML 'workflow' string to the Python module
 WORKFLOW_MAP = {
     "static_prompting": static_flow,
     "dynamic_prompting": dynamic_flow,
-    # Future scalability:
-    # "masking_workflow": masking_flow 
 }
+
+# ==========================================
+# ASPECT RATIO OPTIONS
+# ==========================================
+ASPECT_RATIOS = {
+    "1:1 (Square)": "1:1",
+    "16:9 (Landscape)": "16:9",
+    "9:16 (Portrait)": "9:16",
+    "4:3 (Standard)": "4:3",
+    "3:4 (Portrait Standard)": "3:4",
+}
+
 # ==========================================
 # CONFIGURATION & SETUP
 # ==========================================
 CONFIG_PATH = os.path.join("config", "operations.yaml")
 
+
 def load_config() -> List[Dict[str, Any]]:
-    """
-    Loads the operations configuration from the YAML file.
-    Returns a list of operation dictionaries.
-    """
     if not os.path.exists(CONFIG_PATH):
         st.error(f"Configuration file not found at: {CONFIG_PATH}")
         return []
-    
+
     with open(CONFIG_PATH, 'r') as file:
         try:
             data = yaml.safe_load(file)
@@ -38,158 +44,194 @@ def load_config() -> List[Dict[str, Any]]:
             st.error(f"Error parsing YAML file: {exc}")
             return []
 
-# ==========================================
-# UI HELPER FUNCTIONS
-# ==========================================
-def format_op_display(op: Dict) -> str:
-    """Formats the operation for the dropdown display."""
-    # We display Name and Description, hiding the ID from the immediate view
-    # strictly mimicking a user-friendly frontend
-    return f"{op['name']} | {op['description']}"
 
-def format_variant_display(variant: Dict) -> str:
-    """Formats the variant for the dropdown display."""
-    return f"{variant['name']} - {variant['description']}"
+def sanitize_filename(text: str) -> str:
+    """Helper to turn 'Make it Christmas!!' into 'Make_it_Christmas'"""
+    clean = re.sub(r'[^a-zA-Z0-9\s]', '', text)
+    return clean.strip().replace(' ', '_')[:20]
+
 
 # ==========================================
 # MAIN APPLICATION
 # ==========================================
 def main():
-    st.set_page_config(page_title="Nano Banana Pro - GenAI Studio", layout="wide")
-    
-    st.title("Version 1 streamlit dashboard")
+    st.set_page_config(page_title="Nano Banana Pro", layout="wide")
+
+    st.title("🍌 Nano Banana Pro: GenAI Studio")
     st.markdown("---")
 
-    # 1. Load Operations
     operations = load_config()
-    
     if not operations:
-        st.warning("No operations found. Please check config/operations.yaml")
         return
 
-    # Container for the Control Panel
-    with st.container():
-        col1, col2 = st.columns([1, 1])
-
-        # ------------------------------------------------
-        # SECTION 1: OPERATION SELECTION
-        # ------------------------------------------------
-        with col1:
-            st.subheader("1. Select Strategy")
-            
-            # Select Operation
-            # We map the display string back to the actual operation object
-            selected_op_index = st.selectbox(
-                "Choose Operation",
-                range(len(operations)),
-                format_func=lambda i: format_op_display(operations[i]),
-                help="Select the high-level modification goal."
-            )
-            
-            current_op = operations[selected_op_index]
-            
-            # Debug/Dev info (Optional, can be removed for pure UI feel)
-            st.caption(f"System ID: {current_op['id']} | Workflow: {current_op['workflow']}")
-
-        # ------------------------------------------------
-        # SECTION 2: VARIANT SELECTION
-        # ------------------------------------------------
-        with col2:
-            st.subheader("2. Select Variant")
-            
-            variants = current_op.get('variants', [])
-            
-            if variants:
-                selected_variant_index = st.selectbox(
-                    "Choose Variant",
-                    range(len(variants)),
-                    format_func=lambda i: format_variant_display(variants[i]),
-                    help="Select the specific style or theme."
-                )
-                current_variant = variants[selected_variant_index]
-            else:
-                st.info("No specific variants defined for this operation. Using default.")
-                current_variant = None
+    # ------------------------------------------------
+    # INPUT 1: Operation Selection
+    # ------------------------------------------------
+    st.subheader("1. Select Operation")
+    selected_op_index = st.selectbox(
+        "Choose Operation",
+        range(len(operations)),
+        format_func=lambda i: f"[{operations[i]['id']}] {operations[i]['name']} — {operations[i]['description']}"
+    )
+    current_op = operations[selected_op_index]
 
     st.markdown("---")
 
     # ------------------------------------------------
-    # SECTION 3: ASSET UPLOAD & SPECS
+    # INPUT 2: User Specifications
     # ------------------------------------------------
-    st.subheader("3. Add Assets")
-    
-    c1, c2 = st.columns([1, 2])
-    
-    with c1:
-        # Multiple Image Upload Support
-        uploaded_files = st.file_uploader(
-            "Upload Reference Images", 
-            type=['png', 'jpg', 'jpeg', 'webp'], 
-            accept_multiple_files=True
-        )
-        
-    with c2:
-        # Product Context (Crucial for the LLM Meta-Prompt)
-        product_specs = st.text_area(
-            "Product Specifications / Context",
-            placeholder="E.g., A red leather modern sofa, 3-seater...",
-            height=100,
-            help="Describe the product exactly as it appears. This helps the AI preserve product identity."
-        )
+    st.subheader("2. Product Specifications & Requirements")
+    user_specs = st.text_area(
+        "Describe your product and what you want",
+        placeholder=(
+            "E.g., A red leather 3-seater modern sofa. "
+            "Make it in a Christmas living room setting with snow visible through the window."
+        ),
+        height=120,
+        help="Include both product details and your desired variation/theme. The AI will handle the rest."
+    )
+
+    st.markdown("---")
 
     # ------------------------------------------------
-    # SECTION 4: EXECUTION
+    # INPUT 3: Assets
     # ------------------------------------------------
+    st.subheader("3. Upload Assets")
+    uploaded_files = st.file_uploader(
+        "Upload Reference Images",
+        type=['png', 'jpg', 'jpeg', 'webp'],
+        accept_multiple_files=True
+    )
+
+    # Show uploaded previews
+    if uploaded_files:
+        preview_cols = st.columns(min(len(uploaded_files), 5))
+        for idx, f in enumerate(uploaded_files):
+            with preview_cols[idx % 5]:
+                st.image(f, caption=f.name, use_container_width=True)
+
     st.markdown("---")
-    if st.button("Generate Output", type="primary"):
+
+    # ------------------------------------------------
+    # SETTINGS: Aspect Ratio
+    # ------------------------------------------------
+    st.subheader("⚙️ Settings")
+    selected_ratio_label = st.selectbox(
+        "Aspect Ratio",
+        list(ASPECT_RATIOS.keys()),
+        index=0,
+        help="Output image aspect ratio for Nano Banana Pro."
+    )
+    aspect_ratio = ASPECT_RATIOS[selected_ratio_label]
+
+    st.markdown("---")
+
+        # ------------------------------------------------
+    # EXECUTION
+    # ------------------------------------------------
+    ready = bool(uploaded_files) and bool(user_specs.strip())
+
+    if not ready:
+        st.info("📋 Please provide specifications and upload at least one image to proceed.")
+
+    if st.button("🚀 Generate Output", type="primary"):
         
-        # 1. Identify the requested workflow string (e.g., "dynamic_prompting")
+        # Validate AFTER button click instead of disabling
+        if not uploaded_files:
+            st.warning("⚠️ Please upload at least one reference image.")
+            st.stop()
+        
+        if not user_specs.strip():
+            st.warning("⚠️ Please enter product specifications / requirements.")
+            st.stop()
+
         workflow_name = current_op.get('workflow')
-        
-        # 2. Get the corresponding Python module
         workflow_module = WORKFLOW_MAP.get(workflow_name)
-        
-        if not workflow_module:
-            st.error(f"Workflow '{workflow_name}' is not defined in main.py registry.")
-            return
 
-        # 3. Execute the Workflow
+        if not workflow_module:
+            st.error(f"Workflow '{workflow_name}' is not defined in WORKFLOW_MAP.")
+            st.stop()
+
+        # ------------------------------------------------
+        # DEBUG PANEL
+        # ------------------------------------------------
+        with st.expander("🐛 Debug Panel — Pipeline Details", expanded=True):
+
+            st.markdown("### 📥 Inputs Received")
+            st.markdown(f"**Operation:** `[{current_op['id']}] {current_op['name']}`")
+            st.markdown(f"**Workflow:** `{workflow_name}`")
+            st.markdown(f"**Template File:** `{current_op.get('template')}`")
+            st.markdown(f"**Aspect Ratio:** `{aspect_ratio}`")
+            st.markdown(f"**Number of Assets:** `{len(uploaded_files)}`")
+            st.markdown(f"**User Specs:**")
+            st.code(user_specs, language="text")
+
+            st.markdown("---")
+            st.markdown("### ⚙️ Pipeline Execution Log")
+
         try:
             results = workflow_module.execute(
                 uploaded_files=uploaded_files,
-                product_specs=product_specs,
-                template_filename=current_variant['template']
+                user_specs=user_specs,
+                template_filename=current_op.get('template'),
+                aspect_ratio=aspect_ratio,
             )
-            
-            # 4. Display & Save Results
-            st.success("Generation Complete!")
-            
-            # Create columns if multiple images
-            cols = st.columns(len(results))
-            
+
+            st.success(f"✅ Generation Complete! {len(results)} image(s) generated.")
+
+            # ------------------------------------------------
+            # RESULTS & LOCAL SAVE
+            # ------------------------------------------------
+            st.markdown("---")
+            st.subheader("🖼️ Results")
+
             for idx, img in enumerate(results):
-                with cols[idx]:
-                    # A. Display Image
-                    st.image(img, caption=f"Result {idx+1}", use_container_width=True)
-                    
-                    # B. Save to Disk (Auto-save)
+                col_img, col_info = st.columns([2, 1])
+
+                with col_img:
+                    st.image(img, caption=f"Result {idx + 1}", use_container_width=True)
+
+                with col_info:
+                    # Save locally
+                    variant_name = sanitize_filename(user_specs)
                     save_path, filename = output_handler.save_image(
-                        img, 
-                        current_op['name'], 
-                        current_variant['name']
+                        img,
+                        current_op['name'],
+                        variant_name
                     )
-                    st.caption(f"Saved locally to: `{save_path}`")
-                    
-                    # C. Download Button
-                    btn = st.download_button(
-                        label="⬇️ Download Image",
+
+                    st.markdown(f"**💾 Saved Locally**")
+                    st.code(save_path, language="text")
+                    st.caption(f"📂 `outputs/{current_op['name']}/`")
+
+                    st.download_button(
+                        label="⬇️ Download",
                         data=output_handler.convert_to_bytes(img),
                         file_name=filename,
-                        mime="image/png"
+                        mime="image/png",
+                        key=f"download_{idx}"
                     )
-                
+
+            # ------------------------------------------------
+            # PAST GENERATIONS (for this operation)
+            # ------------------------------------------------
+            with st.expander(f"📁 All saved outputs for `{current_op['name']}`", expanded=False):
+                past_outputs = output_handler.get_operation_outputs(current_op['name'])
+                if past_outputs:
+                    st.markdown(f"**{len(past_outputs)}** image(s) found")
+                    history_cols = st.columns(min(len(past_outputs), 4))
+                    for h_idx, item in enumerate(past_outputs[:12]):  # Show last 12
+                        with history_cols[h_idx % 4]:
+                            hist_img = Image.open(item["path"])
+                            st.image(hist_img, caption=item["filename"], use_container_width=True)
+                else:
+                    st.info("No previous outputs found for this operation.")
+
         except Exception as e:
-            st.error(f"An error occurred during execution: {e}")
+            st.error(f"❌ Execution Error: {e}")
+            import traceback
+            with st.expander("🔴 Full Error Traceback"):
+                st.code(traceback.format_exc(), language="python")
 
 if __name__ == "__main__":
     main()
