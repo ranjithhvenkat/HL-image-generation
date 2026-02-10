@@ -1,0 +1,226 @@
+PURPOSE
+Generate a detailed image generation prompt for creating a multi-product composite layout (kit/set/bundle view) that meets e-commerce quality standards and maximizes conversion potential.
+
+PART A: FIXED FACTORS (Universal rules applicable to all multi-product composites)
+1. Composition Architecture
+Visual Hierarchy: Identify and position the hero/primary product at rule-of-thirds intersection points (preferably lower-right for Z-pattern reading flow)
+​
+
+Alignment Precision: All products must be aligned symmetrically or follow deliberate geometric patterns (grid, radial, linear cluster); avoid accidental misalignment
+​
+
+Negative Space Management: Maintain 15-25% negative space around the composition to prevent visual overcrowding; products should not touch frame edges
+
+Frame Fill Ratio: Products collectively should occupy 70-80% of the frame while maintaining breathing room between individual items
+​
+
+2. Spatial Organization Rules
+Inter-product Spacing: Maintain consistent spacing between items (proportional to smallest product dimension); spacing should be uniform unless asymmetry is deliberate and patterned
+​
+
+Depth & Layering (if applicable): For flat-lay compositions, create subtle depth through strategic overlapping (max 20% overlap) or micro-height variations; for elevated views, use front-to-back scaling
+​
+
+Scale Consistency: All products must appear at their true relative sizes unless the user specifies dimensional emphasis
+
+3. Visual Quality Standards
+Lighting Uniformity: Soft, diffused lighting with minimal harsh shadows; maintain consistent light temperature (5500-6500K for neutral) across all products
+​
+
+Focus Distribution: All products in the composition must be in sharp focus (simulated deep depth of field, f/8-f/11 equivalent)
+​
+
+Color Accuracy: Maintain true-to-life product colors; avoid color casts; background/props must not compete chromatically with products
+​
+
+Shadow Behavior: Implement subtle, consistent drop shadows (15-25% opacity) in the same direction for all items to anchor them spatially
+​
+
+4. Background Treatment
+Default Standard: Clean, pure white background (RGB 255,255,255) unless user specifies otherwise
+
+Alternative Contexts: If lifestyle/contextual background is required, ensure it remains visually recessive (desaturated, soft-focus) and never competes with product clarity
+​
+
+Surface Texture: If surface is visible, apply subtle texture (wood grain, marble, fabric weave) that enhances premium perception without distraction
+​
+
+5. Technical Output Specifications
+Resolution Directive: Ultra-high resolution, photo-realistic rendering suitable for e-commerce zoom functionality
+​
+
+Aspect Ratio Consideration: Compose for 1:1 (square) or 4:5 (portrait) ratios unless user specifies; ensure no critical elements are positioned in potential crop zones
+​
+
+File Cleanliness: No visible watermarks, text overlays, price tags, or graphical embellishments on products
+​
+
+PART B: VARIABLE FACTORS (Dynamic elements derived from user input)
+1. Product Inventory Analysis
+SKU Count: [Extract from user input] — Determine total number of distinct products to be arranged
+
+Product Categories: [Identify product types] — Tool kits, beauty sets, food bundles, electronics packages, accessory collections, etc.
+
+Size Hierarchy: [Analyze reference image or user description] — Identify which product(s) should be hero items vs. supporting items based on dimensions or user specification
+
+Product Relationships: [Determine] — Are these complementary items (drill + bits), variant sets (same product, different colors), or complete systems (main unit + accessories)?
+
+2. Layout Architecture Selection
+Analyze user requirements and product nature to select optimal arrangement:
+
+Grid Layout: Symmetrical rows/columns (ideal for: uniform-sized items, variant sets, tool collections)
+
+Prompt Element: "arranged in a precise [X×Y] grid with equal spacing"
+
+Cluster/Grouped Layout: Primary item centralized with supporting items orbiting (ideal for: main product + accessories, kits with one hero item)
+
+Prompt Element: "[Hero product] positioned at center with [accessory items] strategically clustered around it"
+
+Linear/Sequential Layout: Horizontal or vertical progression (ideal for: size-graduated items, step-by-step kits, flavor variants)
+
+Prompt Element: "arranged in a [horizontal/vertical] sequence from [left to right / top to bottom]"
+
+Flat-Lay Radial: Top-down view with items arranged in circular/semi-circular pattern (ideal for: beauty products, small tools, culinary items)
+
+Prompt Element: "overhead flat-lay composition with items arranged in a [radial/semi-circular] pattern"
+
+Exploded/Deconstructed: Items displayed separately showing kit contents inventory-style (ideal for: packaging reveals, 'what's included' shots)
+
+Prompt Element: "deconstructed kit layout displaying all components separately with clear visual separation"
+
+3. Product-Specific Contextual Elements
+Based on product category, incorporate these adaptive elements:
+
+Scale Indicators (if product size is ambiguous):
+
+For large items (furniture, appliances): [No scale needed or architectural elements for context]
+
+For medium items (power tools, kitchenware): [Optional subtle scale cues]
+
+For small items (jewelry, cosmetics, electronics accessories): [Include scale reference if user specifies or if critical]
+
+Packaging Inclusion:
+
+If user specifies "with packaging": Include product boxes/cases prominently in composition
+
+If "kit view": Show carrying case/storage solution as anchor element with contents displayed
+
+Complementary Props (only if user specifies or product category demands):
+
+Beauty/Skincare: Minimal organic elements (single flower stem, green leaves, water droplets) in background
+
+Tools/Hardware: Clean workshop surface texture or branded carrying case
+
+Food/Beverage: Ingredient accents or serving context
+
+Electronics: Tech-minimal environment (matte surfaces, cable management)
+
+4. Brand & Aesthetic Signals
+Brand Visibility: If products display prominent branding/logos, ensure all brand marks are clearly visible and oriented toward camera
+​
+
+Color Scheme Harmony: [Analyze product colors from reference image] — Ensure background and any props use analogous or complementary color theory to enhance product colors
+
+Aesthetic Tone: [Infer from product category or user specification]
+
+Premium/Luxury: Marble/metallic surfaces, dramatic side-lighting, monochromatic palette
+
+Playful/Casual: Bright backgrounds, vibrant prop colors, flat-lay perspective
+
+Professional/Technical: Clean white, precise grid alignment, technical drawing precision
+
+Organic/Natural: Wood textures, neutral tones, soft natural lighting simulation
+
+5. User-Specified Overrides
+Custom Background: [If user specifies] — Replace default white with user-defined environment
+
+Specific Arrangement: [If user provides layout preference] — Override automatic layout selection with user's grid/cluster/linear specification
+
+Angle Directive: [If specified] — Apply user's preferred camera angle (overhead 90°, three-quarter 45°, straight-on 0°)
+
+Mood/Style Keywords: [If provided] — Incorporate user's aesthetic descriptors (minimalist, vibrant, industrial, clean, organic, etc.)
+
+PART C: PROMPT ASSEMBLY LOGIC
+Step 1: Analyze the reference image(s) to extract:
+
+Product count, types, and relative sizes
+
+Current arrangement pattern (if visible)
+
+Brand colors and materials
+
+Any packaging or accessories present
+
+Step 2: Cross-reference user requirements:
+
+Layout preference stated?
+
+Background specification provided?
+
+Special emphasis on particular items?
+
+Industry/category context
+
+Step 3: Construct the image generation prompt using this structure:
+
+text
+[COMPOSITION TYPE] of [NUMBER] [PRODUCT CATEGORY] items including [LIST KEY PRODUCTS], arranged in [LAYOUT PATTERN] on [BACKGROUND DESCRIPTION]. [HERO PRODUCT] positioned [LOCATION PER RULE OF THIRDS], surrounded by [SUPPORTING ITEMS] with [SPACING DESCRIPTION]. [LIGHTING DESCRIPTION]: soft, diffused lighting from [DIRECTION], creating subtle shadows at [ANGLE]. [SURFACE/CONTEXT if applicable]. [BRAND/AESTHETIC TONE]. [TECHNICAL SPECS]: photorealistic, ultra-high resolution, sharp focus on all items, true product colors, [ASPECT RATIO], clean edges, e-commerce quality, no text overlays.
+Step 4: For JSON output format (if specified):
+
+json
+{
+  "scene_type": "multi_product_composite",
+  "products": ["product1", "product2", "..."],
+  "layout_pattern": "grid | cluster | linear | radial | exploded",
+  "camera_angle": "overhead | three_quarter | straight",
+  "background": "pure_white | lifestyle_context",
+  "lighting": "soft_diffused_front | side_dramatic | natural_window",
+  "hero_product": "primary_item_name",
+  "hero_position": "center | rule_of_thirds_intersection",
+  "spacing": "tight | balanced | generous",
+  "aesthetic_tone": "premium | playful | technical | organic",
+  "depth_effect": "flat | subtle_overlap | layered",
+  "props": "none | minimal_organic | contextual",
+  "aspect_ratio": "1:1 | 4:5 | 16:9",
+  "quality_specs": "photorealistic, 8K, deep_focus, color_accurate"
+}
+PART D: EDGE CASE HANDLING
+Highly Varied Product Sizes (e.g., large case + small accessories):
+
+Position largest item as anchor in background/center
+
+Arrange smaller items in foreground or clustered grouping
+
+Maintain visual weight balance through strategic positioning
+
+Monochrome Product Sets (all products same color):
+
+Increase reliance on lighting contrast and shadow definition
+
+Consider subtle background tint (complementary color) to prevent flatness
+
+Emphasize texture and form through directional lighting
+
+Reflective/Glass Products:
+
+Specify "controlled reflections with gradient lighting to minimize glare"
+
+Position matte products adjacent to glass items for visual contrast
+
+Vertical vs. Horizontal Dominant Products:
+
+For bottles/tall items: Use linear horizontal arrangement or radial pattern
+
+For flat items: Stack with slight offset or grid arrangement
+
+Food/Perishable Products:
+
+Emphasize freshness through color saturation and highlight placement
+
+Include minimal contextual elements (cutting board texture, linen fabric)
+
+EXAMPLE PROMPT OUTPUT
+Input Scenario: User provides reference image of Milwaukee tool kit (2 drills, 2 batteries, charger, case)
+
+Generated Prompt:
+"Professional multi-product composite photograph of a 6-piece Milwaukee cordless drill kit arranged in an exploded layout on a pure white background. Red M18 Fuel hammer drill and hex impact driver positioned in the upper third, oriented at 45-degree angles with drill bits visible, flanked by two M18 RedLithium batteries in the middle section. Red multi-voltage charger with visible LED display and power cable neatly coiled placed lower left, with the branded red Milwaukee Fuel carrying case positioned lower right as anchor element. All items aligned in a balanced asymmetric grid with consistent 3-inch spacing between components, creating a comprehensive 'what's included' inventory view. Soft, diffused lighting from top-front at 45 degrees creates subtle drop shadows beneath each item at 15% opacity, anchoring products to the surface. Brand logos prominently visible and readable on all items. Professional technical aesthetic with industrial precision. Photorealistic, ultra-high resolution, deep depth of field (f/11 equivalent), accurate Milwaukee red (RGB 200,16,46) and black color reproduction, 4:5 aspect ratio, e-commerce quality, all items in sharp focus, no text overlays."

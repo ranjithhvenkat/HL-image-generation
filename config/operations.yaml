@@ -205,21 +205,21 @@ operations:
           best_for: "Premium industrial equipment, precision tools, machinery, high-end B2B products"
   
   # OPERATION 36: Requires LLM to imagine "Christmas Decorations"
-  - id: "39"
-    name: "Solid/Plain Background"
+  - id: "40"
+    name: "SKU/Composite product"
     workflow: "dynamic_prompting"
-    description: "Generate plain BG for products."
+    description: "Generate composite"
+    input_image_constraints:
+      - "Product clearly visible and in focus"
+      - "Adequate lighting (no extreme shadows or overexposure)"
+      - "Product fills 50-80% of frame"
+      - "Minimal clutter or distracting elements"
+      - "Product orientation appropriate (upright for furniture, flat for apparel items)"
+      - "Reasonable image quality (not heavily pixelated or blurry)"
+      - "Product identifiable (brand, material, type discernible)"
     variants:
-      - name: "Studio shot"
-        template: "op39_solid_background.txt"
-        description: "Simple plain background."
-
-  # EXAMPLE of a Static Operation (for testing Workflow 1)
-  - id: "99"
-    name: "Quick_Enhance"
-    workflow: "static_prompting"   # <--- USES WORKFLOW 1
-    description: "Simple enhancement without LLM reasoning."
-    variants:
-      - name: "standard"
-        template: "op99_enhance.txt" # Contains just: "High resolution, 4k product photo"
-        description: "Standard upscale."
+      - name: "Kit/Composite View"
+        template: "sku_composite_creation.txt"
+        description: "SKu"
+        best_for: "Premium industrial equipment, precision tools, machinery, high-end B2B products"
+  
