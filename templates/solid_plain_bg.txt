@@ -1,0 +1,112 @@
+You must follow these steps in exact order. Do not skip steps.
+
+STEP 1: Analyze input image (mandatory)
+If an input image is provided, examine it carefully and extract these exact details:
+
+A) Product identity
+
+Exact product type/category
+Key model characteristics and design features
+Installation type (must choose one): freestanding-on-floor / tabletop-on-surface / wall-mounted-suspended / hanging-strap-chain / handheld
+B) Physical attributes
+
+Precise colors (include hex codes if discernible)
+Materials and finishes (matte/glossy/textured/ceramic/chrome/glass/plastic, etc.)
+Shape and form factor
+Proportions and scale cues (compact/wide/tall; thick/thin edges)
+C) Brand elements (critical: preserve exactly)
+
+Any visible logos (position, style)
+Any text/labels (transcribe exactly; if unreadable say “unreadable—preserve as-is”)
+Badges, stickers, marks
+Typography style if readable
+D) Components and attachments (critical)
+
+List every visible component/accessory (hoses, spray heads, faucets, cables, adapters, brackets, screws, remotes, stands)
+For each: describe where it attaches and its orientation
+Mark visibility: fully visible vs partially cropped (and where cropped)
+E) Geometry, contact, and context (critical)
+
+Identify what planes exist in the input: wall plane, floor plane, tabletop plane, none
+Note how the product is physically supported (touching floor, sitting on surface, mounted to wall)
+Note whether the underside is visible or hidden
+Crop status: fully in frame or partially cropped (where)
+F) Current state
+
+Open/closed/off/resting position (must be preserved)
+Condition (pristine/wear), reflections and gloss level to maintain
+Write this analysis explicitly before generating the prompt.
+
+If no input image is provided, use the provided product type to describe a standard accurate representation of that product category.
+
+STEP 2: Construct studio scene specifications (mandatory)
+
+Background
+
+Color: choose one: Pure white (#FFFFFF) / Light gray (#F5F5F5) / Soft beige (#FAF9F6) / Pale neutral tone
+Texture: seamless, perfectly smooth, no pattern, no visible gradient
+Choose scene type based on installation type from Step 1A
+Scene Type A: Freestanding-on-floor or Tabletop-on-surface
+
+Infinity curve backdrop with a subtle ground plane
+Shadows: soft contact shadow at the base
+Reflection: optional and subtle only if physically plausible (0–20%); never mirror-like unless the product is on a clearly glossy surface
+Scene Type B: Wall-mounted / suspended (critical for wall-hung toilets, wall shelves, wall TVs, sconces, floating vanities)
+
+Use a plain studio white vertical wall plane behind the product (still “solid background”)
+Include minimal wall-plane cue (very subtle wall shading only) to prevent “floating in empty space”
+Shadows: soft realistic wall shadow and slight under-shadow consistent with lighting
+Reflection: do not add a floor reflection unless a real floor plane is intentionally included and logically visible
+Do not fabricate mounting brackets or hidden hardware if not visible in input
+Scene Type C: Hanging (strap/chain)
+
+Keep strap/chain geometry, thickness, and attachment points exactly
+Realistic gravity and tension; no extra loops or missing links
+Product positioning
+
+Preserve original camera angle and perspective from the input (do not significantly change viewpoint)
+Center the product with 10–20% margin from edges unless the input crop must be preserved
+Crop policy (choose one and follow it):
+Option 1 (recommended): preserve the exact crop of the input; do not outpaint missing product parts
+Option 2: expand background only; do not invent unseen product parts—keep them cropped
+Lighting setup
+
+Professional soft diffused studio lighting (key + fill + rim)
+Neutral white balance (5500K)
+Shadows must be physically consistent and must ground the product (no hovering)
+Highlights must match material behavior (ceramic vs chrome vs glass); no overexposure
+Avoid harsh contrast; avoid dramatic lighting
+STEP 3: Negative constraints (mandatory “do not” list)
+You must explicitly include these in the final prompt:
+
+Do not change product geometry, silhouette, proportions, or perspective
+Do not add, remove, or relocate parts/components
+Do not alter or hallucinate attachments (hoses/cables/straps); preserve exactly as visible and keep connection points unchanged
+Do not reconstruct missing/cropped regions of product or accessories
+Do not change open/closed state or orientation of movable parts
+Do not garble or replace logos/text; preserve exactly; if unreadable, keep it unreadable
+Do not introduce unrealistic reflections (especially reflections that reveal an invented underside)
+Do not create a floating effect; enforce correct contact/wall shadowing based on installation type
+STEP 4: Generate final prompt (strict format)
+Output must follow exactly this structure:
+
+Professional studio product photography. Background replacement / isolation edit.
+
+PRODUCT: [Insert exact description from Step 1: colors, materials, finishes, shape, proportions]. [Include all brand text/logos exactly as in Step 1C with positions]. [List all visible components/attachments from Step 1D including where they connect]. [State from Step 1F].
+
+SCENE: Product isolated and centered on a solid [background color] seamless studio background. Use [Scene Type A/B/C] consistent with the installation type. Preserve original camera angle and perspective. [State chosen crop policy explicitly].
+
+LIGHTING: Soft diffused key/fill/rim lighting. Realistic physically consistent shadows that correctly ground the product (contact shadow for surface-based items; wall shadow/under-shadow for wall-mounted items). Reflections only if physically plausible and subtle.
+
+TECHNICAL: High-resolution commercial e-commerce photo, tack-sharp focus across the entire product, no depth-of-field blur, neutral white balance (5500K), minimal lens distortion, clean edges, no gradients, no texture, no extra props.
+
+PRESERVE / DO NOT: [Insert the full Step 3 “do not” list verbatim or near-verbatim].
+
+Mandatory checks (before finalizing prompt)
+
+Did I preserve installation logic (wall-mounted vs freestanding) with correct shadowing and no impossible reflection?
+Did I forbid invention of cropped/missing parts and preserve attachments exactly?
+Did I preserve logos/text exactly and avoid hallucinated typography?
+Did I keep the camera angle consistent with the input?
+Final output rule
+Only provide the final tailored prompt (Step 4) unless the user explicitly requests the analysis.

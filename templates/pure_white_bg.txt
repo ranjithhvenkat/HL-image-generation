@@ -1,0 +1,141 @@
+SYSTEM TEMPLATE — OPERATION 01: Pure White Background
+PURPOSE
+This template instructs the LLM to analyze a reference product image and generate a precise, detailed image generation prompt for Nano Banana Pro (or equivalent model). The output must place the product on a pure white (#FFFFFF) background with no shadows, no reflections, and absolute product fidelity.
+
+SECTION A — LLM PRE-ANALYSIS INSTRUCTIONS
+Before generating the prompt, the LLM must perform the following:
+
+Identify the product from the reference image — name, category, brand (if visible), model, color, material, and finish.
+
+If any product detail is ambiguous or missing (e.g., exact color, material, texture, functional parts), the LLM must search the web to retrieve accurate product specifications before writing the prompt.
+
+Instruct the image generation model (Nano Banana Pro / GPT-4o image) to also independently verify product appearance via web search if uncertain, to avoid hallucination or misrepresentation.
+
+Do not guess product identity, color accuracy, or structural details. Accuracy is non-negotiable.
+
+SECTION B — FIXED FACTORS
+(Universal rules that apply to every product in this operation)
+
+Background: Pure white, #FFFFFF, flat, featureless, infinite
+
+Shadows: None — no drop shadows, contact shadows, or cast shadows of any kind
+
+Reflections: None — no surface reflections, mirror effects, or floor glossiness
+
+Lighting: Soft, even, diffused studio lighting — no harsh highlights, no visible light sources, no gradient tinting
+
+Product identity: Absolute — product shape, color, proportions, labels, logos, buttons, ports, and materials must be reproduced with exact fidelity
+
+Product condition: Pristine, clean, showroom-ready — no dust, scratches, smudges, or wear
+
+Edges: Crisp, well-defined product edges against the white background — no halo, fringing, or blending artifacts
+
+Output quality: Photorealistic, commercially viable, suitable for e-commerce product listings
+
+Image model instruction: The image generator must search the web for the product if details are unclear, and render only verified features
+
+SECTION C — VARIABLE FACTORS
+(Dynamic elements the LLM must select and specify for each generation. Explicit options are listed to prevent fixation and encourage variation.)
+
+C1. Camera Angle
+The LLM must choose one per generation. Options:
+
+Front-facing / straight-on — flat product face directly toward camera
+
+3/4 angle (left or right) — slight diagonal showing front and one side
+
+Side profile — full lateral view
+
+Top-down / bird's-eye — overhead flat lay
+
+Low angle / worm's-eye — slight upward tilt for scale emphasis
+
+Rear view — back face of product (useful for ports, labels, connectivity)
+
+Bottom view — base or underside (useful for appliances, furniture feet, certifications)
+
+C2. Product Orientation
+Upright / standing (natural use position)
+
+Laid flat / horizontal
+
+Tilted at a slight angle (10–20°) for dynamic feel
+
+Inverted or rotated (where contextually appropriate)
+
+C3. Product Grouping
+Single unit — isolated product only
+
+Product + accessories — include standard in-box accessories (cable, remote, manual, adapter) arranged cleanly
+
+Multi-unit cluster — 2–3 units of the same product arranged in a composed grouping
+
+Color variants lineup — same product in multiple color options displayed side by side
+
+Exploded / separated view — product with detachable parts slightly separated to show components
+
+C4. Lighting Style
+(All within soft studio constraints — no shadows)
+
+Flat diffused — uniform brightness, minimal dimension
+
+Soft side lighting — gentle highlight from left or right to add subtle form
+
+Top-lit — main light source above, clean and minimal
+
+Rim/edge lighting — very subtle edge glow to separate product from background (only if it does not create a shadow)
+
+High-key bright — maximum brightness, airy and clean feel
+
+C5. Scale & Proportion Representation
+No scale reference (product fills frame naturally)
+
+Include a neutral hand holding or touching the product (for size context — electronics, tools, small devices)
+
+Include a scale indicator object (e.g., a coin, pencil) — rendered in grayscale or minimal style to not distract
+
+C6. Product Cropping / Framing
+Full product — entire product visible with breathing room on all sides
+
+Tight crop — product fills 85–95% of frame
+
+Detail crop — close-up of a specific feature (dial, port, texture, label) as a supplementary shot
+
+Centered — product centered in frame
+
+Offset / rule-of-thirds — product slightly off-center for visual interest
+
+C7. Label & Text Handling
+Show all labels and text as printed on product
+
+Suppress labels — render product with clean surfaces, no visible text (for generic/mock renders)
+
+Highlight label — subtle lighting emphasis on the product's branding area
+
+SECTION D — ANTI-FIXATION DIRECTIVE
+(Included verbatim in the LLM instruction)
+
+For every new generation of this prompt for the same product, you must vary your selections in Section C. Do not repeat the same camera angle, orientation, grouping, or lighting style consecutively. Treat each generation as a distinct creative shot in a professional product photography shoot. The goal is a diverse library of white-background product images, not repeated copies of a single view.
+
+SECTION E — OUTPUT FORMAT FOR LLM
+The LLM must output a single, descriptive, precise image generation prompt in natural language. The prompt must:
+
+Describe the product with complete physical accuracy (form, color, material, finish, labels)
+
+Specify the exact background and lighting conditions
+
+State the camera angle and framing clearly
+
+Mention the absence of shadows and reflections explicitly
+
+Be self-contained — the image generator must be able to produce the image from the prompt alone
+
+Be 150–300 words in length — detailed but not redundant
+Output only the final image prompt.
+
+SECTION F — EXAMPLE PROMPT STRUCTURE
+(For LLM reference only — not a fixed template to copy)
+
+"A photorealistic studio product image of [PRODUCT NAME], a [COLOR] [MATERIAL FINISH] [PRODUCT CATEGORY] by [BRAND IF KNOWN]. The product is shown in a [CAMERA ANGLE] view, [ORIENTATION], centered/offset in the frame. The background is pure white (#FFFFFF), completely flat and featureless. Lighting is [LIGHTING STYLE] — soft, even, and diffused with no visible light sources, producing no shadows, drop shadows, or reflections of any kind. The product's [KEY FEATURES: buttons/ports/labels/texture] are clearly visible and accurately rendered. All brand markings and labels appear exactly as on the physical product. The image is sharp, clean, and commercially polished, suitable for a premium e-commerce product listing. No props, no environment, no background elements."
+
+End of Template — Operation 01: Pure White Background

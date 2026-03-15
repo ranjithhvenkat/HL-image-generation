@@ -46,18 +46,23 @@ def load_config() -> List[Dict[str, Any]]:
 
 
 def sanitize_filename(text: str) -> str:
-    """Helper to turn 'Make it Christmas!!' into 'Make_it_Christmas'"""
-    clean = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-    return clean.strip().replace(' ', '_')[:20]
-
-
+    """Sanitize text for use in filenames — remove all unsafe characters."""
+    # Replace newlines, tabs, carriage returns with spaces first
+    clean = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    # Remove non-alphanumeric chars (keep spaces for now)
+    clean = re.sub(r'[^a-zA-Z0-9\s]', '', clean)
+    # Collapse multiple spaces into one, then replace with underscore
+    clean = re.sub(r'\s+', '_', clean.strip())
+    # Limit length
+    return clean[:30] if clean else "output"
+    
 # ==========================================
 # MAIN APPLICATION
 # ==========================================
 def main():
     st.set_page_config(page_title="Nano Banana Pro", layout="wide")
 
-    st.title("🍌 Nano Banana Pro: GenAI Studio")
+    st.title("GenAI Studio")
     st.markdown("---")
 
     operations = load_config()
@@ -129,7 +134,7 @@ def main():
         # ------------------------------------------------
     # EXECUTION
     # ------------------------------------------------
-    ready = bool(uploaded_files) and bool(user_specs.strip())
+    ready = bool(uploaded_files) or bool(user_specs.strip())
 
     if not ready:
         st.info("📋 Please provide specifications and upload at least one image to proceed.")
@@ -141,9 +146,9 @@ def main():
             st.warning("⚠️ Please upload at least one reference image.")
             st.stop()
         
-        if not user_specs.strip():
+        """if not user_specs.strip():
             st.warning("⚠️ Please enter product specifications / requirements.")
-            st.stop()
+            st.stop()"""
 
         workflow_name = current_op.get('workflow')
         workflow_module = WORKFLOW_MAP.get(workflow_name)

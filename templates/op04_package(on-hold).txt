@@ -1,0 +1,107 @@
+Generates realistic packed views from product input like "neckband" → complete box/blister/retail packaging
+
+This production template takes any product name (ex: "neckband") and auto-generates photorealistic packaging renders with style selection, cut layouts, and e-commerce-ready visuals. Heavy text minimized for clean premium aesthetic.
+
+Core Packaging Physics
+text
+PRODUCT INTEGRATION: Real product 3D scanned into packaging
+LIGHTING: Studio softbox 5600K + fill card shadows
+SHADOWS: Natural package-product interaction
+MATERIALS: Accurate paper/cardboard textures, plastic blister clarity
+ANGLE: 15° hero elevation for maximum shelf pop
+Master Packaging Prompt System
+text
+Photorealistic e-commerce product packaging render for [PRODUCT_NAME].
+
+PACKAGING STYLE: [box/blister/retail_display] with clean minimalist design. White/kraft background, subtle brand window cutout showing product inside.
+
+Product perfectly positioned within packaging showing key features through die-cut window. Natural shadows between product and package interior. Front-facing 15° elevation angle.
+
+Clean typography - product name + 3 key benefits maximum. NO heavy text walls. Premium matte/gloss finish appropriate for category.
+
+Include unfolded CUT LAYOUT VIEW beside packed product (50% scale): Precise dieline showing front/back/side panels, die-cut window position, fold lines.
+
+Studio photography lighting 5600K softbox + fill card. White seamless background. Category: [Apparel/Tools/etc].
+JSON Input/Output Template
+json
+{
+  "input_product": "neckband",
+  "packaging_style": "[box/blister/retail_display]",
+  "category": "[Apparel/Electronics/etc]",
+  "key_features": ["wireless charging", "IPX7 waterproof", "20hr battery"],
+  "brand_name": "[brand]",
+  "complete_packed_prompt": "[full_packaging_prompt]",
+  "cut_layout_prompt": "[dieline_view_prompt]"
+}
+🛠️ NECKLACE EXAMPLE (User Input: "neckband")
+Input Processing
+text
+Product: neckband → Electronics category
+Style: Select box (common for accessories)
+Features: Wireless audio, sweatproof, 15m range
+1. PACKED BOX RENDER
+text
+Photorealistic e-commerce neckband packaging box render. Clean white cardboard box with precision die-cut window revealing neckband drivers and cable neatly coiled inside.
+
+Front panel: "Wireless Neckband" + icons (battery 20h, IPX7, Bluetooth 5.2). Matte white finish, subtle emboss logo. Product shadow interaction with box interior foam.
+
+15° hero elevation angle. Studio softbox lighting 5600K. White seamless background.
+Result: Premium boxed neckband ready for Amazon listing.
+​
+
+2. CUT BOX LAYOUT
+text
+Technical cut layout of neckband box packaging (50% scale beside packed view). Precise dieline showing:
+- Front panel (100x150mm): Die-cut window 60x40mm center
+- Back panel: 3 bullet icons only (NO paragraphs)
+- Side panels: Fold tabs, glue flap positions
+- Top/bottom flaps with lock tabs
+
+Clean linework, fold scores, die-cut paths accurate for production.
+🏷️ 6 CATEGORY TEMPLATES
+Apparel (Box)
+text
+[Product] apparel gift box. Kraft paper exterior, satin ribbon closure, internal fabric pouch containing product. Window shows folded garment. Minimal "Premium [Material]" branding.
+Tools (Blister Pack)
+text
+[Tool] clear PET blister pack on printed card header. Secure molded plastic cavity, tamper-evident seal. Card shows 3 icons: durability, precision, warranty. Hang-sell punch hole.
+Electronics (Retail Display)
+text
+[Device] acrylic retail display tray. Suspended product with LED backlighting. Base card minimal specs + QR code. Shelf-ready with price ticket holder.
+Beauty (Box)
+text
+[Cosmetic] matte black gift box, magnetic closure, internal velvet tray. Window reveals product upright. Gold foil branding, satin ribbon pull.
+Plumbing (Clamshell)
+text
+[Fitting] heavy-duty clamshell blister. Molded plastic cavity shows thread profile. Card stock header with torque specs icon, UPC barcode.
+Furniture (Box)
+text
+[Hardware] protective shipping box, foam corner protectors visible. "Assembly Required" icon only. Cut layout shows flat-pack folding.
+🚀 PRODUCTION WORKFLOW
+Step 1: User Input → Auto-Categorize
+
+text
+"neckband" → Electronics → Box packaging → Wireless features
+"drill bit" → Tools → Blister pack → Durability icons
+Step 2: Generate Dual Views
+
+text
+Prompt 1: Packed product hero shot
+Prompt 2: Cut layout technical drawing
+Combine: Mockup shows both
+Step 3: E-commerce Optimization
+
+text
+Thumbnail: Packed box front
+Zoom: Shows internal product detail
+Alt text: "[Product] premium packaging"
+✅ QUALITY SPECIFICATIONS
+text
+□ Product fits perfectly in packaging ✓
+□ Die-cut window reveals key features ✓
+□ Cut layout production accurate ✓
+□ Minimal text (3 icons max) ✓
+□ Natural product-package shadows ✓
+□ Studio lighting consistency ✓
+□ Category-appropriate materials ✓
+□ Shelf-ready dimensions ✓

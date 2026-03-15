@@ -13,7 +13,7 @@ client = genai.Client(
     http_options={'api_version': 'v1alpha'}
 )
 
-IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "gemini-3-pro-image-preview")
+IMAGE_MODEL = os.getenv("IMAGE_MODEL_NAME", "gemini-3.1-flash-image-preview")
 
 # Aspect ratio to pixel dimensions mapping
 ASPECT_RATIO_DIMENSIONS = {

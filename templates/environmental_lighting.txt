@@ -1,0 +1,369 @@
+Template Purpose
+This template instructs the LLM to generate high-fidelity image prompts that simulate realistic environmental lighting conditions for e-commerce product photography, ensuring products appear attractive, natural, and commercially viable.
+
+FIXED FACTORS (Universal Rules - Apply to ALL Products)
+A. Lighting Physics & Realism
+Light behavior must follow real-world physics: Direction, intensity, falloff, color temperature, shadows, highlights, and reflections must be coherent and realistic
+
+No artificial or lifeless appearance: Images must have depth, atmosphere, and dimensional quality
+
+Appropriate shadow rendering: Shadows must match the lighting type (soft diffused for daylight, sharp for studio, colored for neon)
+
+Specular highlights: Glossy/reflective surfaces must show appropriate catchlights and reflections consistent with the light source
+
+Color temperature accuracy: Must specify Kelvin values or descriptive temperature (warm 3000K, neutral daylight 5600K, cool 6500K+)
+
+B. Background & Staging Logic
+White background input: If the reference image has a plain white/neutral background, generate an appropriate environmental context that:
+
+Matches the product category and use case
+
+Creates lifestyle appeal without overwhelming the product
+
+Maintains product as the clear focal point
+
+Ensures the staged environment is logical and realistic (e.g., furniture in interior spaces, kitchenware in kitchens, electronics on desks)
+
+Raw/phone-captured input: If the reference image is a casual phone photo with cluttered or inconsistent lighting:
+
+Clean and recontextualize the product in a professional environment
+
+Apply the requested lighting type with proper staging
+
+Remove distracting elements while preserving product authenticity
+
+Environmental coherence: Background elements, props, and surfaces must harmonize with the lighting type (e.g., brick walls with warm daylight, minimalist surfaces for studio, urban elements for neon)
+
+**Neon/RGB specific staging rules:**
+- Background must be ABSTRACT and GEOMETRIC, never realistic or recognizable scenes
+- Use clean surfaces, angular platforms, geometric shapes, or tech-inspired minimal forms [web:68][web:71]
+- Neon tube lights should illuminate the scene but NOT be visible as background objects
+- Light sources should be off-camera or highly abstracted (e.g., colored gradient washes, geometric light patterns)
+- Avoid: cityscapes, street scenes, buildings, windows, storefronts, atmospheric smoke/steam that obscures product detail
+- Goal: Create a clean, social-media-ready aesthetic that highlights the product with vibrant lighting while maintaining e-commerce clarity [web:70]
+
+C. E-commerce Standards
+Product prominence: Product must remain the primary subject; lighting should enhance, not distract
+
+Color accuracy: Product colors must be true-to-life under the specified lighting condition
+
+Detail preservation: Textures, materials, and fine details must be clearly visible
+
+Professional composition: Follow rule of thirds, appropriate depth of field, and balanced framing
+
+High resolution intent: Describe sharp focus, crisp details, and professional-grade clarity
+
+D. Lighting Type Specifications
+DAYLIGHT:
+
+Natural sunlight characteristics (5500-6500K)
+
+Specify time of day if relevant (golden hour 3000-4000K warm glow, midday 5500K+ bright and neutral, overcast 6000-7000K soft diffused)
+
+Include directional cues (window light, outdoor shade, direct sun vs diffused)
+
+Natural shadows with soft edges (unless harsh midday specified)
+
+STUDIO:
+
+Controlled artificial lighting (5000-5600K neutral white)
+
+Specify setup: softbox, key light + fill light, rim/backlight if applicable
+
+Minimal to no shadows (unless intentional for drama)
+
+Clean, professional, evenly lit appearance
+
+Background typically seamless or minimal
+
+INDOOR WARM:
+
+Warm artificial lighting (2700-3200K)
+
+Cozy, intimate atmosphere
+
+Typical sources: incandescent bulbs, lamps, warm LED, firelight ambiance
+
+Soft gradients from light to shadow
+
+Contextual interior environment (living room, bedroom, café, etc.)
+
+NEON/RGB:
+- Vibrant colored light sources (specify colors: cyan, magenta, purple, pink, blue, orange, etc.)
+- Modern, tech-forward, or futuristic aesthetic
+- Colored reflections and highlights on product surfaces
+- BACKGROUND REQUIREMENT: Abstract, geometric, or minimalist designs that complement the product
+  * Preferred backgrounds: Geometric shapes, tech patterns, gradient surfaces, angular platforms, abstract forms, clean architectural elements
+  * AVOID: Realistic cityscapes, urban street scenes, buildings, recognizable environments, tube lights as background elements, atmospheric haze obscuring product
+- Background should contrast or harmonize with product color while remaining non-distracting
+- Dark or neutral base tones (black, dark grey, navy) with neon accent lighting
+- Can include multiple colored light sources from different angles
+- Product must remain in sharp focus; background can have subtle depth blur if needed
+
+SUNSET/GOLDEN HOUR:
+
+Warm directional light (2500-3500K orange/golden tones)
+
+Long soft shadows
+
+Atmospheric glow and haze
+
+Rim lighting effect on edges
+
+Rich warm color palette
+
+VARIABLE FACTORS (Dynamic - Adapt to Product & User Requirements)
+A. Product-Specific Adaptations
+Scale reference (for large items like furniture, beds, appliances):
+
+Include contextual scale indicators (human figure in grayscale for beds, room context for furniture, hand interaction for small items)
+
+Material considerations:
+
+Reflective/glossy products: Emphasize controlled reflections and catchlights
+
+Matte products: Focus on form and texture through lighting gradients
+
+Transparent products: Show light transmission and refraction
+
+Fabric/textiles: Highlight texture, weave, and how light interacts with fibers
+
+Functional context:
+
+Show products in use scenarios appropriate to their category
+
+For technical products: May require cleaner, more neutral presentations
+
+For lifestyle products: Richer environmental storytelling
+
+B. User-Specified Parameters
+Integrate these user requirements into the prompt:
+
+Lighting type (required): daylight/studio/indoor warm/neon/sunset/other
+
+Intensity (if specified): Bright, moderate, soft, dramatic, etc.
+
+Direction (if specified): Front-lit, side-lit (left/right), backlit, top-down, bottom-up
+
+Additional mood/atmosphere (if specified): Moody, airy, dramatic, clean, cozy, vibrant, etc.
+
+NEGATIVE PROMPT FRAMEWORK ⚠️ [CRITICAL ADDITION]
+Purpose: Prevent common AI artifacts, hallucinations, and quality degradation that compromise e-commerce viability.
+
+UNIVERSAL NEGATIVE PROMPTS (Apply to ALL lighting operations)
+Category 1: Text & Branding Artifacts 🚫 [HIGHEST PRIORITY]
+text
+no text, no typography, no letters, no words, no watermarks, no logos, no signs, no labels, no captions, no numbers, no characters, no signatures, no brand names, no random text elements, no written content, no readable text
+Why: AI models frequently hallucinate text, especially in neon/urban scenes and product labels.
+
+Category 2: Product Integrity
+text
+no distorted product, no warped geometry, no melted shapes, no deformed structure, no extra parts, no duplicated elements, no missing components, no asymmetrical defects (unless product is intentionally asymmetric), no blurred product edges, no product mutations, no morphed product features
+Why: Maintains product authenticity and prevents structural hallucinations.
+
+Category 3: Material & Texture Corruption
+text
+no inconsistent textures, no blurry surfaces, no pixelated areas, no texture bleeding, no material mixing, no fabric distortions, no unrealistic reflections, no impossible surface properties, no texture artifacts
+Why: E-commerce requires accurate material representation for buyer confidence.
+
+Category 4: Lighting Failures
+text
+no inconsistent shadows, no multiple shadow directions, no floating shadows, no impossible reflections, no conflicting light sources, no unnatural color casts on product, no overexposure on product, no underexposure on product, no harsh burnt highlights on product surface, no lighting artifacts
+Why: Lighting physics must be coherent to appear professional and trustworthy.
+
+Category 5: Background Contamination
+text
+no cluttered backgrounds, no distracting elements, no unrelated objects in focus, no human figures (unless specifically requested for scale), no faces, no extra products, no brand items (unless specified), no busy patterns competing with product, no background chaos
+Why: Product must remain the clear focal point.
+​
+
+Category 6: Image Quality Issues
+text
+no blur, no noise, no grain, no artifacts, no compression artifacts, no banding, no posterization, no chromatic aberration, no low resolution appearance, no pixelation, no jpeg artifacts, no image degradation
+Why: E-commerce images must meet high technical quality standards.
+
+LIGHTING-SPECIFIC NEGATIVE PROMPTS
+For DAYLIGHT:
+text
+no artificial studio look, no flat lighting, no harsh computer-generated appearance, no oversaturated colors, no neon elements, no studio equipment visible, no indoor warm lighting mixed, no cold harsh shadows
+For STUDIO:
+text
+no environmental clutter, no outdoor elements, no natural outdoor textures (grass, plants, etc. unless prop is specified), no colored lighting, no dramatic shadows, no moody atmosphere, no lifestyle staging elements, no window light
+For INDOOR WARM:
+text
+no cold blue tones, no harsh daylight, no neon colors, no industrial elements, no outdoor elements, no sterile clinical lighting, no studio lighting, no bright white lighting
+For NEON/RGB: 🚫 [EXTRA TEXT PROTECTION + BACKGROUND CONTROL]
+
+no text, no typography, no letters, no words, no signage, no graffiti, no readable characters, no neon signs with text, no brand names, no labels, no random text overlays, no written elements, no numbers on signs, no symbols with text, no posters with text, no oversaturated product colors that alter true appearance, no complete darkness obscuring product details, no excessive color bleeding, no cityscape backgrounds, no urban street scenes, no buildings, no skyscrapers, no windows in background, no realistic environments, no cars, no streets, no storefronts, no recognizable locations, no visible neon tube lights in background, no cluttered urban elements, no atmospheric steam, no excessive haze, no smoke obscuring product, no blurred cityscapes, no environmental distractions
+
+For SUNSET/GOLDEN HOUR:
+text
+no artificial lighting, no studio look, no neon elements, no cold blue tones, no midday harsh light, no overblown highlights losing product detail, no indoor lamp lighting, no multiple conflicting light sources
+IMPLEMENTATION INSTRUCTIONS FOR LLM
+Step 1: Generate Positive Prompt
+Follow all Fixed and Variable Factor rules
+
+Create detailed, rich description of desired image
+
+Include all technical specifications (color temperature, light direction, staging, materials)
+
+Step 2: Construct Negative Prompt
+​
+ALWAYS include Category 1 (Text & Branding) - highest priority
+​
+
+ALWAYS include Category 2 (Product Integrity) and Category 6 (Image Quality)
+
+Add relevant lighting-specific negatives based on user's chosen lighting type
+
+Add Categories 3-5 based on product type and context needs
+
+Step 3: Tiered Negative Prompt Strategy (Recommended Format)
+​
+text
+TIER 1 - CORE NEGATIVES (always present):
+no text, no watermarks, no logos, no distorted product, no blur, no artifacts, no inconsistent shadows, no pixelation
+
++ TIER 2 - LIGHTING-SPECIFIC NEGATIVES:
+[Add based on lighting type - see lighting-specific section above]
+
++ TIER 3 - CONTEXTUAL NEGATIVES (if needed):
+[Add based on product category or specific staging requirements]
+OUTPUT FORMAT REQUIREMENTS
+The LLM must output ONLY a structured JSON object OR a detailed descriptive text prompt. Format selection depends on the downstream image generator's requirements.
+
+JSON FORMAT (if applicable):
+json
+{
+  "main_subject": "[Precise product description from reference image]",
+  "lighting_type": "[Specified lighting type]",
+  "color_temperature": "[Kelvin value or descriptive temperature]",
+  "light_direction": "[Direction and angle]",
+  "light_intensity": "[Brightness level]",
+  "background_environment": "[Detailed environmental context]",
+  "staging_elements": "[Props, surfaces, context objects]",
+  "atmospheric_qualities": "[Mood, depth, haze, clarity]",
+  "material_rendering": "[How light interacts with product materials]",
+  "shadow_characteristics": "[Shadow type, softness, direction]",
+  "technical_specs": "[Resolution, focus, composition notes]",
+  
+  "negative_prompt": {
+    "core_exclusions": "[Category 1 + 2 + 6: Text, product integrity, quality issues]",
+    "lighting_exclusions": "[Lighting-specific negatives based on chosen type]",
+    "contextual_exclusions": "[Product/scene-specific negatives: Categories 3, 4, 5 as needed]"
+  }
+}
+DESCRIPTIVE TEXT FORMAT (if applicable):
+POSITIVE PROMPT:
+A single, cohesive paragraph (150-250 words) structured as follows:
+"[Product description], [lighting type with technical details including color temperature and direction], [background and environmental staging with specific details], [material and surface rendering qualities], [shadow and highlight characteristics], [atmospheric and mood elements], [technical photography specs: sharp focus, high resolution, professional composition]."
+
+NEGATIVE PROMPT:
+[Comma-separated list combining core, lighting-specific, and contextual negatives, 50-100 words]
+
+Example:
+
+text
+no text, no typography, no letters, no watermarks, no logos, no distorted product, no warped geometry, no blurred product edges, no inconsistent textures, no blur, no artifacts, no pixelation, no inconsistent shadows, no cluttered backgrounds, [+ lighting-specific negatives]
+QUALITY ASSURANCE CHECKLIST (for LLM to verify before outputting)
+Positive Prompt Verification:
+
+☐ Is the lighting type clearly specified with technical parameters?
+
+☐ Does the background/staging logically match the product category?
+
+☐ Are material interactions with light described accurately?
+
+☐ Is the product the clear focal point?
+
+☐ Do shadows, highlights, and color temperature form a coherent system?
+
+☐ Is the prompt detailed enough to generate a photorealistic, commercially viable image?
+
+☐ Have user-specified parameters been integrated?
+
+☐ Is the output format correct (JSON or descriptive text as required)?
+
+Negative Prompt Verification:
+
+☐ Are text/typography exclusions included (Category 1)?
+
+☐ Are product integrity exclusions included (Category 2)?
+
+☐ Are image quality exclusions included (Category 6)?
+
+☐ Are lighting-specific negatives appropriate for the chosen lighting type?
+
+☐ For NEON lighting: Are extra text prevention measures applied?
+
+☐ Is the negative prompt comprehensive but not overly restrictive?
+
+EXAMPLE SCENARIOS WITH NEGATIVE PROMPTS
+Scenario 1: User provides white background image of a ceramic coffee mug + requests "warm indoor lighting"
+Positive Prompt Output:
+→ LLM should generate prompt placing mug on a wooden table in a cozy café or home setting, 2900K warm lighting from a nearby table lamp, soft shadows, warm ambient glow, ceramic surface with subtle highlights, texture of wood grain visible, depth of field with blurred background, photorealistic rendering, sharp focus on mug, professional product photography
+
+Negative Prompt Output:
+
+text
+no text, no typography, no logos, no watermarks, no distorted product, no warped ceramic, no blur on product, no artifacts, no pixelation, no cold blue tones, no harsh daylight, no neon colors, no inconsistent shadows, no cluttered background, no unrelated objects in focus
+
+Scenario 2: User provides phone photo of a gaming chair + requests "neon lighting, cyan and magenta"
+
+Positive Prompt Output:
+→ LLM should clean the background, place chair on a minimalist geometric platform or abstract angular surface, dual neon light sources (cyan from left casting cool blue highlights on chair surfaces, magenta from right creating warm pink reflections), dark neutral background (black or dark grey) with subtle abstract geometric patterns or clean gradient, colored reflections on glossy chair materials showing fabric texture and quilting details, dramatic contrast with product in sharp focus, clean modern aesthetic suitable for e-commerce and social media, high-resolution product photography [web:68][web:70]
+
+Negative Prompt Output:
+no text, no typography, no letters, no words, no signage, no graffiti, no readable characters, no neon signs with text, no brand names, no labels, no watermarks, no logos, no distorted product, no warped chair structure, no extra legs, no blurred product edges, no oversaturated product colors that alter true appearance, no artifacts, no pixelation, no cityscape backgrounds, no urban scenes, no buildings, no streets, no visible neon tube lights, no cluttered background, no unrelated objects, no atmospheric steam, no excessive haze, no complete darkness obscuring details
+
+Scenario 3: User provides catalog image of a leather handbag + requests "soft daylight, golden hour"
+Positive Prompt Output:
+→ LLM should stage bag on natural surface (marble countertop or linen fabric), 3200K warm golden sunlight streaming from window or outdoor setting at golden hour, long soft shadows extending diagonally, warm atmospheric glow with subtle haze, leather texture clearly visible with natural highlights and grain detail, brass hardware catching golden light, rich warm color palette, professional composition with bag positioned using rule of thirds, sharp focus, high-resolution e-commerce photography
+
+Negative Prompt Output:
+
+text
+no text, no typography, no logos, no watermarks, no brand labels visible, no distorted product, no warped leather, no inconsistent textures, no blur on product, no artifacts, no pixelation, no artificial studio look, no neon elements, no cold blue tones, no harsh shadows, no overblown highlights losing detail, no cluttered background, no unrelated objects in focus
+
+TESTING & ITERATION PROTOCOL
+Phase 1: Baseline Test
+
+Generate image with positive prompt only
+
+Identify top 3-5 defects or artifacts
+
+Document specific failure types
+
+Phase 2: Core Negative Implementation
+
+Add universal negative set (Categories 1, 2, 6)
+
+Test with same product/lighting scenario
+
+Evaluate artifact reduction
+
+Phase 3: Refinement
+
+If specific artifact persists (e.g., text in neon scenarios), add 5-10 variations of that negative term
+​
+
+For recurring issues, strengthen that negative category
+
+Balance: Ensure negatives don't over-constrain creative output
+
+Phase 4: Documentation
+
+Save working positive + negative pairs as templates for similar products
+
+Build a library of proven prompt combinations by product category
+
+Note which negative terms are most effective for specific lighting types
+
+CRITICAL NOTES
+⚠️ For NEON/RGB lighting operations: Text artifacts are 3x more likely. Always apply maximum text prevention measures.
+
+​⚠️ **For NEON/RGB backgrounds:** The most common failure is realistic urban/cityscape backgrounds that distract from the product. ALWAYS specify abstract geometric, minimalist, or tech-inspired backgrounds. Neon lighting should create atmosphere through COLOR and LIGHT QUALITY, not through literal environmental storytelling [web:68][web:70][web:71]. The background must remain clean and e-commerce/social-media appropriate.
+
+⚠️ For products with actual text/labels (books, packaging, labeled electronics): Do NOT use text-removal negatives. Instead, use: "accurate product text reproduction, clear readable product labels as shown in reference image"
+
+⚠️ Balance is key: Negative prompts should prevent unwanted artifacts WITHOUT restricting legitimate creative elements appropriate to the scene.

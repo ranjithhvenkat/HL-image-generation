@@ -1,7 +1,47 @@
+OPERATION 1: MULTI-PRODUCT COMPOSITE LAYOUTS
+UNIVERSAL TEMPLATE v4.1 - ANTI-HALLUCINATION ENHANCED
 CRITICAL INSTRUCTION TO LLM
 OUTPUT FORMAT: After completing ALL analysis steps below, output ONLY the final image generation prompt in the requested format (text OR JSON). Do not include explanatory text, process descriptions, reasoning, or multiple format options. Output ONE clean, ready-to-use prompt and STOP.
 
-PART A: FIXED FACTORS (Universal rules applicable to all multi-product composites)
+⚠️ REFERENCE IMAGE PRIORITY PROTOCOL - ANTI-HALLUCINATION DIRECTIVE ⚠️
+ABSOLUTE RULE: Reference images are the SOLE SOURCE OF TRUTH for product appearance. Text prompts below serve ONLY for spatial arrangement, background context, and camera angle - NOT for modifying product characteristics.
+
+Strict Hierarchy:
+HIGHEST PRIORITY (95% weight): Visual fidelity to reference images
+
+Secondary (5% weight): Spatial arrangement and environmental context from text
+
+Anti-Hallucination Rules:
+Configuration State Lock: If reference shows case CLOSED → generate CLOSED (not open)
+
+Component Count Lock: If reference shows 3 items → generate exactly 3 items (not 4, not 5)
+
+Color Preservation Lock: Product colors MUST match reference (do not alter red to orange, black to gray, etc.)
+
+Cable/Accessory Lock: If reference shows NO cables → do not add cables. If reference shows specific cable arrangement → replicate exactly.
+
+Assembly State Lock: If reference shows battery ATTACHED to drill → generate ATTACHED (not separate)
+
+Brand Fidelity Lock: Logos, text, typography MUST match reference pixel-for-pixel
+
+Prohibited Actions:
+❌ Opening cases shown closed in reference
+❌ Adding cables, wires, or accessories not in reference
+❌ Modifying product colors, materials, or finishes
+❌ Altering brand logos, text, or placement
+❌ Inventing additional components or accessories
+❌ Changing product assembly/disassembly states
+❌ Reinterpreting or stylizing products
+
+Text Prompt Purpose (Limited Scope):
+✅ Specify where products are positioned (spatial arrangement)
+✅ Define background/surface/environment
+✅ Describe lighting direction and quality
+✅ Set camera angle and composition
+
+Reference Images Provided: [List image identifiers]
+
+PART A: FIXED FACTORS
 1. Composition Architecture
 Visual Hierarchy: Position primary/hero product at rule-of-thirds intersection points or center-frame depending on product category and layout type
 
@@ -37,13 +77,11 @@ Aspect Ratio: Default to 1:1 (square) or 4:5 (portrait) unless user specifies; a
 File Cleanliness: No watermarks, text overlays, price tags, or graphical embellishments visible on products
 
 PART B-1: PRODUCT FIDELITY ANALYSIS & PRESERVATION PROTOCOL
-PURPOSE: Ensure generated images maintain exact visual fidelity to reference products, preserving all details, materials, colors, branding, and configurations.
-
 MANDATORY STEP 1: FORENSIC VISUAL ANALYSIS OF REFERENCE IMAGES
 For EACH product in the reference image(s), systematically extract and document:
 
 A. Product Identity & Configuration State
-Product Type: [Exact product category with specific model/type - e.g., "cordless hammer drill/driver", "chef's knife 8-inch blade", "stainless steel stockpot with glass lid"]
+Product Type: [Exact product category with specific model/type]
 
 Product State/Configuration: [CRITICAL - Document exact state]
 
@@ -53,7 +91,7 @@ Is product assembled or disassembled?
 
 Are lids ON containers or displayed separately?
 
-What orientation/angle is visible? (front view, side profile, three-quarter angle, overhead flat-lay)
+What orientation/angle is visible?
 
 Are any components extended/retracted/deployed?
 
@@ -62,34 +100,24 @@ Are batteries attached to power tools OR separate?
 Are cables coiled or extended? How many loops if coiled?
 
 B. Brand & Text Elements
-Brand Name: [Extract exact brand name from reference - e.g., "CRAFTSMAN", "Milwaukee", "DeWALT", "VINERS"]
+Brand Name: [Extract exact brand name from reference]
 
 Logo Placement & Style: [Where logos appear with typography style]
 
-Example: "White 'CRAFTSMAN' logo in bold sans-serif capitals centered on drill body"
-
-Example: "Milwaukee script logo in white on red background panel"
-
 Text Visibility: [Document all readable text]
 
-Voltage ratings: "20V MAX", "M18 FUEL", "18V"
+Voltage ratings
 
-Capacity: "4.0Ah", "5.0Ah XC"
+Capacity specifications
 
-Product names: "LITHIUM ION", "REDLITHIUM"
+Product names
 
 Model numbers, warning labels, technical specifications
 
-Text Color & Material: [e.g., "White text on red matte plastic", "Embossed silver text on black metal"]
+Text Color & Material: [e.g., "White text on red matte plastic"]
 
 C. Color Analysis with Material Context
 Primary Colors: [Exact color description with RGB approximation if identifiable]
-
-Milwaukee Red: RGB ~200,16,46
-
-DeWalt Yellow: RGB ~255,185,0
-
-Craftsman Red: RGB ~210,30,40
 
 Secondary Colors: [All visible accent colors with location]
 
@@ -115,7 +143,7 @@ Proportions & Dimensions: [Compact vs full-size, handle-to-body ratio, blade len
 
 Hardware Visible: [Screws (Phillips/hex), rivets, metal clips, hinges, clasps, buckles, zippers]
 
-Component Count: [Exact quantity - "5 knives", "3 pots with 2 lids", "2 batteries", "6 chairs"]
+Component Count: [Exact quantity]
 
 F. Product Condition & Quality Indicators
 Condition: [Pristine/brand new appearance - no wear, scuffs, or use marks]
@@ -124,207 +152,275 @@ Surface Cleanliness: [No dust, fingerprints, smudges, or imperfections]
 
 Quality Cues: [Premium details like chrome accents, precision molding seams, quality printing, brass ferrules, stitching details]
 
-MANDATORY STEP 2: GEOMETRY & ALIGNMENT ANALYSIS ⚠️ CRITICAL FOR ACCURACY
+MANDATORY STEP 2: GEOMETRY & ALIGNMENT ANALYSIS
 For KNIFE SETS:
-Count Verification: [Extract exact number of knives from reference - e.g., "5 knives"]
+Count Verification: [Extract exact number of knives from reference]
 
-Handle Alignment: [Measure and confirm] ALL knife handles positioned at IDENTICAL vertical height on block/magnetic strip
+Handle Alignment: ALL knife handles positioned at IDENTICAL vertical height on block/magnetic strip
 
-Blade Length Progression: [Document order] Shortest→Longest OR Longest→Shortest (e.g., "Paring knife 3.5" → Chef's knife 8"")
+Blade Length Progression: [Document order] Shortest→Longest OR Longest→Shortest
 
-Blade Spacing: [Specify uniform spacing] "1.5 inches between each blade center-to-center"
+Blade Spacing: [Specify uniform spacing] measured center-to-center
 
-Handle Angle: [Document consistency] "All handles at 15° from vertical"
+Handle Angle: [Document consistency] measured from vertical
 
-Blade Orientation: [Verify] All blade edges facing same direction
+Blade Orientation: All blade edges facing same direction
 
-Stand/Block Details: [Position and angle] "Black magnetic block at 35° three-quarter view showing front face and right side"
+Stand/Block Details: [Position and angle] three-quarter view angle specification
 
-Brand Visibility: [Confirm] Brand name on block base clearly readable
+Brand Visibility: Brand name on block base clearly readable
 
-For COOKWARE SETS (Pots, Pans):
+For COOKWARE SETS:
 Count & Configuration: [e.g., "3 pots: 1.5qt saucepan, 2.5qt pot, 5qt stockpot"]
 
-Arrangement Type: [Choose one]
+Arrangement Type: Nested/Stacked OR Separated/Linear OR Grouped
 
-Nested/Stacked: Largest at bottom, smallest at top
+Handle Orientation: ALL handles facing consistent direction with angle specification
 
-Separated/Linear: Arranged by size left→right (ascending or descending)
+Lid Placement Logic: [Specify for each pot] ON pot OR separate display
 
-Grouped: Clustered with artistic spacing
+Handle Attachment Visible: Rivets/screws attaching handles visible and symmetrically placed
 
-Handle Orientation: [Critical] ALL handles facing consistent direction
+For DINNERWARE SETS:
+Stacking Logic: Largest at bottom → smallest at top if nested
 
-Example: "All handles facing left at 30° from horizontal"
+Offset Stacking: Slight offset to show multiple plate edges if stacked
 
-Example: "Handles symmetrically opposed - front pot handles left, back pot handles right"
+Baseline Alignment: All items aligned along common baseline if separated
 
-Lid Placement Logic: [Specify for each pot]
+Dual-Tone Display: Positioning shows both exterior and interior colors if applicable
 
-"Lid ON largest pot showing glass top"
-
-"Lids displayed separately beside pots showing both glass top and metal rim"
-
-Handle Attachment Visible: [Verify] Rivets/screws attaching handles visible and symmetrically placed on both sides
-
-For DINNERWARE SETS (Plates, Bowls):
-Stacking Logic: [If nested] Largest plate at bottom → smallest at top
-
-Offset Stacking: [If stacked] Slight offset (0.5-1 inch) to show multiple plate edges
-
-Baseline Alignment: [If separated] All items aligned along common baseline
-
-Dual-Tone Display: [If applicable] Positioning shows both exterior and interior colors (e.g., black outside, red inside)
-
-Rim Profile: [Angle to show] Plate rim thickness and curved edge profile
+Rim Profile: Angle to show plate rim thickness and curved edge profile
 
 For TECH/CABLE KITS:
-Cable Coiling: [Critical] Cables coiled in 2-3 clean loops (NOT tangled)
+Cable Coiling: Cables coiled in 2-3 clean loops (NOT tangled)
 
-Connector Visibility: [Verify] Both connector ends visible (USB-C, Lightning, etc.)
+Connector Visibility: Both connector ends visible
 
-Coil Diameter: [Proportional] Larger cables = wider coil diameter (3-4 inches), smaller cables = tighter coils (2-3 inches)
+Coil Diameter: Proportional to cable length
 
-Case Configuration: [If organizer present] Case OPEN flat showing interior organization OR closed showing exterior
+Case Configuration: OPEN flat OR closed
 
-Component Organization: [If in case] Each item (cables, charger, earbuds) secured in designated elastic band/pocket
+Component Organization: Each item secured in designated location if in case
 
-Charger Orientation: [Specify] Charging brick positioned to show input/output ports and LED indicator lights
+Charger Orientation: Positioned to show ports and LED indicators
 
-For FITNESS EQUIPMENT (Dumbbells, Weights):
-Paired Items: [Verify] Dumbbells, barbells displayed as symmetrical pairs
+For FITNESS EQUIPMENT:
+Paired Items: Displayed as symmetrical pairs
 
-Weight Progression: [If multiple] Arranged by weight (lightest→heaviest OR vice versa)
+Weight Progression: Arranged by weight if multiple weights
 
-Plate Alignment: [If weight plates] All plates aligned showing center holes concentrically
+Plate Alignment: All plates aligned showing center holes concentrically
 
-Grip Texture: [Document] Ribbed foam padding, knurled metal, rubberized coating clearly visible
+Grip Texture: Texture details clearly visible
 
-Lock Collars: [If adjustable] Star-lock or spin-lock collars positioned showing mechanism
+Lock Collars: Positioned showing mechanism if adjustable
 
-Weight Markings: [Critical] "2.5KG", "10 LBS" text on plates clearly legible and correctly oriented
+Weight Markings: Text on plates clearly legible and correctly oriented
 
-For MULTI-ITEM KITS (20+ Components - Pet Kits, Baby Kits, Tool Sets):
-Functional Grouping: [Organize by category]
+For MULTI-ITEM KITS (20+ Components):
+Functional Grouping: Organized by category
 
-Feeding items clustered together (bowls, bottles, utensils)
+Size Hierarchy: Largest items first, smallest last within groups
 
-Toys grouped separately (rope toys, squeakers, balls)
+Breathing Room: Minimum 1 inch spacing between ALL items
 
-Grooming items together (brush, nail clipper, shampoo)
+Color Coordination: Color-matched items grouped if themed kit
 
-Size Hierarchy: [Within each group] Largest items first, smallest last
-
-Breathing Room: [Critical] Minimum 1 inch spacing between ALL items (no touching/overlapping)
-
-Color Coordination: [If themed kit] Color-matched items grouped when applicable
-
-Layout Pattern: [Choose] Organized rows, radial clusters, OR category-based sections
+Layout Pattern: Organized rows, radial clusters, OR category-based sections
 
 For JEWELRY SETS:
-Chain/Necklace Drape: [Critical] Natural S-curve or gentle arc (NOT straight line)
+Chain/Necklace Drape: Natural S-curve or gentle arc (NOT straight line)
 
-Pendant Position: [Specify] Positioned at curve's lowest point, facing camera
+Pendant Position: Positioned at curve's lowest point, facing camera
 
-Earring Symmetry: [Paired positioning] Flanking necklace OR positioned symmetrically beside
+Earring Symmetry: Flanking necklace OR positioned symmetrically beside
 
-Hook/Closure Visibility: [Verify] Fish-hook, lever-back, or post closures clearly visible
+Hook/Closure Visibility: Fish-hook, lever-back, or post closures clearly visible
 
-Fabric Drape: [If on fabric] Natural folds and sheen showing material quality
+Fabric Drape: Natural folds and sheen showing material quality if on fabric
 
 MANDATORY STEP 3: MATERIAL RENDERING SPECIFICATIONS
-Based on forensic analysis, specify exact material rendering for each product component:
-
 Metal Finishes:
-Stainless Steel (Brushed): "Directional grain pattern running horizontally/vertically, subtle satin sheen, controlled highlights along grain direction"
+Stainless Steel (Brushed): Directional grain pattern, subtle satin sheen, controlled highlights along grain direction
 
-Stainless Steel (Mirror Polish): "Mirror-like reflections showing environment hints, gradient lighting to prevent blown-out hotspots"
+Stainless Steel (Mirror Polish): Mirror-like reflections showing environment hints, gradient lighting to prevent blown-out hotspots
 
-Chrome/Nickel Plating: "Bright mirror finish with sharp reflections, blue-tinted highlights"
+Chrome/Nickel Plating: Bright mirror finish with sharp reflections, blue-tinted highlights
 
-Brass/Gold (Matte): "Warm golden tone RGB ~184,134,11, satin finish with subtle highlights"
+Brass/Gold (Matte): Warm golden tone, satin finish with subtle highlights
 
-Brass/Gold (Polished): "Bright gold reflections, mirror-like shine on edges and curves"
+Brass/Gold (Polished): Bright gold reflections, mirror-like shine on edges and curves
 
-Aluminum (Anodized): "Uniform matte finish in [color], slight metallic sheen, no fingerprints"
+Aluminum (Anodized): Uniform matte finish, slight metallic sheen, no fingerprints
 
-Rose Gold PVD Coating: "Warm pink-gold tone RGB ~183,110,121, mirror polish with controlled reflections"
+Rose Gold PVD Coating: Warm pink-gold tone, mirror polish with controlled reflections
 
 Plastic Finishes:
-Matte Hard Plastic: "Flat finish with zero shine, uniform color, subtle surface texture (fine stippling or smooth), no reflections"
+Matte Hard Plastic: Flat finish with zero shine, uniform color, subtle surface texture, no reflections
 
-Glossy Hard Plastic: "High-shine finish showing sharp light reflections, slight environmental reflections on curved surfaces"
+Glossy Hard Plastic: High-shine finish showing sharp light reflections, slight environmental reflections on curved surfaces
 
-Textured Plastic: "Dimpled/stippled/pebbled surface texture creating micro-shadows, matte to semi-gloss finish"
+Textured Plastic: Dimpled/stippled/pebbled surface texture creating micro-shadows, matte to semi-gloss finish
 
-Transparent Polycarbonate: "Clear with 90% transparency, slight green/blue tint, visible internal components/contents, edge highlights, subtle distortion through material"
+Transparent Polycarbonate: Clear with 90% transparency, slight green/blue tint, visible internal components/contents, edge highlights, subtle distortion through material
 
 Rubber & Elastomer Finishes:
-Rubberized Overmold (Grips): "Matte black/gray finish, textured with grip pattern (diamond, hexagon, stippling), subtle compression marks at edges where bonded to plastic"
+Rubberized Overmold (Grips): Matte black/gray finish, textured with grip pattern, subtle compression marks at edges where bonded to plastic
 
-Silicone (Soft): "Semi-matte finish with slight sheen, flexible appearance showing gentle curves, translucent quality allowing light transmission"
+Silicone (Soft): Semi-matte finish with slight sheen, flexible appearance showing gentle curves, translucent quality allowing light transmission
 
 Glass:
-Clear Glass (Lids, Containers): "95% transparency with subtle green tint on edges, gradient reflections showing environment, light refraction through thickness, edge highlights"
+Clear Glass (Lids, Containers): 95% transparency with subtle green tint on edges, gradient reflections showing environment, light refraction through thickness, edge highlights
 
-Tempered Glass: "Clear with slight surface reflection, visible tempering marks if present"
+Tempered Glass: Clear with slight surface reflection, visible tempering marks if present
 
 Ceramic & Porcelain:
-Glazed Ceramic: "High-gloss finish with smooth reflections, uniform color, slight color variation showing glaze depth, rim highlights"
+Glazed Ceramic: High-gloss finish with smooth reflections, uniform color, slight color variation showing glaze depth, rim highlights
 
-Matte Ceramic: "Flat finish with no shine, subtle surface texture, uniform color with slight variation"
+Matte Ceramic: Flat finish with no shine, subtle surface texture, uniform color with slight variation
 
 Fabric & Textiles:
-Velvet Upholstery: "Directional nap showing light/dark shading based on angle, depth and richness, vertical channel tufting creating shadow lines, soft highlight along top edges"
+Velvet Upholstery: Directional nap showing light/dark shading based on angle, depth and richness, vertical channel tufting creating shadow lines, soft highlight along top edges
 
-Linen/Cotton: "Visible weave texture, matte finish, natural wrinkles and folds, slight color variation in weave"
+Linen/Cotton: Visible weave texture, matte finish, natural wrinkles and folds, slight color variation in weave
 
-Silk: "Directional sheen creating highlights and lowlights based on drape angle, smooth surface, rich color saturation"
+Silk: Directional sheen creating highlights and lowlights based on drape angle, smooth surface, rich color saturation
 
-Leather: "Grain texture visible, slight sheen (depends on finish), natural color variation, subtle creasing at fold points"
+Leather: Grain texture visible, slight sheen, natural color variation, subtle creasing at fold points
 
 Wood:
-Natural Wood (Walnut, Oak, Teak): "Visible grain pattern flowing naturally, color variation (light/dark streaks), matte to satin finish, knots if present"
+Natural Wood: Visible grain pattern flowing naturally, color variation (light/dark streaks), matte to satin finish, knots if present
 
-Stained/Finished Wood: "Enhanced grain visibility through stain, consistent finish (matte/satin/gloss), rich color depth"
+Stained/Finished Wood: Enhanced grain visibility through stain, consistent finish (matte/satin/gloss), rich color depth
 
-Painted Wood: "Smooth finish with wood grain subtle or invisible depending on paint type"
+Painted Wood: Smooth finish with wood grain subtle or invisible depending on paint type
 
-MANDATORY STEP 4: REFERENCE FIDELITY ANCHORING INSTRUCTIONS
+MANDATORY STEP 4: ENHANCED REFERENCE FIDELITY ANCHORING INSTRUCTIONS
 After completing Steps 1-3, the final prompt MUST include explicit instructions to preserve product appearance from reference images:
 
 For Text Prompts - Include This Anchor Section:
 
 text
-REFERENCE FIDELITY MANDATE: Product appearance, materials, colors, branding, design details, and configurations MUST exactly match the provided reference images with pixel-accurate fidelity. Maintain the following critical elements precisely as shown in reference:
+⚠️ CRITICAL REFERENCE FIDELITY MANDATE ⚠️
 
-- Brand logos, text, and typography (exact font, size, placement, color)
-- Product color schemes with RGB accuracy [list key colors from analysis]
-- Material finishes and surface treatments [list from material analysis]
-- Product configuration states [list open/closed/assembled states]
-- Component arrangements and spatial relationships [list key geometric requirements]
-- Hardware details (screws, rivets, handles, clasps) [list visible hardware]
-- Texture details (grips, fabric weaves, wood grain, metal finishes)
+Product appearance, materials, colors, branding, configurations, and ALL visual characteristics MUST exactly match the provided reference images with ZERO deviation. This is a HARD CONSTRAINT with 95% generation weight.
 
-Do not alter, reinterpret, stylize, or modify products in any way. Use reference images as absolute source of truth for all product visual characteristics. Generate new arrangement/lighting/context as specified, but preserve products exactly as shown in reference.
+SPECIFIC FIDELITY REQUIREMENTS FROM REFERENCE ANALYSIS:
+
+1. PRODUCT CONFIGURATION STATES:
+[List each product with exact state from Step 1A]
+- [Product 1]: [Exact configuration - CLOSED/OPEN, ATTACHED/SEPARATE, etc.] (DO NOT CHANGE)
+- [Product 2]: [Exact configuration]
+[Continue for all products]
+
+2. EXACT COLOR PRESERVATION:
+[List precise colors with RGB from Step 1C]
+- [Element 1]: [Color description with RGB and finish]
+- [Element 2]: [Color description with RGB and finish]
+[Continue for all color-critical elements]
+
+3. BRAND ELEMENTS - PIXEL-ACCURATE:
+[List exact branding details from Step 1B]
+- [Brand element 1]: [Exact description of logo/text placement, style, color]
+- [Brand element 2]: [Exact description]
+[Continue for all visible text/logos]
+
+4. MATERIAL FINISHES - NO ALTERATIONS:
+[List specific material treatments from Step 1D]
+- [Material 1]: [Specific finish description]
+- [Material 2]: [Specific finish description]
+[Continue for all materials]
+
+5. COMPONENT COUNT - EXACT MATCH:
+[List precise quantities from Step 1E]
+- Total: [Number] components EXACTLY - do not add or remove items
+[List each component type with quantity]
+
+6. GEOMETRIC RELATIONSHIPS:
+[List critical spatial/alignment rules from Step 2]
+- [Alignment rule 1]
+- [Alignment rule 2]
+[Continue for alignment-critical elements]
+
+ANTI-HALLUCINATION PROHIBITIONS:
+- DO NOT open cases/containers shown closed in reference
+- DO NOT add cables/wires/accessories not present in reference
+- DO NOT modify colors (shades, tones, or hues)
+- DO NOT alter brand text, logos, or typography
+- DO NOT change product assembly states
+- DO NOT invent additional components or accessories
+- DO NOT reinterpret product designs or proportions
+
+TEXT PROMPT SCOPE LIMITATION:
+The detailed text descriptions below serve ONLY to specify:
+- Spatial arrangement (where each product is positioned)
+- Background environment (surface, lighting setup)
+- Camera angle (three-quarter, overhead, etc.)
+
+Text does NOT authorize ANY changes to product appearance shown in reference images.
+
+GENERATION WEIGHT DISTRIBUTION:
+- 95% weight: Pixel-accurate fidelity to reference images
+- 5% weight: Spatial arrangement and environmental context from text
+
+Use reference images as ABSOLUTE TRUTH. Generate new spatial arrangement and context per text instructions, but preserve every product characteristic exactly as shown in reference with ZERO tolerance for deviation or reinterpretation.
 For JSON Prompts - Include This Field:
 
 json
 {
-  "reference_fidelity_mandate": {
-    "fidelity_priority": "absolute_highest",
-    "preserve_exact_appearance": true,
-    "critical_elements_from_reference": [
-      "exact brand logos and text as shown (font, size, placement)",
-      "precise color matching: [list RGB values or color names from analysis]",
-      "material finishes: [list specific finishes from material analysis]",
-      "product configuration: [list states - case closed, lid on pot, battery attached, etc.]",
-      "geometric alignment: [list critical alignment rules from geometry analysis]",
-      "all structural details: [list hardware, features from structural analysis]",
-      "component proportions and relative sizing as shown in reference",
-      "texture details: [list textures from material analysis]"
+  "CRITICAL_reference_fidelity_mandate": {
+    "priority_level": "absolute_highest",
+    "generation_weight_reference": 0.95,
+    "generation_weight_text": 0.05,
+    
+    "configuration_state_locks": {
+      "[product_1]": "[exact_state_from_reference_DO_NOT_CHANGE]",
+      "[product_2]": "[exact_state_from_reference_DO_NOT_CHANGE]"
+    },
+    
+    "component_count_exact": {
+      "total_items": "[number]",
+      "[item_type_1]": "[quantity]",
+      "[item_type_2]": "[quantity]"
+    },
+    
+    "color_preservation_locks": {
+      "[element_1]": "[RGB_or_precise_color_description_with_finish]",
+      "[element_2]": "[RGB_or_precise_color_description_with_finish]"
+    },
+    
+    "brand_fidelity_locks": {
+      "[brand_element_1]": "[exact_description_of_logo_text_placement_style]",
+      "[brand_element_2]": "[exact_description]"
+    },
+    
+    "material_finish_locks": {
+      "[material_1]": "[specific_finish_from_analysis]",
+      "[material_2]": "[specific_finish_from_analysis]"
+    },
+    
+    "geometric_alignment_locks": {
+      "[alignment_rule_1]": "[specific_requirement_from_step_2]",
+      "[alignment_rule_2]": "[specific_requirement_from_step_2]"
+    },
+    
+    "prohibited_actions_STRICT": [
+      "NO_opening_cases_shown_closed",
+      "NO_adding_cables_wires_not_in_reference",
+      "NO_modifying_colors_or_shades",
+      "NO_altering_logos_text_branding",
+      "NO_inventing_accessories_or_components",
+      "NO_changing_assembly_attachment_states",
+      "NO_reinterpreting_product_designs"
     ],
-    "strict_instruction": "Use reference images as absolute truth. Generate new arrangement, lighting, or background context per user requirements, but maintain products in exact appearance from reference. Zero tolerance for product alteration or reinterpretation."
+    
+    "text_prompt_limited_scope": {
+      "allowed": ["spatial_arrangement", "background_environment", "lighting_setup", "camera_angle"],
+      "prohibited": ["product_modifications", "color_changes", "configuration_changes", "adding_removing_components"]
+    },
+    
+    "anti_hallucination_directive": "Generate ONLY elements present in reference images. Maintain EXACT configurations shown. Do not open closed cases. Do not add missing cables. Do not modify colors. Do not alter branding. Preserve all product characteristics with pixel-accurate fidelity."
   }
 }
 PART B-2: PRODUCT CATEGORY INTELLIGENCE & CONTEXTUAL STAGING
@@ -332,9 +428,7 @@ STEP: PRODUCT CATEGORY DETECTION
 Analyze reference images and user description to identify primary product category, then apply category-specific staging rules:
 
 CATEGORY A: FURNITURE & HOME DÉCOR
-Triggers: dining sets, sofas, beds, chairs, tables, cabinets, shelving, home furnishings
-
-Mandatory Requirement: ⚠️ LIFESTYLE CONTEXT REQUIRED - Never use plain white/isolated backgrounds for furniture
+Mandatory Requirement: LIFESTYLE CONTEXT REQUIRED - Never use plain white/isolated backgrounds for furniture
 
 Dining Furniture (Tables, Dining Chairs, Dining Sets):
 Complete Scene Requirements:
@@ -352,8 +446,6 @@ Complete cutlery set (fork, knife, spoon) at each place
 Cloth napkins (folded elegantly or in napkin rings)
 
 Centerpiece Element: Fresh flowers in vase, fruit bowl, candle arrangement, or table runner
-
-NEVER cutlery alone - always complete place settings
 
 Room Environment Styling:
 
@@ -394,8 +486,6 @@ Ambient Props: Wall art above headboard, area rug partially visible, soft window
 Lighting: Cozy warm ambiance with bedside lamps glowing
 
 CATEGORY B: POWER TOOLS & HARDWARE
-Triggers: drills, impact drivers, saws, tool kits, hand tools, batteries, chargers
-
 Background Options:
 
 Primary (Most Common): Pure white seamless background (RGB 255,255,255)
@@ -406,13 +496,13 @@ Staging Rules:
 
 Layout Type: Exploded kit layout OR grid inventory display
 
-Kit Display Components: Show ALL included items - tools, batteries, charger, case, accessories, instruction manual if visible
+Kit Display Components: Show ALL included items - tools, batteries, charger, case, accessories
 
-Battery Configuration: If batteries shown WITH tools, attach them; if shown separately, position them as standalone components
+Battery Configuration: If batteries shown WITH tools, attach them; if shown separately, position as standalone components
 
 Charger Details: Power cord neatly coiled (2-3 loops), plug visible, LED indicators facing camera
 
-Case State: If case included, show it CLOSED as backdrop element OR opened flat showing interior (specify which)
+Case State: If case included, show it CLOSED as backdrop element OR opened flat showing interior (specify which based on reference)
 
 Accessories Visible: Drill bits, driver bits, blade sets in their storage cases/organizers
 
@@ -423,8 +513,6 @@ Surface: Clean, professional - no clutter, no sawdust, no workshop debris
 Lighting: Bright, even studio lighting to show tool details, specifications, and brand text clearly
 
 CATEGORY C: KITCHEN & COOKWARE
-Triggers: knife sets, pots, pans, bakeware, mixing bowls, utensils, food storage
-
 Background Options:
 
 Primary: Pure white seamless OR light marble/stone surface
@@ -467,8 +555,6 @@ Props: Minimal - measuring cups, whisk, scattered flour, baking ingredients
 Surface: White marble or light wood
 
 CATEGORY D: BEAUTY, SKINCARE & COSMETICS
-Triggers: skincare bottles, serums, moisturizers, makeup, fragrances
-
 Background Options:
 
 Primary: Clean white/cream with subtle texture (tile, mosaic, marble)
@@ -500,8 +586,6 @@ Spacing: 2-3 inches between bottles, props positioned in negative space (never o
 Color Harmony: Background neutral tones (white, cream, beige, soft gray) complement product packaging colors
 
 CATEGORY E: ELECTRONICS & TECH ACCESSORIES
-Triggers: smartphones, laptops, speakers, cameras, smartwatches, cables, chargers
-
 Background Options:
 
 Primary: Clean white (RGB 255) or light gray (RGB 245-250)
@@ -533,8 +617,6 @@ Lighting: Clean, even front lighting with subtle side fill to define edges and b
 Screen Display: If device screens visible, show clean UI or off/sleep state (no personal content)
 
 CATEGORY F: FITNESS & SPORTS EQUIPMENT
-Triggers: dumbbells, resistance bands, yoga mats, foam rollers, jump ropes
-
 Background Options:
 
 Primary: Clean white seamless
@@ -556,8 +638,6 @@ Surface: White seamless, gym floor rubber, or wood texture
 Lighting: Bright, energetic lighting with clean shadows
 
 CATEGORY G: PET CARE PRODUCTS
-Triggers: grooming kits, feeding bowls, toys, leashes, collars
-
 Background Options:
 
 Primary: Clean white seamless
@@ -577,8 +657,6 @@ Spacing: 1-2 inches between items (no overlap)
 Props: None or minimal (pet paw print accent, subtle texture)
 
 CATEGORY H: JEWELRY & ACCESSORIES
-Triggers: necklaces, earrings, bracelets, rings, watches
-
 Background Options:
 
 Primary: Luxury fabric backdrop (silk, velvet) in jewel tones (burgundy, purple, navy, emerald)
@@ -600,8 +678,6 @@ Lighting: Focused to create sparkle on gemstones/metal while maintaining fabric 
 Metal Shine: Controlled highlights and reflections (not blown out)
 
 CATEGORY I: DINNERWARE & TABLEWARE
-Triggers: plate sets, bowl sets, mug sets, glassware
-
 Background Options:
 
 Primary: Clean white seamless or light neutral surface
@@ -620,11 +696,11 @@ Props: Minimal - cloth napkin, single flower, or bare surface
 
 Lighting: Soft diffused to show glaze finish and rim details
 
-PART C: VARIABLE FACTORS (Dynamic elements from user input)
+PART C: VARIABLE FACTORS
 1. Product Inventory Extraction
 SKU Count: [Extract from reference images and user description - exact number]
 
-Product Types: [List each distinct product with specifics - "8-inch chef's knife", "2.5qt stainless steel pot with glass lid"]
+Product Types: [List each distinct product with specifics]
 
 Size Hierarchy: [Identify which products are largest/smallest]
 
@@ -648,42 +724,30 @@ Nested/Stacked (cookware, dinnerware): Size-graduated stacking
 3. User Specification Integration
 Extract and apply from user input:
 
-Layout Preference: [If user specifies "grid", "cluster", "linear", "flat-lay" - override automatic selection]
+Layout Preference: [If user specifies layout type - override automatic selection]
 
-Background Directive: [If user specifies "lifestyle setting", "white background", "marble surface", etc.]
+Background Directive: [If user specifies background type]
 
-Camera Angle: [If specified: "overhead 90°", "three-quarter 45°", "eye-level", "elevated view"]
+Camera Angle: [If specified: overhead 90°, three-quarter 45°, eye-level, elevated view]
 
-Mood/Style Keywords: [Extract: "elegant", "minimalist", "vibrant", "rustic", "modern", "industrial", "organic", "professional"]
+Mood/Style Keywords: [Extract: elegant, minimalist, vibrant, rustic, modern, industrial, organic, professional]
 
-Target Audience: [If specified: "budget-conscious", "mid-range", "premium/luxury" - adjusts styling richness]
+Target Audience: [If specified: budget-conscious, mid-range, premium/luxury - adjusts styling richness]
 
-Specific Requirements: [Any unique user requests - "show all chair backs", "display lids separately", "include packaging", etc.]
+Specific Requirements: [Any unique user requests]
 
-PART D: LOGICAL COMPLETENESS VALIDATION ⚠️ CRITICAL QUALITY CHECK
+PART D: LOGICAL COMPLETENESS VALIDATION
 Before finalizing the prompt, systematically verify:
 
 1. Prop Logic Check
 Question: Do all props make contextual sense together and form a complete story?
 
-Examples:
-
-❌ BAD: Dining table with only cutlery (incomplete place setting)
-
-✅ GOOD: Dining table with plates, glasses, cutlery, napkins, centerpiece
-
-❌ BAD: Power tools on marble with flowers (category mismatch)
-
-✅ GOOD: Power tools on white background or workshop surface
+Verify: Props appropriate for category and create cohesive scene
 
 2. Scene Coherence Check
 Question: Does the overall scene tell a believable, aspirational story?
 
-Examples:
-
-❌ BAD: Furniture floating on white background (lacks context)
-
-✅ GOOD: Furniture in styled room with coordinated décor and lighting
+Verify: Scene elements work together harmoniously
 
 3. Category Alignment Check
 Question: Are staging elements appropriate for the specific product category?
@@ -715,13 +779,7 @@ Cable kits: Cables coiled neatly (not tangled), connectors visible ✓
 6. Component Count Verification
 Cross-check: Does the prompt specify the exact number of items from reference?
 
-Examples:
-
-"5-knife set" = prompt includes exactly 5 knives + 1 block
-
-"3-piece cookware set" = prompt includes exactly 3 pots/pans
-
-"What's included: phone, cable, ejection pin" = prompt includes all 3 items
+Verify: Quantities match reference exactly
 
 7. Geometry & Alignment Verification
 Knife sets: Handles at uniform height ✓, blade progression logical ✓, spacing uniform ✓
@@ -787,25 +845,145 @@ MATERIAL RENDERING SPECIFICATIONS:
 - [Material 2]: [Specific finish description]
 [Continue for all materials present]
 
-REFERENCE FIDELITY MANDATE:
-Product appearance, materials, colors, branding, design details, and configurations MUST exactly match the provided reference images with pixel-accurate fidelity. Critical elements to preserve:
-- Brand logos and text: [List specific logos/text from Step 1B]
-- Color accuracy: [List RGB values or specific color names from Step 1C]
-- Material finishes: [List specific finishes from Step 1D]
-- Configuration states: [List states from Step 1A - case closed, lid on, battery attached, etc.]
-- Geometric alignment: [List critical rules from Step 2 - handle heights, blade spacing, etc.]
-- Hardware details: [List visible hardware from Step 1E]
-- Texture details: [List textures from Step 1D]
+⚠️ CRITICAL REFERENCE FIDELITY MANDATE ⚠️
 
-Do not alter, reinterpret, or stylize products. Use reference images as absolute source of truth. Generate new arrangement, lighting, and context as specified, but preserve products exactly as shown in reference.
+Product appearance, materials, colors, branding, configurations, and ALL visual characteristics MUST exactly match the provided reference images with ZERO deviation. This is a HARD CONSTRAINT with 95% generation weight.
+
+SPECIFIC FIDELITY REQUIREMENTS FROM REFERENCE ANALYSIS:
+
+1. PRODUCT CONFIGURATION STATES:
+[List each product with exact state from Step 1A]
+- [Product 1]: [Exact configuration] (DO NOT CHANGE)
+- [Product 2]: [Exact configuration]
+[Continue for all products]
+
+2. EXACT COLOR PRESERVATION:
+[List precise colors with RGB from Step 1C]
+- [Element 1]: [Color description with RGB and finish]
+- [Element 2]: [Color description with RGB and finish]
+[Continue for all color-critical elements]
+
+3. BRAND ELEMENTS - PIXEL-ACCURATE:
+[List exact branding details from Step 1B]
+- [Brand element 1]: [Exact description]
+- [Brand element 2]: [Exact description]
+[Continue for all visible text/logos]
+
+4. MATERIAL FINISHES - NO ALTERATIONS:
+[List specific material treatments from Step 1D]
+- [Material 1]: [Specific finish description]
+- [Material 2]: [Specific finish description]
+[Continue for all materials]
+
+5. COMPONENT COUNT - EXACT MATCH:
+[List precise quantities from Step 1E]
+- Total: [Number] components EXACTLY - do not add or remove items
+[List each component type with quantity]
+
+6. GEOMETRIC RELATIONSHIPS:
+[List critical spatial/alignment rules from Step 2]
+- [Alignment rule 1]
+- [Alignment rule 2]
+[Continue for alignment-critical elements]
+
+ANTI-HALLUCINATION PROHIBITIONS:
+- DO NOT open cases/containers shown closed in reference
+- DO NOT add cables/wires/accessories not present in reference
+- DO NOT modify colors (shades, tones, or hues)
+- DO NOT alter brand text, logos, or typography
+- DO NOT change product assembly states
+- DO NOT invent additional components or accessories
+- DO NOT reinterpret product designs or proportions
+
+TEXT PROMPT SCOPE LIMITATION:
+The detailed text descriptions above serve ONLY to specify:
+- Spatial arrangement (where each product is positioned)
+- Background environment (surface, lighting setup)
+- Camera angle (three-quarter, overhead, etc.)
+
+Text does NOT authorize ANY changes to product appearance shown in reference images.
+
+GENERATION WEIGHT DISTRIBUTION:
+- 95% weight: Pixel-accurate fidelity to reference images
+- 5% weight: Spatial arrangement and environmental context from text
+
+Use reference images as ABSOLUTE TRUTH. Generate new spatial arrangement and context per text instructions, but preserve every product characteristic exactly as shown in reference with ZERO tolerance for deviation or reinterpretation.
+
+NEGATIVE PROMPT (Elements to AVOID):
+- Open cases or containers if reference shows them closed
+- Cables, wires, or cords not present in reference images
+- Modified product colors differing from reference
+- Altered brand logos or text
+- Invented accessories or components
+- Changed product configurations (assembled/disassembled states)
+- Additional batteries beyond reference count
+- Modified drill chuck colors or sizes
+- Altered tool body proportions or shapes
+- Reinterpreted product designs
+- Stylized or artistic variations from reference products
 
 TECHNICAL SPECIFICATIONS:
 Photorealistic, ultra-high resolution (8K equivalent), [depth of field specification - f/8-f/11 for sharp focus OR selective focus with background blur], true product colors [list key colors from analysis with RGB if available], [aspect ratio - 1:1, 4:5, 3:2, or user-specified], e-commerce quality suitable for zoom, clean edges, no watermarks, no text overlays, no graphical embellishments.
 PROMPT STRUCTURE - JSON FORMAT:
 json
 {
+  "CRITICAL_reference_priority_protocol": {
+    "override_level": "ABSOLUTE_MAXIMUM",
+    "reference_image_authority": "SOLE_SOURCE_OF_TRUTH",
+    "generation_weight_reference": 0.95,
+    "generation_weight_text": 0.05,
+    
+    "configuration_state_locks": {
+      "[product_1]": "[exact_state_from_reference_DO_NOT_CHANGE]",
+      "[product_2]": "[exact_state_from_reference_DO_NOT_CHANGE]"
+    },
+    
+    "component_count_exact": {
+      "total_items": "[number]",
+      "[item_type_1]": "[quantity]",
+      "[item_type_2]": "[quantity]"
+    },
+    
+    "color_preservation_locks": {
+      "[element_1]": "[RGB_or_precise_color_description_with_finish]",
+      "[element_2]": "[RGB_or_precise_color_description_with_finish]"
+    },
+    
+    "brand_fidelity_locks": {
+      "[brand_element_1]": "[exact_description]",
+      "[brand_element_2]": "[exact_description]"
+    },
+    
+    "material_finish_locks": {
+      "[material_1]": "[specific_finish_from_analysis]",
+      "[material_2]": "[specific_finish_from_analysis]"
+    },
+    
+    "geometric_alignment_locks": {
+      "[alignment_rule_1]": "[specific_requirement]",
+      "[alignment_rule_2]": "[specific_requirement]"
+    },
+    
+    "prohibited_actions_STRICT": [
+      "NO_opening_cases_shown_closed",
+      "NO_adding_cables_wires_not_in_reference",
+      "NO_modifying_colors_or_shades",
+      "NO_altering_logos_text_branding",
+      "NO_inventing_accessories_or_components",
+      "NO_changing_assembly_attachment_states",
+      "NO_reinterpreting_product_designs"
+    ],
+    
+    "text_prompt_limited_scope": {
+      "allowed": ["spatial_arrangement", "background_environment", "lighting_setup", "camera_angle"],
+      "prohibited": ["product_modifications", "color_changes", "configuration_changes", "adding_removing_components"]
+    },
+    
+    "anti_hallucination_directive": "Generate ONLY elements present in reference images. Maintain EXACT configurations shown. Do not open closed cases. Do not add missing cables. Do not modify colors. Do not alter branding. Preserve all product characteristics with pixel-accurate fidelity."
+  },
+  
   "scene_type": "multi_product_composite",
-  "product_category": "[furniture_dining | power_tools | kitchen_cookware | beauty_skincare | electronics_tech | fitness_equipment | pet_products | jewelry | dinnerware | etc.]",
+  "product_category": "[furniture_dining | power_tools | kitchen_cookware | beauty_skincare | electronics_tech | fitness_equipment | pet_products | jewelry | dinnerware]",
   
   "products": [
     {
@@ -820,21 +998,20 @@ json
       "key_features": ["[feature1]", "[feature2]"],
       "dimensions_relative": "[compact/full-size/large/small]"
     }
-    // Repeat for each product
   ],
   
   "layout_pattern": "[functional_cluster | exploded_kit | grid | linear_sequence | radial_flat_lay | nested_stacked]",
   
   "geometry_specifications": {
-    "knife_set_alignment": "[if applicable - handles_uniform_height, blade_progression_order, spacing_measurement]",
-    "cookware_handle_orientation": "[if applicable - all_left_30deg, symmetrically_opposed, etc.]",
-    "cookware_lid_placement": "[if applicable - on_pots, separate_display]",
-    "dinnerware_stacking": "[if applicable - nested_largest_bottom, offset_stacking]",
-    "cable_coiling": "[if applicable - 2_3_loops_neat, connectors_visible]",
-    "fitness_pairing": "[if applicable - symmetric_pairs, weight_progression]",
-    "jewelry_drape": "[if applicable - natural_S_curve, pendant_at_lowest_point]",
-    "spacing_between_items": "[measurement - 3-5 inches, 1-2 inches, etc.]",
-    "baseline_alignment": "[yes/no - if items share common baseline]"
+    "knife_set_alignment": "[if applicable]",
+    "cookware_handle_orientation": "[if applicable]",
+    "cookware_lid_placement": "[if applicable]",
+    "dinnerware_stacking": "[if applicable]",
+    "cable_coiling": "[if applicable]",
+    "fitness_pairing": "[if applicable]",
+    "jewelry_drape": "[if applicable]",
+    "spacing_between_items": "[measurement]",
+    "baseline_alignment": "[yes/no]"
   },
   
   "camera_angle": "[overhead_90 | three_quarter_45 | eye_level | elevated_view | user_specified]",
@@ -842,109 +1019,92 @@ json
   "environment": "[lifestyle_room_setting | clean_white_seamless | minimal_surface_context | luxury_fabric_backdrop]",
   
   "room_styling": {
-    "applicable": "[true for furniture, false for most other categories]",
-    "complete_table_setting": [
-      "[if dining: dinner plates, salad plates, glassware, complete cutlery, napkins, centerpiece - list each item]"
-    ],
-    "lighting_sources": [
-      "[natural_window_left, pendant_light, table_lamps, ambient_room_lighting]"
-    ],
-    "background_elements": [
-      "[wall_art, window_with_curtains, area_rug, hardwood_flooring, sideboard, wall_paneling - list specific items]"
-    ],
-    "textiles": [
-      "[if applicable: throw_pillows, throw_blanket, layered_bedding - list specific items]"
-    ],
-    "decorative_props": [
-      "[if applicable: books, plants, candles, decorative_objects - list specific items with descriptions]"
-    ]
+    "applicable": "[true/false]",
+    "complete_table_setting": ["[if dining: list each item]"],
+    "lighting_sources": ["[specific sources]"],
+    "background_elements": ["[specific items]"],
+    "textiles": ["[if applicable: list items]"],
+    "decorative_props": ["[if applicable: list items]"]
   },
   
   "props": {
     "category_appropriate": true,
-    "items": [
-      "[List specific props based on category - organic elements for beauty, minimal tools for kitchen, none for power tools on white, etc.]"
-    ],
+    "items": ["[List specific props based on category]"],
     "placement": "[in_negative_space, never_obscuring_products]"
   },
   
   "surface_background": {
     "type": "[white_seamless | marble | wood_grain | tile_texture | fabric_backdrop | workshop_surface | gym_floor]",
     "color": "[RGB or color name]",
-    "texture": "[smooth, textured_tile, wood_grain_visible, fabric_weave, etc.]"
+    "texture": "[description]"
   },
   
   "hero_product": "[Primary item name]",
-  "hero_position": "[center_frame | rule_of_thirds_lower_right | upper_center | etc.]",
+  "hero_position": "[center_frame | rule_of_thirds_position]",
   
   "lighting": {
     "type": "[soft_diffused_natural | warm_ambient | clean_studio | focused_directional]",
     "source": "[window_front_left | overhead_diffused | studio_front_45deg | multiple_sources]",
-    "direction": "[front, side, overhead, three_quarter]",
+    "direction": "[front | side | overhead | three_quarter]",
     "color_temperature": "[warm_3000K | neutral_5500K | cool_6500K]",
     "mood": "[bright_airy | cozy_evening | professional_clean | dramatic | energetic]",
     "shadow_quality": "subtle_soft_shadows_15_25_percent_opacity_30_45_degree_angle"
   },
   
   "material_rendering": {
-    "stainless_steel": "[if present: brushed_directional_grain, mirror_polish_controlled_reflections, etc.]",
-    "plastic_matte": "[if present: flat_finish_zero_shine_subtle_texture]",
-    "plastic_glossy": "[if present: high_shine_sharp_reflections]",
-    "rubber_overmold": "[if present: textured_grip_pattern_matte_finish]",
-    "glass_clear": "[if present: 95_percent_transparency_edge_highlights_refraction]",
-    "ceramic_glazed": "[if present: glossy_smooth_reflections_rim_highlights]",
-    "velvet_fabric": "[if present: directional_nap_light_dark_shading]",
-    "wood_natural": "[if present: visible_grain_color_variation_matte_satin_finish]",
-    "metal_chrome": "[if present: mirror_bright_reflections]",
-    "metal_brass": "[if present: warm_gold_tone_satin_or_polished]"
-    // Add materials as applicable from forensic analysis
+    "stainless_steel": "[if present: specific finish]",
+    "plastic_matte": "[if present: specific finish]",
+    "plastic_glossy": "[if present: specific finish]",
+    "rubber_overmold": "[if present: specific finish]",
+    "glass_clear": "[if present: specific finish]",
+    "ceramic_glazed": "[if present: specific finish]",
+    "velvet_fabric": "[if present: specific finish]",
+    "wood_natural": "[if present: specific finish]",
+    "metal_chrome": "[if present: specific finish]",
+    "metal_brass": "[if present: specific finish]"
   },
   
   "aesthetic_tone": "[luxury_elegant | modern_minimalist | warm_inviting | technical_professional | playful_vibrant | rustic_organic]",
   "target_audience": "[middle_class | premium_luxury | budget_conscious | professional | enthusiast]",
   
-  "color_palette": "[Primary product colors plus complementary background/prop colors - list specific colors]",
+  "color_palette": "[Primary product colors plus complementary background/prop colors]",
   
   "depth_effect": "[realistic_spatial_depth | flat_minimal_depth | layered_foreground_background]",
   
   "aspect_ratio": "[1:1 | 4:5 | 3:2 | 16:9 | user_specified]",
   
-  "reference_fidelity_mandate": {
-    "fidelity_priority": "absolute_highest",
-    "preserve_exact_appearance": true,
-    "critical_elements_from_reference": [
-      "exact brand logos and text: [list specific from forensic analysis]",
-      "precise color matching: [list RGB or specific colors from analysis]",
-      "material finishes: [list specific finishes from material analysis]",
-      "product configuration: [list states - case_closed, lid_on_pot, battery_attached, cables_coiled, etc.]",
-      "geometric alignment: [list critical rules - knife_handles_uniform_height, cookware_handles_left_30deg, etc.]",
-      "structural details: [list hardware, features - rivets_visible, chuck_color, chair_leg_brass_ferrules, etc.]",
-      "component proportions: [maintain relative sizing from reference]",
-      "texture details: [list specific textures - grip_stippling, fabric_weave, wood_grain, etc.]"
-    ],
-    "strict_instruction": "Use reference images as absolute source of truth for all product visual characteristics. Generate new arrangement, lighting, and background context per user requirements, but maintain products in exact appearance from reference. Zero tolerance for product alteration, reinterpretation, or stylization."
-  },
+  "negative_prompt": [
+    "open case if reference shows closed",
+    "invented cables not in reference",
+    "modified product colors",
+    "altered branding or logos",
+    "extra accessories not shown in reference",
+    "changed product configuration states",
+    "additional components beyond reference count",
+    "reinterpreted product designs",
+    "stylized variations from reference"
+  ],
   
   "technical_specs": "photorealistic, ultra_high_resolution_8K, depth_of_field_f8_f11_all_products_sharp_focus, accurate_color_reproduction, e_commerce_quality_suitable_for_zoom, clean_edges, no_watermarks, no_text_overlays, no_graphical_embellishments"
 }
-PART F: FINAL OUTPUT INSTRUCTION ⚠️ CRITICAL
+PART F: FINAL OUTPUT INSTRUCTION
 After completing the entire analysis and prompt construction process above:
 
 OUTPUT ONLY ONE OF THE FOLLOWING:
-If user requested JSON format → Output ONLY the complete JSON object (as structured above), nothing else
+If user requested JSON format → Output ONLY the complete JSON object, nothing else
 
-If user requested text/descriptive format → Output ONLY the complete descriptive text prompt (as structured above), nothing else
+If user requested text/descriptive format → Output ONLY the complete descriptive text prompt, nothing else
 
 DO NOT INCLUDE:
 ❌ Explanations of your analysis process
 
 ❌ Multiple format options (don't show both text AND JSON)
 
-❌ Introductory phrases like "Here's the prompt:", "Text Prompt:", "JSON Output:", "Based on my analysis..."
+❌ Introductory phrases
 
 ❌ Any commentary, notes, or explanations before or after the prompt
 
-❌ Markdown code blocks (json or text) around the output
+❌ Markdown code blocks around the output
 
 ❌ Section headers or labels
 
